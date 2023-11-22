@@ -3,8 +3,6 @@
 const search_bar_icon = document.getElementById("search_icon");
 const mobile_search_bar = document.querySelector(".mobile_search");
 const desktop_search_icon = document.getElementById("desktop_search_icon");
-const desktop_close_icon = document.getElementById("dstp_close_btn");
-const desktop_search_bar = document.querySelector(".dstp_search_bar");
 const product_item = document.getElementById("product_item");
 const product_item_message = document.querySelector(".product_msg");
 const product_group = document.querySelectorAll(".p_group");
@@ -17,7 +15,36 @@ const popup_page = document.querySelector(".popup_content");
 const popup_product_img = document.querySelector(".popup_p_img");
 const copyRightYear = document.getElementById("currentYear");
 
-console.log(popup_product_img)
+// category search < get elements
+const category_search_click_area = document.querySelector(".search_road");
+const category_toggle_area = document.querySelector(".category_toggle");
+const toggle_area_open = document.querySelector(".toggle_open");
+const toggle_area_close = document.querySelector(".toggle_close");
+console.log(toggle_area_close)
+console.log(toggle_area_open)
+
+// category search handler 
+
+let toggle = true;
+const category_search_handler = () => {
+  if(toggle){
+ category_toggle_area.style.display = "unset";
+  toggle_area_open.style.display = "none";
+  toggle_area_close.style.display = "block";
+
+  toggle = false;
+  }else{
+    category_toggle_area.style.display = "none";
+    toggle_area_open.style.display = "block";
+    toggle_area_close.style.display = "none";
+
+    toggle = true;
+  }
+ 
+}
+
+category_search_click_area.addEventListener("click", category_search_handler)
+
 
 
 //to get current year
@@ -57,28 +84,6 @@ function popup_hide() {
   popup_overlay.style.display = "none";
 
 }
-
-
-
-//desktop search bar toggle function
-function toggleSearchBar(displayValue, opacityValue) {
-  desktop_search_bar.style.display = displayValue;
-  desktop_search_bar.style.opacity = opacityValue;
-}
-desktop_search_bar.addEventListener('scroll', function (event) {
-  event.preventDefault();
-});
-desktop_search_icon.addEventListener("click", () => {
-  toggleSearchBar("flex", "1");
-});
-
-desktop_close_icon.addEventListener("click", () => {
-  toggleSearchBar("none", "0");
-});
-
-
-
-
 
 //product item message function here
 let product_item_visible = false;

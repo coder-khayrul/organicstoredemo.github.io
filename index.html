@@ -54,32 +54,73 @@
 
 
       <div class="container-fluid container-xl">
-
-        <nav class="navbar navbar-expand-lg">
+        <!--top header section start here-->
+        <div class="top_header d-flex justify-content-between align-items-center ">
           <div class="logo">
             <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="./img/logo.png">
             </a>
           </div>
 
+          <div class="main_search_bar d-flex align-content-center">
+            <div class="category_area">
+              <div class="category_selector">
+                <div class="search_road">
+                  <span class="search_diseble_title">All Category</span>
+                  <i class="toggle_open fa-solid fa-caret-down"></i>
+                  <i style="display: none;" class="toggle_close fa-solid fa-caret-up"></i>
 
+                </div>
+              </div>
+              <div class="category_toggle">
+                <div class="category_search_input">
+                  <input type="text" name="category_searchField" id="category_searchField">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul class="category_items ps-0">
+                  <li class="list-unstyled active">All Category</li>
+                  <li class="list-unstyled ">category one</li>
+                  <li class="list-unstyled ">category one</li>
+                  <li class="list-unstyled ">category one</li>
+                  <li class="list-unstyled ">category one</li>
+                  <li class="list-unstyled ">category one</li>
+                  <li class="list-unstyled ">category one</li>
+                  <li class="list-unstyled ">category one</li>
+                </ul>
+              </div>
+
+            </div>
+
+
+            <div class="search_input">
+              <input type="text" name="searchField" id="searchField" placeholder="Enter search keyword..">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="woocommerce_area">
+            <ul class="woocommerce_options align-items-center  justify-content-end mb-0  ps-0">
+
+              <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+              <li id="product_item" class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+              </li>
+              <li class="list-unstyled me-3"><span>£</span>0.00</li>
+
+              <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+              <li class="list-unstyled me-3 product_like_list"><a href="#"><i class="fa-regular fa-heart"></i> </a></li>
+
+            </ul>
+          </div>
+
+        </div>
+        <!--top header section end here-->
+
+
+        <nav class="navbar navbar-expand-lg">
 
           <!-- toggle button -->
           <div class="button_and_search d-flex align-items-center ">
 
             <div class="product_msg">
               <span>No products in the cart.</span>
-            </div>
-
-            <!--desktop full width search bar-->
-
-            <div class="dstp_search_bar">
-              <span id="dstp_close_btn"><i class="fa-solid fa-xmark"></i></span>
-              <div class="dstp_search_wrapper">
-                <div class="dstp_search_box">
-                  <input type="text" placeholder="Enter Search Keyword.... ">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-              </div>
             </div>
 
             <!--mobile full width search bar-->
@@ -104,9 +145,9 @@
 
           <!-- navigation bar -->
 
-          <div class="collapse navbar-collapse justify-content-end justify-content-lg-center " id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-start  " id="navbarNav">
 
-            <!-- mobile menu -->
+            <!-- mobile menu start -->
             <ul class="accordion-menu ps-0">
               <li>
                 <a href="#" class="dropdownlink"> HOME</a>
@@ -187,7 +228,57 @@
 
               </li>
             </ul>
+            <!-- mobile menu end -->
 
+            <div class="vertical_category">
+              <div class="v_category_handler d-flex justify-content-between align-items-center ">
+                <i class="fa-solid fa-list mb-0 pb-0 "></i>
+                <span class="v_category_title">PRODUCT CATEGORIES</span>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <ul id="category_list" class="v_category_items ps-0 ">
+                <li>
+                  <div class="category_title">
+                    <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
+                    <span>Product</span>
+                  </div>
+                    
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  <div class="category_title">
+                    <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
+                    <span>Product</span>
+                  </div>
+                    
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  <div class="category_title">
+                    <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
+                    <span>Product</span>
+                  </div>
+                    
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  <div class="category_title">
+                    <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
+                    <span>Product</span>
+                  </div>
+                    
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  <div class="category_title">
+                    <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
+                    <span>Product</span>
+                  </div>
+                    
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+              </ul>
+            </div>
 
             <!-- desktop menu start here -->
 
@@ -196,7 +287,7 @@
               <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
 
               <li class="nav-item menu-item-has-children">
-                <a href="#" class="nav-link">Shop <i class="fa fa-angle-down"></i></a>
+                <a href="#" class="nav-link">SHOP <i class="fa fa-angle-down"></i></a>
                 <div class="sub-menu mega-menu mega-menu-column-4 ">
 
                   <div class="list-item">
@@ -387,25 +478,11 @@
               </li>
 
               <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i id="desktop_search_icon" class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </li>
+
             </ul>
             <!-- desktop menu end here -->
           </div>
-          <ul class="woocommerce_options align-items-center  justify-content-end mb-0  ps-0">
 
-            <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-user"></i></a></li>
-            <li id="product_item" class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </li>
-            <li class="list-unstyled me-3"><span>£</span>0.00</li>
-
-            <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-            <li class="list-unstyled me-3 product_like_list"><a href="#"><i class="fa-regular fa-heart"></i> </a></li>
-
-          </ul>
 
         </nav>
       </div>
@@ -919,9 +996,9 @@
                       <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
                       <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
                     </div>
-                   
+
                     <div class="view_btn  ">
-                      <button  type="submit">Quick View</button>
+                      <button type="submit">Quick View</button>
                     </div>
 
                   </div>
@@ -1549,49 +1626,49 @@
     </footer>
     <!--*************footer_section end here**************-->
 
- <!--quick button popup-->
- <div class="popup_overlay">
-  <div class="popup_content">
-    <div class="exit_icon">
-      <i class="fa-solid fa-x"></i>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="popup_img">
-          <img class="popup_p_img img-fluid" src="./img/man_jcket.jpg" alt="./img/man_jcket.jpg">
+    <!--quick button popup-->
+    <div class="popup_overlay">
+      <div class="popup_content">
+        <div class="exit_icon">
+          <i class="fa-solid fa-x"></i>
         </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="popup_info">
-          <h3>
-            Men’s Slim Fit Linen Suit Coat Khaki</h3>
-          <b>£ 130.00</b>
-          <p>Enhance your stylish look with the Men’s Slim Fit Linen Suit Coat from Merona. Made of
-            sturdy material in a textured Chambray weave.</p>
-          <button type="submit">BUY PRODUCT</button>
-          <a class="wishlist" href="#">Add to Wishlist</a>
-          <ul class="about_p ps-0 py-3">
-            <li class="mb-2">SKU: <span>10848</span></li>
-            <li class="mb-2">Categories:: <span>Blazers, Clothing, Men</span></li>
-            <li>Tag: <span>Man</span></li>
-          </ul>
-          <div class="popup_social d-flex align-items-center ">
-            <div class="share_text me-3">
-              Share:
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="popup_img">
+              <img class="popup_p_img img-fluid" src="./img/man_jcket.jpg" alt="./img/man_jcket.jpg">
             </div>
-            <div class="social_link d-flex ">
-              <a class="me-2" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a class="me-2" href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a class="me-2" href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a class="me-2" href="#"><i class="fa-brands fa-pinterest"></i></a>
-            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="popup_info">
+              <h3>
+                Men’s Slim Fit Linen Suit Coat Khaki</h3>
+              <b>£ 130.00</b>
+              <p>Enhance your stylish look with the Men’s Slim Fit Linen Suit Coat from Merona. Made of
+                sturdy material in a textured Chambray weave.</p>
+              <button type="submit">BUY PRODUCT</button>
+              <a class="wishlist" href="#">Add to Wishlist</a>
+              <ul class="about_p ps-0 py-3">
+                <li class="mb-2">SKU: <span>10848</span></li>
+                <li class="mb-2">Categories:: <span>Blazers, Clothing, Men</span></li>
+                <li>Tag: <span>Man</span></li>
+              </ul>
+              <div class="popup_social d-flex align-items-center ">
+                <div class="share_text me-3">
+                  Share:
+                </div>
+                <div class="social_link d-flex ">
+                  <a class="me-2" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a class="me-2" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a class="me-2" href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a class="me-2" href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
 
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 
 
