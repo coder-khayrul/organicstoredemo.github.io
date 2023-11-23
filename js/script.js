@@ -43,8 +43,31 @@ const category_search_click_area = document.querySelector(".search_road");
 const category_toggle_area = document.querySelector(".category_toggle");
 const toggle_area_open = document.querySelector(".toggle_open");
 const toggle_area_close = document.querySelector(".toggle_close");
-console.log(toggle_area_close)
-console.log(toggle_area_open)
+const category_title = document.querySelectorAll(".category_items li");
+const search_title = document.querySelector(".search_disable_title");
+
+const categoryArray = new Array();
+let single_item;
+ for(let i = 0; i< category_title.length; i++){
+   categoryArray.push(category_title[i]);
+ 
+ }
+
+ //for getting items values
+const get_items_value = (item) => {
+ 
+}
+let text;
+categoryArray.forEach((item) => {
+  single_item= item;
+  item.addEventListener("click", () => {
+    text = this.textContent
+    search_title.textContent = text;
+  });
+
+  
+  
+})
 
 // category search handler 
 
@@ -54,7 +77,6 @@ const category_search_handler = () => {
     category_toggle_area.style.display = "unset";
     toggle_area_open.style.display = "none";
     toggle_area_close.style.display = "block";
-    console.log("active")
 
     toggle = false;
   } else {
@@ -194,32 +216,6 @@ for (let i = 0; i < 5; i++) {
 
   });
 }
-
-//****************owl carousel script**********
-//owl carousel script
-$(document).ready(function () {
-
-  $(".owl-carousel").owlCarousel({
-
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    items: 1,
-    dots: false,
-    nav: true,
-    loop: true,
-    itemsDesktop: false,
-    itemsDesktopSmall: false,
-    itemsTablet: false,
-    itemsMobile: false,// Enable loop mode
-    autoplay: true, // Enable auto play
-    autoplayTimeout: 3000, // Set the time interval (1 second in this case)
-    autoplayHoverPause: true,
-    animateOut: "fadeOut",
-    animateIn: "fadeIn",
-
-  });
-})
-
 
 
 

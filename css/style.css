@@ -301,6 +301,8 @@ span, p,a {
   align-items: center;
   justify-content: space-between;
   color: #969696;
+  height: 44px;
+  cursor: pointer;
 }
 
 .category_area {
@@ -328,6 +330,7 @@ span, p,a {
   right: 10px;
   transition: .3s;
   color: var(--primary_color);
+  cursor: pointer;
 }
 
 .category_toggle ul.category_items{
@@ -337,6 +340,7 @@ span, p,a {
 .category_toggle ul.category_items li {
   padding: 8px 15px;
   transition: .3s;
+  cursor: pointer;
 }
 
 .category_toggle ul.category_items li:hover, .category_toggle ul.category_items li.active {
@@ -493,6 +497,7 @@ span:nth-child(3) {
   font-weight: 500;
   color: white;
   font-size: 14px;
+  cursor: pointer;
 }
 
 
@@ -502,6 +507,7 @@ span:nth-child(3) {
   justify-content: space-around;
   padding: 8px 10px;
   font-size: 15px;
+  cursor: pointer;
 }
 .vertical_category ul.v_category_items li img.img-fluid {
   max-width: 15%;
