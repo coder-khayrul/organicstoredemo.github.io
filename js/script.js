@@ -186,15 +186,6 @@ search_bar_icon.addEventListener("click", () => {
 
 
 
-// mobile animated menubar icon
-document.addEventListener('DOMContentLoaded', function () {
-  var thirdButton = document.querySelector('.third-button');
-  var animatedIcon = document.querySelector('.nav_animated_icon');
-
-  thirdButton.addEventListener('click', function () {
-    animatedIcon.classList.toggle('open');
-  });
-});
 
 // product section button script here
 let previousButton = product_group[0]; // Set the first button as default active
