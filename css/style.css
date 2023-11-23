@@ -31,6 +31,261 @@ a {
 .sub_drp_link {
   color: black !important;
 }
+
+/* popup login and sign up page style start */
+
+.user_join_popup {
+  padding: 20px 30px;
+  background: #00000054;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  display: none;
+
+}
+.page_wrapper {
+    width: 90%;
+    /* height: 80vh; */
+    overflow: hidden;
+    background: white;
+}
+
+ .page_wrapper .login_form {
+    padding: 20px 30px;
+    background: white;
+    height: 100%;
+}
+
+ .form_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .form_box h2 {
+    font-size: 2.2em;
+    color: var(--primary_color);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+ .form_box span {
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 17px;
+}
+
+.form_box .input_box {
+    position: relative;
+    margin-bottom: 15px;
+    height: 45px;
+    width: 100%;
+}
+
+.form_box .input_box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--primary_color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: var(--primary_color);
+}
+ .form_box .input_box input:focus{
+    outline: none;
+ border: 2px solid var(--primary_color) ;
+}
+   
+
+ .form_box .input_box label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: all 0.2s;
+}
+.form_box .cdt_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form_box .login_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_box .page_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0px;
+}
+a{
+    text-decoration: none;
+}
+.form_box .page_links a{
+    color: #888;
+    margin-right: 20px;
+}
+ .form_box .page_links a:hover{
+    text-decoration: underline;
+}
+.login_btn button {
+    padding: 15px 65px;
+    border-radius: 50px;
+    background: var(--primary_color);
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border: 2px solid var(--primary_color);
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.page_wrapper .msg_box span {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  border-radius: 100%;
+  place-items: center;
+  font-size: 16px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--primary_color)
+}
+.page_wrapper .msg_box span:hover i {
+ transform: rotate(360deg);
+ transition: .6s;
+}
+ .page_wrapper .msg_box {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: var(--primary_color);
+}
+
+ .hello_msg .msg_box h3 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
+.msg_box .cir_photo{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.msg_box .cir_photo img{
+    width: 100%;
+    
+}
+.hello_msg .msg_box h3:after {
+    content: " ";
+    width: 50px;
+    height: 3px;
+    background: white;
+    display: block;
+    margin: auto;
+    margin-top: 13px;
+}
+
+ .msg_box button {
+    padding: 15px 65px;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    border: 2px solid white;
+    margin-top: 40px;
+    font-size: 1em;
+    transition: all 0.2s;
+}
+
+.cdt_div a {
+    color: #777;
+}
+
+.form_box h2:after {
+    content: " ";
+    width: 80px;
+    height: 3px;
+    background: var(--primary_color);
+    display: block;
+    margin: auto;
+    margin-top: 19px;
+}
+
+.checkbox_ctn span {
+    color: black;
+}
+span, p,a {
+    font-size: 0.85em;
+}
+
+.cdt_div a:hover {
+    text-decoration: underline;
+    color: var(--primary_color);
+}
+
+.msg_box button:hover {
+    background: white;
+    color: var(--primary_color);
+    transition: all 0.2s;
+    box-shadow: 1px 5px 16px 0px #0000006b;
+}
+.social_site {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.social_site a {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: white;
+    display: grid;
+    place-items: center;
+    font-size: 1.em;
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+    transition: all 0.2s;
+}
+.form_box .page_links a:hover {
+  color: #333;
+}
+.social_site a:hover {
+    background: var(--primary_color);
+    color: white;
+    transition: all 0.2s;
+}
+.form_box .login_btn button:hover {
+    border-color: var(--primary_color);
+    background: white;
+    color: var(--primary_color);
+    box-shadow: 1px 7px 14px 1px #00000045;
+    transition: all 0.2s;
+}
+/* popup login and sign up page style end */
+
+
 /* top header style start here */
 .top_header {
   padding: 10px 0px;
@@ -472,6 +727,7 @@ a.nav-link:hover {
 /*hero section style start here*/
 section#hero_section {
   max-height: 90vh;
+  padding-bottom: 50px;
 }
 
 div#owl_slider .single_slider {
@@ -1229,6 +1485,26 @@ section#latest_news_section .latest_news_wrapper .latest_news_title p{
   transition: .2s;
 
 }
+span.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border: 2px solid var(--primary_color) !important;
+  margin-top: 30px !important;
+}
+.swiper-pagination{
+  bottom: -30px !important;
+}
+.swiper {
+  overflow-y: visible !important;
+  overflow-x: clip !important;
+  
+  
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary_color) !important;
+}
 /*latest_news_section style end here*/
 
 
@@ -1499,10 +1775,10 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 /* product view popup style end here */
 /* owl carousel some custom style */
 .owl-theme .owl-nav {
-  margin-top: 10px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  transform: translate(0px, -520%);
+  height: 75px;
 }
 
 .owl-theme .owl-nav button {
@@ -1541,9 +1817,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 /* responsive code for large desktop screen */
 
 @media only screen and (max-width: 992px) {
-  .woocommerce_options {
-    display: none;
-  }
+
 
   #desktop_menu {
     display: none !important;
@@ -1851,10 +2125,6 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 
   div#owl_slider .single_slider {
     height: 55vh;
-  }
-
-  .owl-theme .owl-nav {
-    transform: translate(0px, -420%);
   }
 
   div#owl_slider .single_slider .product_title {

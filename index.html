@@ -12,14 +12,14 @@
   <!--mega menu css-->
   <link rel="stylesheet" href="./css/mega_menu.css">
   <!--owl carousel css link-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <!--owl carousel css link-->
-  <link rel="stylesheet"
+  <!-- <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <!-- swiper css cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
     integrity="sha512-UV9ujyMxyYubOSkCa8+OGzknJ1EilA19WPimPseyMcZaGIoO8l7iNphD0Mq/0R/lNkzBH70ai3tmurxAW0M2ww=="
@@ -51,6 +51,68 @@
         <a class="p_btm_item col-3 p-3 bg-light " href="#"><i class="fa-solid fa-bag-shopping"></i></a>
       </div>
 
+      <!--signup and sign in page popup start-->
+      <div class="user_join_popup">
+        <div class="page_wrapper row">
+
+          <div class="col-12 col-md-6 ">
+
+            <div class="form_box">
+              <h2>Sign in to Account</h2>
+              <div class="social_site">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </div>
+              <span>or use your phone number</span>
+              <div class="input_box">
+                <label for="phone">Phone</label>
+                <input type="number" name="phone_num" id="phone_num" placeholder="Your Phone Number" required>
+              </div>
+
+              <div class="input_box">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" placeholder="Your Password" required>
+              </div>
+              <div class="cdt_div">
+                <div class="checkbox_ctn">
+                  <input type="checkbox" name="checkbox" id="checkbox"> <span>Remember me</span>
+                </div>
+
+                <a href="#">forgot password?</a>
+              </div>
+              <div class="login_btn">
+                <button type="submit">SIGN IN</button>
+              </div>
+
+              <div class="page_links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pe-0">         
+              <div class="msg_box d-flex flex-column ">
+                <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
+                <div class="cir_photo">
+                  <img src="img/profile_sml.jpg" alt="profile picture">
+                </div>
+                <h3>Hello, Friend !</h3>
+                <p>Fill up personal information and start journey with us.</p>
+                <button type="submit">SIGN UP</button>
+              </div>
+          
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+      <!--signup and sign in page popup end-->
+
 
 
       <div class="container-fluid container-xl">
@@ -61,7 +123,7 @@
             </a>
           </div>
 
-          <div class="main_search_bar d-flex align-content-center">
+          <div class="main_search_bar d-none d-lg-flex align-content-center">
             <div class="category_area">
               <div class="category_selector">
                 <div class="search_road">
@@ -98,14 +160,61 @@
           </div>
           <div class="woocommerce_area">
             <ul class="woocommerce_options align-items-center  justify-content-end mb-0  ps-0">
+              <!--mobile full width search bar-->
+              <div class="search_bar align-items-center d-block d-lg-none  me-4">
+                <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
 
-              <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                <div class="mobile_search">
+                  <div class="main_search_bar d-flex align-content-center">
+                    <div class="category_area">
+                      <div class="category_selector">
+                        <div class="search_road">
+                          <span class="search_diseble_title">All Category</span>
+                          <i class="toggle_open fa-solid fa-caret-down"></i>
+                          <i style="display: none;" class="toggle_close fa-solid fa-caret-up"></i>
+
+                        </div>
+                      </div>
+                      <div class="category_toggle">
+                        <div class="category_search_input">
+                          <input type="text" name="category_searchField" id="category_searchField">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <ul class="category_items ps-0">
+                          <li class="list-unstyled active">All Category</li>
+                          <li class="list-unstyled ">category one</li>
+                          <li class="list-unstyled ">category one</li>
+                          <li class="list-unstyled ">category one</li>
+                          <li class="list-unstyled ">category one</li>
+                          <li class="list-unstyled ">category one</li>
+                          <li class="list-unstyled ">category one</li>
+                          <li class="list-unstyled ">category one</li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+
+                    <div class="search_input">
+                      <input type="text" name="searchField" id="searchField" placeholder="Enter search keyword..">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <li class="list-unstyled me-3"><a id="user_join_icon" href="#"><i class="fa-solid fa-user"></i></a></li>
               <li id="product_item" class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
               </li>
               <li class="list-unstyled me-3"><span>£</span>0.00</li>
 
               <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
               <li class="list-unstyled me-3 product_like_list"><a href="#"><i class="fa-regular fa-heart"></i> </a></li>
+              <button class="navbar-toggler third-button d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="nav_animated_icon"><span></span><span></span><span></span></div>
+              </button>
 
             </ul>
           </div>
@@ -123,24 +232,9 @@
               <span>No products in the cart.</span>
             </div>
 
-            <!--mobile full width search bar-->
-            <div class="search_bar align-items-center  me-4">
-              <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
-
-              <div class="mobile_search">
-                <div class="search_wrapper">
-                  <input type="text" placeholder="Enter Search Keyword.... ">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-              </div>
-            </div>
 
 
-            <button class="navbar-toggler third-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <div class="nav_animated_icon"><span></span><span></span><span></span></div>
-            </button>
+
           </div>
 
           <!-- navigation bar -->
@@ -242,40 +336,40 @@
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
                   </div>
-                    
-                    <i class="fa-solid fa-angle-right"></i>
+
+                  <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li>
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
                   </div>
-                    
-                    <i class="fa-solid fa-angle-right"></i>
+
+                  <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li>
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
                   </div>
-                    
-                    <i class="fa-solid fa-angle-right"></i>
+
+                  <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li>
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
                   </div>
-                    
-                    <i class="fa-solid fa-angle-right"></i>
+
+                  <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li>
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
                   </div>
-                    
-                    <i class="fa-solid fa-angle-right"></i>
+
+                  <i class="fa-solid fa-angle-right"></i>
                 </li>
               </ul>
             </div>
@@ -493,87 +587,92 @@
     <section id="hero_section">
       <div class="container-fluid container-xl">
         <div class="hero_wrapper">
-          <div id="owl_slider" class="owl-carousel owl-theme">
 
-            <div class="single_slider item  item d-flex align-items-center justify-content-center ">
-              <div class="bg_shape slide_child">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="owl_slider">
+                <div class="single_slider item  item d-flex align-items-center justify-content-center ">
+                  <div class="bg_shape slide_child">
 
-              </div>
-              <div class="product_title slide_child">
-                <div class="p_left_text p_title">
-                  <span>E</span>
-                  <span>N</span>
-                  <span>E</span>
-                  <span>R</span>
-                  <span>G</span>
-                  <span>Y</span>
+                  </div>
+                  <div class="product_title slide_child">
+                    <div class="p_left_text p_title">
+                      <span>E</span>
+                      <span>N</span>
+                      <span>E</span>
+                      <span>R</span>
+                      <span>G</span>
+                      <span>Y</span>
+                    </div>
+                    <div class="p_right_text p_title">
+                      <span>D</span>
+                      <span>R</span>
+                      <span>I</span>
+                      <span>N</span>
+                      <span>K</span>
+                    </div>
+                  </div>
+
+                  <div class="p_img_one slide_child animate__animated animate__zoomIn">
+                    <img class="img-fluid " src="./img/bordear-slidar-01.png" alt="./img/bordear-slidar-01.png">
+                  </div>
+                  <div class="p_img_two slide_child">
+                    <img class="img-fluid " src="./img/bordear-slidar-02.png" alt="./img/bordear-slidar-02.png">
+                  </div>
+
+                  <div class="p_img_three slide_child">
+                    <img class="img-fluid " src="./img/bordear-slidar-03.png" alt="./img/bordear-slidar-03.png">
+                  </div>
+
+
                 </div>
-                <div class="p_right_text p_title">
-                  <span>D</span>
-                  <span>R</span>
-                  <span>I</span>
-                  <span>N</span>
-                  <span>K</span>
+              </div>
+              <div class="swiper-slide" id="owl_slider">
+                <div class="single_slider item d-flex align-items-center justify-content-center ">
+                  <div class="bg_shape slide_child">
+
+                  </div>
+                  <div class="product_title slide_child">
+                    <div class="left_text p_title">
+                      <span>F</span>
+                      <span>R</span>
+                      <span>E</span>
+                      <span>S</span>
+                      <span>H</span>
+                    </div>
+                    <div class="right_text p_title">
+                      <span>J</span>
+                      <span>U</span>
+                      <span>I</span>
+                      <span>C</span>
+                      <span>E</span>
+                    </div>
+                  </div>
+
+                  <div class="p_img_1 slide_child animate__animated animate__zoomIn animate__delay-2s">
+                    <img class="img-fluid " src="./img/slider-021.png" alt="./img/slider-021.png">
+                  </div>
+                  <div class="p_img_2 slide_child">
+                    <img class="img-fluid " src="./img/slider2-02.png" alt="./img/slider2-02.png">
+                  </div>
+                  <div class="p_img_3 slide_child ">
+                    <img class="img-fluid " src="./img/slider2-03.png" alt="./img/slider2-03.png">
+                  </div>
+                  <div class="p_img_4 slide_child">
+                    <img class="img-fluid " src="./img/slider2-04.png" alt="./img/slider2-04.png">
+                  </div>
+
+
                 </div>
-              </div>
 
-              <div class="p_img_one slide_child animate__animated animate__zoomIn">
-                <img class="img-fluid " src="./img/bordear-slidar-01.png" alt="./img/bordear-slidar-01.png">
               </div>
-              <div class="p_img_two slide_child">
-                <img class="img-fluid " src="./img/bordear-slidar-02.png" alt="./img/bordear-slidar-02.png">
-              </div>
-
-              <div class="p_img_three slide_child">
-                <img class="img-fluid " src="./img/bordear-slidar-03.png" alt="./img/bordear-slidar-03.png">
-              </div>
-
 
             </div>
-
-
-            <div class="single_slider item d-flex align-items-center justify-content-center ">
-              <div class="bg_shape slide_child">
-
-              </div>
-              <div class="product_title slide_child">
-                <div class="left_text p_title">
-                  <span>F</span>
-                  <span>R</span>
-                  <span>E</span>
-                  <span>S</span>
-                  <span>H</span>
-                </div>
-                <div class="right_text p_title">
-                  <span>J</span>
-                  <span>U</span>
-                  <span>I</span>
-                  <span>C</span>
-                  <span>E</span>
-                </div>
-              </div>
-
-              <div class="p_img_1 slide_child animate__animated animate__zoomIn animate__delay-2s">
-                <img class="img-fluid " src="./img/slider-021.png" alt="./img/slider-021.png">
-              </div>
-              <div class="p_img_2 slide_child">
-                <img class="img-fluid " src="./img/slider2-02.png" alt="./img/slider2-02.png">
-              </div>
-              <div class="p_img_3 slide_child ">
-                <img class="img-fluid " src="./img/slider2-03.png" alt="./img/slider2-03.png">
-              </div>
-              <div class="p_img_4 slide_child">
-                <img class="img-fluid " src="./img/slider2-04.png" alt="./img/slider2-04.png">
-              </div>
-
-
-            </div>
-
-
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination2"></div>
           </div>
-
-        </div>
-      </div>
     </section>
     <!--*************hero section end here**************-->
 
@@ -1693,9 +1792,9 @@
     integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--owl carousel js-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <!-- Swiper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"
     integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ=="

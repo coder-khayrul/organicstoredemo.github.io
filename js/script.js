@@ -15,6 +15,29 @@ const popup_page = document.querySelector(".popup_content");
 const popup_product_img = document.querySelector(".popup_p_img");
 const copyRightYear = document.getElementById("currentYear");
 
+// user page sign page & login page > get elements
+const user_popup_icon = document.getElementById("user_join_icon");
+const user_popup_page = document.querySelector(".user_join_popup");
+const user_popup_exit = document.querySelector("#user_popup_close");
+
+//page popup function
+
+const user_popup_page_handler = () => {
+  user_popup_page.style.display = "flex";
+
+ 
+}
+const user_popup_exit_handler = () => {
+  user_popup_page.style.display = "none";
+  
+ 
+}
+user_popup_icon.addEventListener("click", user_popup_page_handler)
+user_popup_exit.addEventListener("click", user_popup_exit_handler)
+
+
+
+
 // category search < get elements
 const category_search_click_area = document.querySelector(".search_road");
 const category_toggle_area = document.querySelector(".category_toggle");
@@ -27,20 +50,21 @@ console.log(toggle_area_open)
 
 let toggle = true;
 const category_search_handler = () => {
-  if(toggle){
- category_toggle_area.style.display = "unset";
-  toggle_area_open.style.display = "none";
-  toggle_area_close.style.display = "block";
+  if (toggle) {
+    category_toggle_area.style.display = "unset";
+    toggle_area_open.style.display = "none";
+    toggle_area_close.style.display = "block";
+    console.log("active")
 
-  toggle = false;
-  }else{
+    toggle = false;
+  } else {
     category_toggle_area.style.display = "none";
     toggle_area_open.style.display = "block";
     toggle_area_close.style.display = "none";
 
     toggle = true;
   }
- 
+
 }
 
 category_search_click_area.addEventListener("click", category_search_handler)
@@ -194,8 +218,6 @@ $(document).ready(function () {
     animateIn: "fadeIn",
 
   });
-
-
 })
 
 
@@ -203,6 +225,41 @@ $(document).ready(function () {
 
 
 //****swiper script */
+var swiper = new Swiper(".mySwiper2", {
+  // slidesPerView: 1,
+  // mousewheel: true,
+  keyboard: true,
+  autoplay: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination2',
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 5,
+    },
+  },
+
+});
+
+
 var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 1,
   autoplay: true,
