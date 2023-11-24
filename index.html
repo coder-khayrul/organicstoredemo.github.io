@@ -18,8 +18,7 @@
   <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- bottom to top toggle button -->
   <link rel="stylesheet" href="./css/jquery.elevator.css">
-  <!--mobile mega menu-->
-  <link rel="stylesheet" href="./css/swipe.css">
+
   <!--font-awesome cdn-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -45,7 +44,7 @@
 
           <div class="col-12 col-md-6 ">
 
-            <form class="form_box">
+            <form name="user_form" action="" id="user_form"  autocomplete="on" class="form_box">
               <h2>Sign in to Account</h2>
               <div class="social_site">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -54,7 +53,7 @@
               </div>
               <span>or use your phone number</span>
               <div class="input_box">
-                <label for="phone">Phone</label>
+                <label for="phone_num">Phone</label>
                 <input type="number" name="phone_num" id="phone_num" placeholder="Your Phone Number" required>
               </div>
 
@@ -64,6 +63,7 @@
               </div>
               <div class="cdt_div">
                 <div class="checkbox_ctn">
+                  <label for="checkbox"></label>
                   <input type="checkbox" name="checkbox" id="checkbox"> <span>Remember me</span>
                 </div>
 
@@ -105,7 +105,7 @@
             </a>
           </div>
 
-          <div class="main_search_bar d-none d-lg-flex align-content-center">
+          <form autocomplete="on" action="" class="main_search_bar d-none d-lg-flex align-content-center">
             <div class="category_area">
               <div class="category_selector">
                 <div class="search_road">
@@ -117,6 +117,7 @@
               </div>
               <div class="category_toggle">
                 <div class="category_search_input">
+                  <label for="category_searchField"></label>
                   <input type="text" name="category_searchField" id="category_searchField">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -135,10 +136,11 @@
 
 
             <div class="search_input">
+              <label for="searchField"></label>
               <input type="text" name="searchField" id="searchField" placeholder="Enter search keyword..">
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-          </div>
+          </form>
           <div class="woocommerce_area">
             <ul class="woocommerce_options align-items-center  justify-content-end mb-0  ps-0">
               <!--mobile full width search bar-->
@@ -158,6 +160,7 @@
                       </div>
                       <div class="category_toggle">
                         <div class="category_search_input">
+                          <label for="category_searchField"></label>
                           <input type="text" name="category_searchField" id="category_searchField">
                           <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
@@ -175,6 +178,7 @@
                     </div>
 
                     <div class="search_input">
+                      <label for="searchField"></label>
                       <input type="text" name="searchField" id="searchField" placeholder="Enter search keyword..">
                       <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
@@ -202,77 +206,6 @@
         <!--top header section end here-->
         <nav class="navbar navbar-expand-lg">
           <!-- toggle button -->
-        
-          <!-- navigation bar -->
-          <div class="d-flex justify-content-start" >
-            <!-- mobile menu start -->
-            <div id="mobile_menu"  class="swipe-menu default-theme">
-             
-              <div class="nav-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <nav class="codehim-nav">
-                <div class="tab-container">
-                   <span class="tab-name tab-name1-active"> Tab 1</span>
-                   <span class="tab-name"> Tab 2  </span>
-                </div>
-                <!--Tab Container-->
-                <div class="tab tab-active">
-                   <ul class="menu-item">
-                      <li> <a href="#1"> Website Templates </a> </li>
-                      <li class="has-sub">
-                         <span class="dropdown-heading"> Jquery Projects</span> <!--Do not add any link in li that has sub items // Use span for dropdown heading--> 
-                         <ul>
-                            <li><a href="#2"> Sub Item 1</a> </li>
-                            <li> <a href="#2"> Sub Item 2 </a> </li>
-                            <li> <a href="#2"> Sub Item 3 </a> </li>
-                            <li> <a href="#2"> Sub Item 4 </a> </li>
-                         </ul>
-                      </li>
-                      <li> <a href="#1"> Recommended </a> </li>
-                      <li> <a href="#1"> Top Ten</a> </li>
-                   </ul>
-                   <ul class="my-codehim">
-                      <li> <a class="help" href="#1"> Help & Feedback </a> </li>
-                      <li> <a class="up" href="https://www.jqueryscript.net/time-clock/">date</a><a href="#1"> Subscribe Me</a> </li>
-                      <li> <a class="request" href="#1"> Request for Code</a></li>
-                   </ul>
-                
-                   <!--//social-->
-                </div>
-                <!--//Tab-->
-                <div class="tab">
-                   <ul class="menu-item">
-                      <li> <a href="#1"> Latest Updates </a> </li>
-                      <li> <a href="#1"> How to Coding </a> </li>
-                      <li class="has-sub">
-                         <span class="dropdown-heading"> Designing Tutorials</span> 
-                         <ul>
-                            <li><a href="#2"> Sub Item 1</a> </li>
-                            <li> <a href="#2"> Sub Item 2 </a> </li>
-                            <li> <a href="#2"> Sub Item 3 </a> </li>
-                            <li> <a href="#2"> Sub Item 4 </a> </li>
-                            <li> <a href="#2"> Sub Item 5 </a> </li>
-                         </ul>
-                      </li>
-                      <li class="has-sub">
-                         <span class="dropdown-heading"> Development Tutorials</span> 
-                         <ul>
-                            <li><a href="#2"> Sub Item 1</a> </li>
-                            <li> <a href="#2"> Sub Item 2 </a> </li>
-                            <li> <a href="#2"> Sub Item 3 </a> </li>
-                         </ul>
-                      </li>
-                      <li> <a href="#1"> Most Recently</a> </li>
-                   </ul>
-                </div>
-                <!--//Tab-->
-              </nav>
-            </div>
-            <div class="dim-overlay"> </div>
-            <!-- mobile menu end -->
 
             <div class="vertical_category">
               <div class="v_category_handler d-flex justify-content-between align-items-center ">
@@ -285,6 +218,7 @@
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
+                    <!-- product mega menu-->
                   </div>
 
                   <i class="fa-solid fa-angle-right"></i>
@@ -1344,7 +1278,8 @@
                       to our newsletter.</p>
                   </div>
                   <div class="newsletter_mailbox d-flex flex-column ">
-                    <input class="mb-5" type="eamil" placeholder="Enter your email" required>
+                    <label for="email"></label>
+                    <input class="mb-5" type="email" id="email" placeholder="Enter your email" required>
                     <button class="d-flex justify-content-center m-auto m-lg-0  " type="submit">SUBSCRIBE</button>
                   </div>
                 </div>
@@ -1649,8 +1584,7 @@
   <script src="./js/swiper-bundle.min.js"></script>
   <!-- bottom to top toggle button -->
   <script src="./js/jquery.elevator.js"></script>
-  <!--mobile menu script file-->
-  <script src="./js/swipe.js"></script>
+ 
   <!-- main script file -->
   <script src="./js/script.js"></script>
 
