@@ -365,7 +365,7 @@ a {
 }
 .search_input {
   position: relative;
-  width: 400px;
+  width: 460px;
   height: 44px;
   display: flex;
   align-items: center;
@@ -544,7 +544,7 @@ span:nth-child(3) {
 .vertical_category ul.v_category_items {
   position: absolute;
   background: white;
-  z-index: 999;
+  z-index: 99;
   display: unset;
   width: 225px;
   transition: all 0.3s;
