@@ -545,12 +545,16 @@ span:nth-child(3) {
   position: absolute;
   background: white;
   z-index: 999;
-  display: none;
+  display: unset;
   width: 225px;
   transition: all 0.3s;
+  transform: scaleY(0);
+  transform-origin: top;
 }
 .vertical_category_wrapper:hover #category_list {
-  display: unset;
+ 
+  transform: scaleY(1);
+  transition: .4s;
 }
 nav.navbar {
   padding: 0;
