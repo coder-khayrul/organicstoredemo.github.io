@@ -7,14 +7,15 @@
   <title>Organic Store</title>
   <!-- main css link -->
   <link rel="stylesheet" href="./css/style.css">
-
+  <!--preloader css-->
+  <link rel="stylesheet" href="./css/preloader.css">
   <!--mega menu css-->
   <link rel="stylesheet" href="./css/mega_menu.css">
-  <!-- swiper css cdn -->
+  <!-- swiper css  -->
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-  <!-- animate cdn -->
+  <!-- animate css-->
   <link rel="stylesheet" href="./css/animate.min.css">
-  <!--bootstrap css link-->
+  <!--bootstrap css -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- bottom to top toggle button -->
   <link rel="stylesheet" href="./css/jquery.elevator.css">
@@ -26,6 +27,15 @@
 </head>
 
 <body>
+
+  <!--preloader-->
+  <div class="preloader js-preloader flex-center">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
 
   <main>
     <!--header section start here-->
@@ -44,7 +54,7 @@
 
           <div class="col-12 col-md-6 ">
 
-            <form name="user_form" action="" id="user_form"  autocomplete="on" class="form_box">
+            <form name="user_form" action="" id="user_form" autocomplete="on" class="form_box">
               <h2>Sign in to Account</h2>
               <div class="social_site">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -193,7 +203,7 @@
 
               <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
               <li class="list-unstyled me-3 product_like_list"><a href="#"><i class="fa-regular fa-heart"></i> </a></li>
-             
+
 
             </ul>
           </div>
@@ -207,7 +217,8 @@
         <nav class="navbar navbar-expand-lg">
           <!-- toggle button -->
 
-            <div class="vertical_category">
+          <div class="vertical_category">
+            <div class="vertical_category_wrapper ">
               <div class="v_category_handler d-flex justify-content-between align-items-center ">
                 <i class="fa-solid fa-list mb-0 pb-0 "></i>
                 <span class="v_category_title">PRODUCT CATEGORIES</span>
@@ -218,7 +229,24 @@
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
-                    <!-- product mega menu-->
+                       <!-- product mega menu 1 start-->
+                    <div class="product_mega_menu" id="product_menu">
+                      <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                               
+                            <div class="single_product_menu_item">
+                              <h3>Hello world!</h3>
+                            </div>
+        
+                            <div class="single_product_menu_item">
+                              <h3>Hello world!</h3>
+                            </div>
+        
+                            <div class="single_product_menu_item">
+                              <h3>Hello world!</h3>
+                            </div>
+                      </div>       
+                    </div>
+                      <!-- product mega menu end-->
                   </div>
 
                   <i class="fa-solid fa-angle-right"></i>
@@ -227,6 +255,24 @@
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
+                        <!-- product mega menu 1 start-->
+                        <div class="product_mega_menu" id="product_menu">
+                          <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                   
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+            
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+            
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+                          </div>       
+                        </div>
+                          <!-- product mega menu end-->
                   </div>
 
                   <i class="fa-solid fa-angle-right"></i>
@@ -235,6 +281,24 @@
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
+                        <!-- product mega menu 1 start-->
+                        <div class="product_mega_menu" id="product_menu">
+                          <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                   
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+            
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+            
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+                          </div>       
+                        </div>
+                          <!-- product mega menu end-->
                   </div>
 
                   <i class="fa-solid fa-angle-right"></i>
@@ -243,6 +307,24 @@
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
+                        <!-- product mega menu 1 start-->
+                        <div class="product_mega_menu" id="product_menu">
+                          <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                   
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+            
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+            
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+                          </div>       
+                        </div>
+                          <!-- product mega menu end-->
                   </div>
 
                   <i class="fa-solid fa-angle-right"></i>
@@ -251,212 +333,233 @@
                   <div class="category_title">
                     <img src="./img/order.png" alt="./img/order.png" class="img-fluid me-2">
                     <span>Product</span>
+                        <!-- product mega menu 1 start-->
+                        <div class="product_mega_menu" id="product_menu">
+                          <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                   
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+            
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+            
+                                <div class="single_product_menu_item">
+                                  <h3>Hello world!</h3>
+                                </div>
+                          </div>       
+                        </div>
+                          <!-- product mega menu end-->
                   </div>
 
                   <i class="fa-solid fa-angle-right"></i>
                 </li>
               </ul>
             </div>
+            
 
-            <!-- desktop menu start here -->
-
-            <ul id="desktop_menu" class="navbar-nav navbar-light" class="menu-main">
-              <li class="nav-item "><a class="nav-link" href="#">HOME</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
-
-              <li class="nav-item menu-item-has-children">
-                <a href="#" class="nav-link">SHOP <i class="fa fa-angle-down"></i></a>
-                <div class="sub-menu mega-menu mega-menu-column-4 ">
-
-                  <div class="list-item">
-                    <h4 class="title">SHOP LAYOUT</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                    </ul>
-                  </div>
-                  <div class="list-item">
-                    <h4 class="title">PRODUCT PAGES</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a id="sale" href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar </a></li>
-                    </ul>
-                  </div>
-                  <div class="list-item">
-                    <h4 class="title">PRODUCT FEATURES</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a id="hot_sale" href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebart</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a id="sale" href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-
-                    </ul>
-                  </div>
-                  <div class="list-item">
-                    <h4 class="title">WOOCOMMERCE</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a id="sale" href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-
-                    </ul>
-                  </div>
-                  <div class="list-item">
-                    <h4 class="title">SHOP PAGES</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No </a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-
-
-              <li class="nav-item menu-item-has-children">
-                <a href="#" class="nav-link">PAGES <i class="fa fa-angle-down"></i></a>
-                <div class="sub-menu mega-menu mega-menu-column-4 row">
-
-                  <div class="list-item col-3">
-                    <h4 class="title">BASIC PAGES</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                    </ul>
-                  </div>
-                  <div class="list-item col-3">
-                    <h4 class="title">INFORMATION PAGES</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar </a></li>
-                    </ul>
-                  </div>
-
-                  <div class="list-item col-3">
-                    <h4 class="title">ADDITIONAL PAGE</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                    </ul>
-                  </div>
-                  <div class="list-item col-3">
-                    <h4 class="title">PORTFOLIO</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No </a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li class="nav-item menu-item-has-children">
-                <a href="#" class="nav-link">ELEMENTS <i class="fa fa-angle-down"></i></a>
-                <div class="sub-menu mega-menu mega-menu-column-4 row">
-
-                  <div class="list-item col-3">
-                    <h4 class="title">CIYA ELEMENTS 01</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                    </ul>
-                  </div>
-                  <div class="list-item col-3">
-                    <h4 class="title">CIYA ELEMENTS 02</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar </a></li>
-                    </ul>
-                  </div>
-
-                  <div class="list-item col-3">
-                    <h4 class="title">CIYA ELEMENTS 03</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-
-                    </ul>
-                  </div>
-                  <div class="list-item col-3">
-                    <h4 class="title">CIYA ELEMENTS 04</h4>
-                    <ul class="ps-0 mt-3">
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Product List</a></li>
-                      <li><a href="#">Sticky Gallery No </a></li>
-                      <li><a href="#">Sticky Gallery No Sidebar</a></li>
-
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
-            </ul>
-            <!-- desktop menu end here -->
           </div>
-        </nav>
+
+          <!-- desktop menu start here -->
+
+          <ul id="desktop_menu" class="navbar-nav navbar-light" class="menu-main">
+            <li class="nav-item "><a class="nav-link" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+
+            <li class="nav-item menu-item-has-children">
+              <a href="#" class="nav-link">SHOP <i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4 ">
+
+                <div class="list-item">
+                  <h4 class="title">SHOP LAYOUT</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title">PRODUCT PAGES</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a id="sale" href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title">PRODUCT FEATURES</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a id="hot_sale" href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebart</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a id="sale" href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title">WOOCOMMERCE</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a id="sale" href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title">SHOP PAGES</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No </a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+
+
+            <li class="nav-item menu-item-has-children">
+              <a href="#" class="nav-link">PAGES <i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4 row">
+
+                <div class="list-item col-3">
+                  <h4 class="title">BASIC PAGES</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                  </ul>
+                </div>
+                <div class="list-item col-3">
+                  <h4 class="title">INFORMATION PAGES</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                  </ul>
+                </div>
+
+                <div class="list-item col-3">
+                  <h4 class="title">ADDITIONAL PAGE</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                  </ul>
+                </div>
+                <div class="list-item col-3">
+                  <h4 class="title">PORTFOLIO</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No </a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item menu-item-has-children">
+              <a href="#" class="nav-link">ELEMENTS <i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4 row">
+
+                <div class="list-item col-3">
+                  <h4 class="title">CIYA ELEMENTS 01</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                  </ul>
+                </div>
+                <div class="list-item col-3">
+                  <h4 class="title">CIYA ELEMENTS 02</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                  </ul>
+                </div>
+
+                <div class="list-item col-3">
+                  <h4 class="title">CIYA ELEMENTS 03</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+
+                  </ul>
+                </div>
+                <div class="list-item col-3">
+                  <h4 class="title">CIYA ELEMENTS 04</h4>
+                  <ul class="ps-0 mt-3">
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
+                    <li><a href="#">Sticky Gallery No </a></li>
+                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+          </ul>
+          <!-- desktop menu end here -->
+      </div>
+      </nav>
       </div>
     </header>
 
@@ -1584,7 +1687,9 @@
   <script src="./js/swiper-bundle.min.js"></script>
   <!-- bottom to top toggle button -->
   <script src="./js/jquery.elevator.js"></script>
- 
+  <!--preloader script-->
+  <script src="./js/jquery.preloadinator.min.js"></script>
+
   <!-- main script file -->
   <script src="./js/script.js"></script>
 

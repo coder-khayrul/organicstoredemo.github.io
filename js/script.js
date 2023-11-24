@@ -208,8 +208,10 @@ for (let i = 0; i < 5; i++) {
   });
 }
 
-
-
+/** preloader initialize**/
+$('.js-preloader').preloadinator({
+  minTime: 2000
+});
 
 //****swiper script */
 var swiper = new Swiper(".mySwiper2", {
