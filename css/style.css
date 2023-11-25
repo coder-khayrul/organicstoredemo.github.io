@@ -321,7 +321,18 @@ a {
   padding: 10px 0px;
   border-bottom: 1px solid #ededed;
 }
-
+.mobile_search_bar  {
+  padding: 20px 10px;
+}
+.search_input.mobile{
+  width: 100% !important;
+}
+.search_input.mobile input{
+  font-size: 13px;
+}
+.category_area.mobile_bar {
+  width: 75px;
+}
 .category_area .category_selector .search_road {
   padding: 10px;
   background: #ededed;
