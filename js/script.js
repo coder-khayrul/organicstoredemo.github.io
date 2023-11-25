@@ -40,7 +40,7 @@ user_popup_exit.addEventListener("click", user_popup_exit_handler)
 
 // category search < get elements
 const category_search_click_area = document.querySelector(".search_road");
-const category_toggle_area = document.querySelector(".category_toggle");
+
 const toggle_area_open = document.querySelector(".toggle_open");
 const toggle_area_close = document.querySelector(".toggle_close");
 const category_title = document.querySelectorAll(".category_items li");
