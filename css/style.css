@@ -42,7 +42,9 @@ button.offcanvas_icon {
   margin-right: 7px;
   border: 1px solid transparent;
 }
-
+.menu_tab {
+  width: 100%;
+}
 button.offcanvas_icon img {
   height: 20px;
 }

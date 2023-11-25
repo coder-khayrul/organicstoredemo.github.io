@@ -3894,11 +3894,15 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link {
   border-radius: var(--bs-nav-pills-border-radius);
+  color: black;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: var(--bs-nav-pills-link-active-color);
-  background-color: var(--bs-nav-pills-link-active-bg);
+  color: black;
+  border: 1px solid var(--primary_color);
+  border-bottom: 2px solid var(
+  --primary_color);
+  border-radius: 0;
 }
 
 .nav-underline {
