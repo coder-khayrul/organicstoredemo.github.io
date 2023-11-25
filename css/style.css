@@ -327,7 +327,7 @@ a {
 .search_input.mobile{
   width: 100% !important;
 }
-.search_input.mobile input{
+.search_input.mobile_sm input{
   font-size: 13px;
 }
 .category_area.mobile_bar {
