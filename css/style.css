@@ -307,8 +307,30 @@ a {
 
 .category_area {
   width: 200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.category_area .select_icon {
+  position: absolute;
+  right: 10px;
+}
+.category_area select {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: #ededed;
+  font-size: 15px;
+  padding: 0px 10px !important;
+  appearance: none;
 }
 
+.category_area select option {
+  font-size: 14px;
+  background: white;
+  border: none !important;
+}
 .category_search_input {
   width: 100%;
   position: relative;
@@ -510,6 +532,9 @@ span:nth-child(3) {
   font-size: 15px;
   cursor: pointer;
 }
+.product_mega_menu .product_mega_menu_wrapper img.img-fluid {
+  max-width: 100% !important;
+}
 .vertical_category ul.v_category_items li img.img-fluid {
   max-width: 15%;
 }
@@ -518,27 +543,53 @@ span:nth-child(3) {
 }
 .vertical_category ul.v_category_items li:hover #product_menu {
   display: unset;
-  transition: .3s;
+  transition: 0.3s;
 }
 #product_menu {
   position: relative;
   display: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 .product_mega_menu:hover .product_mega_menu {
   display: unset;
 }
-
+ul.menu_inner_item {
+  margin-bottom: 15px;
+}
+ul.menu_inner_item h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+ul.menu_inner_item h4 {
+  margin-bottom: 15px;
+}
+ul.menu_inner_item li {
+  padding: 5px 10px !important;
+}
+.product_mega_menu .product_mega_menu_wrapper .row {
+  width: 100%;
+}
 .vertical_category ul.v_category_items li:hover .product_mega_menu {
   display: unset;
 }
+.vertical_category ul.v_category_items li:hover .product_mega_menu_wrapper {
+  animation: mega_menu_open_animation 0.5s alternate forwards;
+}
+@keyframes mega_menu_open_animation {
+  0% {
+    left: 215px;
+  }
+  100% {
+    left: 225px;
+  }
+}
 .product_mega_menu .product_mega_menu_wrapper {
   background: white;
-  height: 50vh;
-  position: absolute;
-  min-width: 700px;
-  top: -13px;
-  left: 125px;
+  height: 70vh;
+  position: fixed;
+  min-width: 770px;
+  top: 0px;
+  left: 225px;
   box-shadow: 1px 5px 15px 11px rgb(0 0 0 / 17%);
 }
 .vertical_category ul.v_category_items {
@@ -552,9 +603,8 @@ span:nth-child(3) {
   transform-origin: top;
 }
 .vertical_category_wrapper:hover #category_list {
- 
   transform: scaleY(1);
-  transition: .4s;
+  transition: 0.4s;
 }
 nav.navbar {
   padding: 0;
