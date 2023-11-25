@@ -39,57 +39,57 @@ user_popup_exit.addEventListener("click", user_popup_exit_handler)
 
 
 // category search < get elements
-const category_search_click_area = document.querySelector(".search_road");
+// const category_search_click_area = document.querySelector(".search_road");
 
-const toggle_area_open = document.querySelector(".toggle_open");
-const toggle_area_close = document.querySelector(".toggle_close");
-const category_title = document.querySelectorAll(".category_items li");
-const search_title = document.querySelector(".search_disable_title");
+// const toggle_area_open = document.querySelector(".toggle_open");
+// const toggle_area_close = document.querySelector(".toggle_close");
+// const category_title = document.querySelectorAll(".category_items li");
+// const search_title = document.querySelector(".search_disable_title");
 
-const categoryArray = new Array();
-let single_item;
- for(let i = 0; i< category_title.length; i++){
-   categoryArray.push(category_title[i]);
+// const categoryArray = new Array();
+// let single_item;
+//  for(let i = 0; i< category_title.length; i++){
+//    categoryArray.push(category_title[i]);
  
- }
+//  }
 
- //for getting items values
-const get_items_value = (item) => {
+//  //for getting items values
+// const get_items_value = (item) => {
  
-}
-let text;
-categoryArray.forEach((item) => {
-  single_item= item;
-  item.addEventListener("click", () => {
-    text = this.textContent
-    search_title.textContent = text;
-  });
+// }
+// let text;
+// categoryArray.forEach((item) => {
+//   single_item= item;
+//   item.addEventListener("click", () => {
+//     text = this.textContent
+//     search_title.textContent = text;
+//   });
 
   
   
-})
+// })
 
-// category search handler 
+// // category search handler 
 
-let toggle = true;
-const category_search_handler = () => {
-  if (toggle) {
-    category_toggle_area.style.display = "unset";
-    toggle_area_open.style.display = "none";
-    toggle_area_close.style.display = "block";
+// let toggle = true;
+// const category_search_handler = () => {
+//   if (toggle) {
+//     category_toggle_area.style.display = "unset";
+//     toggle_area_open.style.display = "none";
+//     toggle_area_close.style.display = "block";
 
-    toggle = false;
-  } else {
-    category_toggle_area.style.display = "none";
-    toggle_area_open.style.display = "block";
-    toggle_area_close.style.display = "none";
+//     toggle = false;
+//   } else {
+//     category_toggle_area.style.display = "none";
+//     toggle_area_open.style.display = "block";
+//     toggle_area_close.style.display = "none";
 
-    toggle = true;
-  }
+//     toggle = true;
+//   }
 
-}
+// }
 
-category_search_click_area.addEventListener("click", category_search_handler)
+// category_search_click_area.addEventListener("click", category_search_handler)
 
 
 
@@ -162,26 +162,26 @@ product_item.addEventListener("mouseout", () => {
 
 
 //toggle search bar for mobile screen script
-let isMobileSearchVisible = false;
+// let isMobileSearchVisible = false;
 
-search_bar_icon.addEventListener("click", () => {
+// search_bar_icon.addEventListener("click", () => {
 
-  if (isMobileSearchVisible) {
-    mobile_search_bar.style.transform = "translate(0px, 30%)";
-    mobile_search_bar.style.opacity = "0";
-    mobile_search_bar.style.visibility = "hidden";
-  } else {
-    mobile_search_bar.style.display = "unset";
-    setTimeout(() => {
-      mobile_search_bar.style.visibility = "visible";
-      mobile_search_bar.style.transform = "translate(0px, 0px)";
-      mobile_search_bar.style.opacity = "1";
-    }, 0);
+//   if (isMobileSearchVisible) {
+//     mobile_search_bar.style.transform = "translate(0px, 30%)";
+//     mobile_search_bar.style.opacity = "0";
+//     mobile_search_bar.style.visibility = "hidden";
+//   } else {
+//     mobile_search_bar.style.display = "unset";
+//     setTimeout(() => {
+//       mobile_search_bar.style.visibility = "visible";
+//       mobile_search_bar.style.transform = "translate(0px, 0px)";
+//       mobile_search_bar.style.opacity = "1";
+//     }, 0);
 
-  }
+//   }
 
-  isMobileSearchVisible = !isMobileSearchVisible;
-});
+//   isMobileSearchVisible = !isMobileSearchVisible;
+// });
 
 
 

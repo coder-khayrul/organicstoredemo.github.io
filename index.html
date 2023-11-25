@@ -41,6 +41,7 @@
     <!--header section start here-->
     <header id="header">
       <!-- page bottom menu -->
+      
       <div class="page_bottom_menu  justify-content-between align-content-center flex-wrap">
         <a class="p_btm_item col-3 p-3 bg-light " href="#"><i class="fa-solid fa-house"></i></a>
         <a class="p_btm_item col-3 p-3 bg-light " href="#"><i class="fa-regular fa-heart"></i> </a>
@@ -163,7 +164,7 @@
           <div class="woocommerce_area">
             <ul class="woocommerce_options align-items-center  justify-content-end mb-0  ps-0">
               <!--mobile full width search bar-->
-              <div class="search_bar align-items-center d-block d-lg-none  me-4">
+              <!-- <div class="search_bar align-items-center d-block d-lg-none  me-4">
                 <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
 
                 <div class="mobile_search">
@@ -203,8 +204,32 @@
                     </div>
                   </div>
                 </div>
+              </div> -->
+              <button class="offcanvas_icon btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+               <img src="./img/bars-solid.svg" alt="./img/bars-solid.svg" srcset="">
+              </button>
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas_close_btn">
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body pt-4">
+                  <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                  </div>
+                  <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-
               <li class="list-unstyled me-3"><a id="user_join_icon" href="#"><i class="fa-solid fa-user"></i></a></li>
               <li id="product_item" class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
               </li>

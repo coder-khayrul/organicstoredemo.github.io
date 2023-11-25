@@ -34,6 +34,33 @@ a {
 #mobile_menu {
   display: none;
 }
+
+/*offcanvas style here*/
+button.offcanvas_icon {
+  border: none;
+  background: transparent;
+  margin-right: 7px;
+  border: 1px solid transparent;
+}
+
+button.offcanvas_icon img {
+  height: 20px;
+}
+
+button.offcanvas_icon:hover {
+  border: 1px solid var(--primary_color);
+}
+.offcanvas_close_btn {
+  width: 25px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+div#offcanvasExample {
+  width: 300px;
+}
+
+
 /* popup login and sign up page style start */
 
 .user_join_popup {
