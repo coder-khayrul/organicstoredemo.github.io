@@ -154,16 +154,13 @@ var swiper = new Swiper(".mySwiper3", {
   keyboard: true,
   autoplay: true,
   loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   pagination: {
-    el: '.swiper-pagination2',
+    el: '.swiper-pagination',
     clickable: true,
   },
   breakpoints: {
@@ -174,13 +171,18 @@ var swiper = new Swiper(".mySwiper3", {
     },
     768: {
       loop: true,
-      slidesPerView: 1,
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    991: {
+      loop: true,
+      slidesPerView: 3,
       spaceBetween: 0,
     },
     1024: {
       loop: true,
-      slidesPerView: 1,
-      spaceBetween: 5,
+      slidesPerView: 4,
+      spaceBetween: 0,
     },
   },
 
