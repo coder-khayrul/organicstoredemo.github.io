@@ -152,7 +152,7 @@ var swiper = new Swiper(".mySwiper3", {
   // slidesPerView: 1,
   // mousewheel: true,
   keyboard: true,
-  autoplay: true,
+  autoplay: false,
   loop: true,
 
   navigation: {

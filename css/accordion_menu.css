@@ -50,7 +50,7 @@
 }
 
 .submenuItems li {
-    border-bottom: 1px solid var(--primary_color);
+    border-bottom: 1px solid #ededed;
 }
 
 .submenuItems a {

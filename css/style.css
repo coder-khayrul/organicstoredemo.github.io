@@ -1739,6 +1739,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   transition: 0.3s;
   line-height: 1.9rem;
   margin-right: 40px;
+  cursor: pointer;
 }
 
 .popup_info h3:hover {
