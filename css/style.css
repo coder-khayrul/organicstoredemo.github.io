@@ -71,10 +71,11 @@ div#offcanvasExample {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   width: 100%;
   display: none;
+  position: absolute;
   z-index: 9999;
+  height: 100vh;
 }
 .page_wrapper {
   width: 90%;
@@ -375,10 +376,17 @@ a {
 
 .search_input i {
   position: absolute;
-  right: 10px;
+  right: 0px;
   transition: 0.3s;
   color: var(--primary_color);
   cursor: pointer;
+  height: 100%;
+  background: var(--primary_color);
+  display: flex;
+  align-items: center;
+  width: 40px;
+  justify-content: center;
+  color: white;
 }
 
 
@@ -524,7 +532,6 @@ span:nth-child(3) {
 .vertical_category ul.v_category_items li {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   padding: 8px 10px;
   font-size: 15px;
   cursor: pointer;
