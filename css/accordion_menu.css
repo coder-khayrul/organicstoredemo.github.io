@@ -11,7 +11,7 @@
     color: var(--primary_color);
 }
 
-.active_menu_icon{
+.accordion-menu li.open .dropdownlink .fa-chevron-down{
     transform: rotate(180deg);
 }
 .accordion-menu li {
