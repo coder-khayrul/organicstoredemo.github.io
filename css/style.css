@@ -516,6 +516,9 @@ span:nth-child(3) {
   transition: 0.3s;
   display: flex;
 }
+.vertical_category ul.v_category_items li a {
+  color: black;
+}
 .vertical_category_wrapper {
   width: 225px;
 }
