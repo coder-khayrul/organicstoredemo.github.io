@@ -586,10 +586,10 @@ ul.menu_inner_item li {
 }
 @keyframes mega_menu_open_animation {
   0% {
-    left: 215px;
+    left: 205px;
   }
   100% {
-    left: 225px;
+    left: 215px;
   }
 }
 .product_mega_menu .product_mega_menu_wrapper {
@@ -623,6 +623,7 @@ nav.navbar {
     text-transform: uppercase;
     color: black;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .link_menu ul li:nth-child(2) a {
