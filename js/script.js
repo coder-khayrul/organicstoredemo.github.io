@@ -25,7 +25,6 @@ const user_popup_exit = document.querySelector("#user_popup_close");
 const user_popup_page_handler = () => {
   user_popup_page.style.display = "flex";
 
- 
 }
 const user_popup_exit_handler = () => {
   user_popup_page.style.display = "none";
@@ -58,6 +57,22 @@ toggle =false;
   }
  
 })
+
+//medium screen search bar
+const search_page_open_btn = document.querySelector(".search_icon ");
+const search_page_close_btn = document.querySelector(".popup_search_close");
+const medium_search_page = document.querySelector(".mobile_popup_search");
+
+//medium screen search bar handling
+search_page_open_btn.addEventListener("click", () => {
+  medium_search_page.style.display = "flex"
+})
+search_page_close_btn.addEventListener("click", () => {
+  medium_search_page.style.display = "none"
+})
+
+
+
 
 //  popup image changing
 let popup_img = [

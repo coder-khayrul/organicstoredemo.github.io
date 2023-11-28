@@ -266,7 +266,6 @@ a {
 span,
 p,
 a {
-  font-size: 0.85em;
 }
 
 .cdt_div a:hover {
@@ -375,8 +374,6 @@ a {
 }
 
 .search_input i {
-  position: absolute;
-  right: 0px;
   transition: 0.3s;
   color: var(--primary_color);
   cursor: pointer;
@@ -384,7 +381,6 @@ a {
   background: var(--primary_color);
   display: flex;
   align-items: center;
-  width: 40px;
   justify-content: center;
   color: white;
 }
@@ -398,7 +394,13 @@ a {
   display: flex;
   align-items: center;
 }
-
+.search_input button {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border: none;
+}
 .search_input input {
   padding: 5px 10px;
   width: 100%;
@@ -696,6 +698,111 @@ a.nav-link:hover {
 .search_bar i:hover {
   color: var(--primary_color);
 }
+/* medium screen search bar start*/
+.mobile_popup_search {
+  width: 100%;
+  background: white;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.mobile_popup_search .popup_search_wrapper a.popup_search_close {
+  width: 25px;
+  height: 25px;
+  background: var(--primary_color);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  transition: .3s;
+}
+
+.mobile_popup_search .popup_search_wrapper a.popup_search_close:hover i {
+  transform: scale(1.5);
+  transition: .3s;
+}
+.popular_category h3{
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.mobile_popup_search .popup_search_wrapper {
+  height: 90%;
+  width: 85%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 60px 45px;
+}
+
+.mobile_popup_search .popup_search_wrapper form.mobile_search-bar input {
+  width: 70%;
+  height: 100%;
+  border: none;
+  outline: none;
+  transition: .3s;
+}
+
+.mobile_popup_search .popup_search_wrapper form.mobile_search-bar {height: 40px;width: 100%;border-bottom: 1px solid #969696;margin-bottom: 50px;display: flex;justify-content: space-between;}
+
+.mobile_popup_search .popup_search_wrapper form.mobile_search-bar select {
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.mobile_popup_search .popup_search_wrapper form.mobile_search-bar button {
+  height: 100%;
+  width: 40px;
+  border: none;
+  background: var(--primary_color);
+  color: white;
+}
+.popular_category_wrapper {
+  gap: 1px;
+  justify-content: space-between;
+}
+.mobile_popup_search .popup_search_wrapper .popular_category .popular_category_title {
+  background: white;
+  border: 1px solid #ededed;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  flex: 1 0 20%;
+  font-size: 13px;
+  transition: .2s;
+}
+.mobile_popup_search .popup_search_wrapper .popular_category .popular_category_title i{
+  color: #969696;
+  transition: .2s;
+}
+.mobile_popup_search .popup_search_wrapper .popular_category {
+  width: 100%;
+}
+
+.mobile_popup_search .popup_search_wrapper .popular_category .popular_category_title:hover {
+  background: var(--primary_color);
+  color: white;
+  transition: .2s;
+}
+.mobile_popup_search .popup_search_wrapper .popular_category .popular_category_title:hover i{
+  transition: .2s;
+  color: white;
+}
+.mobile_popup_search .popup_search_wrapper form.mobile_search-bar input:focus {
+  padding: 0px 15px;
+  transition: .3s;
+}
+/*medium screen search bar end*/
+
 
 /* full width search bar style start here  */
 
@@ -1901,6 +2008,9 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
    .link_menu ul li a,  a.nav-link{
     font-size: 12px;
   }
+  .mobile_popup_search .popup_search_wrapper .popular_category .popular_category_title {
+    flex: 1 0 calc((100% / 3) - 1px);
+  }
  
 }
 @media only screen and (max-width: 991px) {
@@ -2140,6 +2250,9 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   }
   .single_product .single_product_img {
     width: 30%;
+  }
+  .mobile_popup_search .popup_search_wrapper .popular_category .popular_category_title {
+    flex: 1 0 calc((100% / 2) - 1px);
   }
 }
 @media only screen and (max-width: 640px) {
