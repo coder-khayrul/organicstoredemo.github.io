@@ -21,6 +21,7 @@ const signup_btn =document.getElementById("signup_btn");
 const login_page =document.getElementById("login_from");
 const signup_page =document.getElementById("signup_from");
 const login_signup_paragraph = document.querySelector(".msg_box p");
+const user_message = document.getElementById("user_msg");
 
 //toggle signup and login page
 const login_tab_handler = () => {
@@ -29,6 +30,7 @@ const login_tab_handler = () => {
   login_btn.style.position = "absolute"
   login_btn.style.display = "none"
   signup_page.style.display = "none";
+  user_message.textContent = "Hello Customer!"
   login_signup_paragraph.textContent = "Fill up personal information and start journey with us."
   signup_btn.style.position = "unset"
   
@@ -38,6 +40,7 @@ const signup_tab_handler = () => {
   login_btn.style.display = "unset"
   login_page.style.display = "none";
   signup_page.style.display = "unset"
+  user_message.textContent = "Wellcome Back!"
   login_signup_paragraph.textContent = "Login here by filling you're username and password or use your favorite social network account to enter to the site"
   signup_btn.style.position = "absolute"
   login_btn.style.position = "unset"
