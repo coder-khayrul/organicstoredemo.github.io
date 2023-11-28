@@ -121,7 +121,7 @@
               <a href="#" class="popular_category_title">
                 <span>Air Condition</span>
                 <i class="fa-solid fa-chevron-right"></i>
-                </a>
+              </a>
             </div>
 
 
@@ -130,63 +130,110 @@
       </div>
       <!--signup and sign in page popup start-->
 
-      <div class="container-xxl position-relative  user_popup_container">
-        <div class="user_join_popup ">
+      <div class="user_popup_container">
+        <div class="user_join_popup container-xxl position-relative  ">
           <div class="page_wrapper row">
-
-            <div class="col-12 col-md-6 ">
-
-              <form name="user_form" action="" id="user_form" autocomplete="on" class="form_box">
-                <h2>Sign in to Account</h2>
-                <div class="social_site">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                </div>
-                <span>or use your phone number</span>
-                <div class="input_box">
-                  <label for="phone_num">Phone</label>
-                  <input type="number" name="phone_num" id="phone_num" placeholder="Your Phone Number" required>
-                </div>
-
-                <div class="input_box">
-                  <label for="Password">Password</label>
-                  <input type="password" name="Password" id="Password" placeholder="Your Password" required>
-                </div>
-                <div class="cdt_div">
-                  <div class="checkbox_ctn">
-                    <label for="checkbox"></label>
-                    <input type="checkbox" name="checkbox" id="checkbox"> <span>Remember me</span>
+            <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
+            <div class="col-12 col-md-6">
+              <div class="position-relative">
+                <form name="user_form" action="" id="signup_from" autocomplete="on" class="signup_form_box">
+                  <h2>Create Your Account</h2>
+                  <div class="social_site">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                  <div class="d-flex justify-content-center ">
+                       <span>or use your email address</span>
+                  </div>
+               
+                  <div class="input_box">
+                    <label for="name"></label>
+                    <input type="name" name="name" id="name" placeholder="Your full name" required>
+                  </div>
+                  <div class="input_box">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
                   </div>
 
-                  <a href="#">forgot password?</a>
-                </div>
-                <div class="login_btn">
-                  <button type="submit">SIGN IN</button>
-                </div>
+                  <div class="input_box">
+                    <label for="Password"></label>
+                    <input type="password" name="Password" id="Password" placeholder="New Password" required>
+                  </div>
+                  <div class="cdt_div">
+                    <div class="checkbox_ctn">
+                      <label for="checkbox"></label>
+                      <input type="checkbox" name="checkbox" id="checkbox"> <span>Remember me</span>
+                    </div>
 
-                <div class="page_links">
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Terms & Conditions</a>
-                </div>
+                    <a href="#">forgot password?</a>
+                  </div>
+                  <div class="login_btn">
+                    <button type="submit">SIGN UP</button>
+                  </div>
 
-              </form>
+                  <div class="page_links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                  </div>
+
+                </form>
+                <div class="login_form_box" id="login_from">
+                  <div class="from_title">
+                    <h2>Login</h2>
+                    <p>Enter your Email and Password to login.</p>
+                  </div>
+                  <form action="" name="" id="" class="login_form" autocomplete="on">
+                    <input type="email" name="email" id="loginEmail" placeholder="Email">
+                    <input type="password" name="password" id="loginPassword" placeholder="password">
+
+                    <div class="optional_items mb-5">
+                      <div class="remember_field">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember me</label>
+
+                      </div>
+                      <div class="forget_item">
+                        <a href="#">Forget your email?</a>
+                      </div>
+                    </div>
+                    <button type="submit">Login</button>
+                  </form>
+                  <span class="or_devider">Or</span>
+                  <div class="login_other_way">
+                    <div class="single_way">
+                      <div class="social-login">
+                        <i class="fa-brands fa-google"></i>
+                      </div>
+                      <span>Connect with google</span>
+                    </div>
+                    <div class="single_way">
+                      <div class="social-login">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <span>Connect with facebook</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-md-6 pe-0">
+            <div class="col-12 msg_box_container col-md-6 pe-0">
               <div class="msg_box d-flex flex-column ">
-                <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
                 <div class="cir_photo">
                   <img src="img/profile_sml.jpg" alt="profile picture">
                 </div>
                 <h3>Hello, Customer !</h3>
-                <p>Fill up personal information and start journey with us.</p>
-                <button type="submit">SIGN UP</button>
+                <p>Login here by filling you're username and password or use your favorite social network account to enter to the site</p>
+                <div class="signup-login_buttons">
+                   <button id="login_btn" type="submit">LOGIN</button>
+                   <button id="signup_btn" type="submit">SIGN UP</button>
+                </div>
+               
               </div>
             </div>
           </div>
         </div>
       </div>
-
 
       <!--signup and sign in page popup end-->
       <div class="container-fluid container-xl">
@@ -194,7 +241,6 @@
           class="main_search_bar mobile_search_bar d-flex d-lg-none align-content-center ">
           <div class="category_area">
             <select class="category_items ps-0">
-
               <option value="">All Category</option>
               <option value="">Clock</option>
               <option value="">Lighting</option>
@@ -208,7 +254,6 @@
               <i style="display: none;" class="toggle_close fa-solid fa-caret-up"></i>
             </div>
           </div>
-
           <div class="search_input mobile">
             <label for="searchField"></label>
             <input type="text" name="searchField" id="top_searchField" placeholder="Enter search keyword..">
@@ -245,7 +290,7 @@
               <label for="searchField"></label>
               <input type="text" name="searchField" id="searchField" placeholder="Enter search keyword.." required>
               <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
-             
+
             </div>
           </form>
           <div class="woocommerce_area">

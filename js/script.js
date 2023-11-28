@@ -15,6 +15,43 @@ const popup_page = document.querySelector(".popup_content");
 const popup_product_img = document.querySelector(".popup_p_img");
 const copyRightYear = document.getElementById("currentYear");
 
+//for sign up and login page tab function
+const login_btn =document.getElementById("login_btn");
+const signup_btn =document.getElementById("signup_btn");
+const login_page =document.getElementById("login_from");
+const signup_page =document.getElementById("signup_from");
+const login_signup_paragraph = document.querySelector(".msg_box p");
+
+//toggle signup and login page
+const login_tab_handler = () => {
+  signup_btn.style.display = "unset"
+  login_page.style.display = "unset";
+  login_btn.style.position = "absolute"
+  login_btn.style.display = "none"
+  signup_page.style.display = "none";
+  login_signup_paragraph.textContent = "Fill up personal information and start journey with us."
+  signup_btn.style.position = "unset"
+  
+}
+const signup_tab_handler = () => {
+  signup_btn.style.display = "none";
+  login_btn.style.display = "unset"
+  login_page.style.display = "none";
+  signup_page.style.display = "unset"
+  login_signup_paragraph.textContent = "Login here by filling you're username and password or use your favorite social network account to enter to the site"
+  signup_btn.style.position = "absolute"
+  login_btn.style.position = "unset"
+}
+
+login_btn.addEventListener("click", login_tab_handler)
+signup_btn.addEventListener("click", signup_tab_handler)
+
+
+
+
+
+
+
 // user page sign page & login page > get elements
 const user_popup_icon = document.getElementById("user_join_icon");
 const user_popup_page = document.querySelector(".user_join_popup");
