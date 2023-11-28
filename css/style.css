@@ -422,11 +422,6 @@ span.or_devider {
 .checkbox_ctn span {
   color: black;
 }
-span,
-p,
-a {
-}
-
 .cdt_div a:hover {
   text-decoration: underline;
   color: var(--primary_color);
