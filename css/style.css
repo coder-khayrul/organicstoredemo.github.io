@@ -1251,6 +1251,7 @@ section#product_section .product_wrapper .product_slider .single_product .produc
 
 section#product_section .product_wrapper .product_slider .single_product {
   overflow: hidden;
+  cursor: pointer;
 }
 
 section#product_section .product_wrapper .product_slider .single_product {
@@ -2001,9 +2002,11 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 }
 
 .popup_info {
-  overflow: auto;
+  overflow-y: scroll;
   margin-right: 20px;
   padding: 20px 15px;
+  height: 80vh;
+  overflow-x: hidden;
 }
 .popup_info .wishlist {
   color: var(--primary_color);
