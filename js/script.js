@@ -208,6 +208,105 @@ $('.js-preloader').preloadinator({
 
 
 //****swiper script */
+var swiper = new Swiper(".mySwiper6", {
+  autoplay: true,
+  keyboard: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next6',
+    prevEl: '.swiper-button-prev6',
+  },
+  breakpoints: {
+    640: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    991: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  },
+
+});
+
+var swiper = new Swiper(".mySwiper5", {
+  autoplay: true,
+  keyboard: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next5',
+    prevEl: '.swiper-button-prev5',
+  },
+  breakpoints: {
+    640: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    991: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  },
+
+});
+var swiper = new Swiper(".mySwiper4", {
+  autoplay: true,
+  keyboard: true,
+  loop: true,
+  navigation: true,
+  navigation: {
+    nextEl: '.swiper-button-next4',
+    prevEl: '.swiper-button-prev4',
+  },
+  breakpoints: {
+    640: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    991: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  },
+
+});
+
 var swiper = new Swiper(".mySwiper3", {
   // slidesPerView: 1,
   // mousewheel: true,
@@ -254,7 +353,7 @@ var swiper = new Swiper(".mySwiper2", {
   // slidesPerView: 1,
   // mousewheel: true,
   keyboard: true,
-  // autoplay: true,
+  autoplay: true,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
