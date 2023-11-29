@@ -1878,7 +1878,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li {
   cursor: pointer;
 }
 
-footer#footer_section .footer-wrapper .single_footer_item span {
+footer#footer_section .footer-wrapper .single_footer_item a{
   padding: 5px 10px;
   font-size: 14px;
   background: white;
@@ -1888,7 +1888,7 @@ footer#footer_section .footer-wrapper .single_footer_item span {
   transition: 0.3s;
 }
 
-footer#footer_section .footer-wrapper .single_footer_item span:hover {
+footer#footer_section .footer-wrapper .single_footer_item a:hover {
   background: var(--primary_color);
   transition: 0.3s;
   color: white;
