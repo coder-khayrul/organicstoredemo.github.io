@@ -254,7 +254,7 @@ var swiper = new Swiper(".mySwiper2", {
   // slidesPerView: 1,
   // mousewheel: true,
   keyboard: true,
-  autoplay: true,
+  // autoplay: true,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
