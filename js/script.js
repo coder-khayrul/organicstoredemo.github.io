@@ -106,9 +106,14 @@ const medium_search_page = document.querySelector(".mobile_popup_search");
 //medium screen search bar handling
 search_page_open_btn.addEventListener("click", () => {
   medium_search_page.style.display = "flex"
+   medium_search_page.style.animation = "mobile_popup_open 1s alternate forwards ease-in";
+  medium_search_page.style.transition = "2s"
 })
 search_page_close_btn.addEventListener("click", () => {
-  medium_search_page.style.display = "none"
+
+  medium_search_page.style.animation = "mobile_popup_close 1s alternate forwards ease-in";
+  medium_search_page.style.transition = "2s"
+  
 })
 
 

@@ -868,8 +868,28 @@ a.nav-link:hover {
   background: white;
   height: 100vh;
   display: none;
+  position: absolute;
   align-items: center;
   justify-content: center;
+ transform: translate(0px,-330px);
+  transform-origin: top;
+  z-index: 9999;
+  
+}
+@keyframes mobile_popup_open {
+  0%{ transform: translate(0px,-330px);}
+  100%{transform: translate(0px,0px);}
+}
+@keyframes mobile_popup_close {
+ 
+  0%{
+    transform: translate(0px,0px);
+    display: flex;
+  }
+ 100%{ 
+  transform: translate(0px,-330px);
+  display: none;
+}
 }
 .mobile_popup_search .popup_search_wrapper a.popup_search_close {
   width: 25px;
