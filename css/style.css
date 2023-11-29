@@ -1742,7 +1742,7 @@ section#latest_news_section .latest_news_wrapper .latest_news_title p {
   width: 115px;
   text-align: center;
   background: var(--primary_color);
-  color: white;
+  color: white !important;
   border-radius: 3px;
   padding: 5px 0px;
   font-size: 14px;
