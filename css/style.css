@@ -1136,7 +1136,8 @@ section#hero_section {
   padding-bottom: 50px;
 }
 section#hero_section .hero_wrapper .single_slider {
-  padding: 30px 50px;
+  min-height: 85vh;
+  padding: 0px 50px;
 }
 
 section#hero_section .hero_wrapper .single_slider .slider_content h1 {
@@ -2191,9 +2192,6 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 
 @media only screen and (max-width: 991px) {
 
-  section#hero_section .hero_wrapper .single_slider {
-    padding: 100px 50px;
-  }
   section#hero_section .hero_wrapper .single_slider .slider_content h1{
     font-size: 35px;
   }

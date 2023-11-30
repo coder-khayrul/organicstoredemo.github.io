@@ -10,7 +10,7 @@
  .jq-elevator.align-top { top: 15px; }
  .jq-elevator.align-bottom { bottom: 15px; }
  .jq-elevator.align-left { left: 15px; }
- .jq-elevator.align-right {right: 15px;z-index: 9;}
+ .jq-elevator.align-right {right: 15px;z-index: 99;}
 
  .jq-top, .jq-item, .jq-bottom, .jq-items-toggle {
 
