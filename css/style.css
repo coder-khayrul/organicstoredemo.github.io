@@ -2361,6 +2361,8 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
     width: 100%;
     bottom: 0;
     display: flex;
+    background: white;
+    z-index: 99;
   }
 
   .page_bottom_menu a {
@@ -2372,6 +2374,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 
   .page_bottom_menu a:hover {
     color: var(--primary_color);
+    background: #ededed !important;
   }
 
 }
