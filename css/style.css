@@ -2117,9 +2117,9 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   border: 2px solid #c7c4c4;
 }
 .popup_overlay .popup_content .exit_icon {
-  position: fixed;
-  right: 15px;
-  top: 20px;
+  position: sticky;
+  left: 95%;
+  top: 3px;
   border-radius: 100%;
   background: #0000008a;
   color: white;
@@ -2129,6 +2129,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   place-items: center;
   font-size: 10px;
   border: 2px solid transparent;
+  z-index: 99;
 }
 
 .popup_gallary_img img {
@@ -2137,7 +2138,29 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
     height: 100%;
     object-position: top center;
 }
+.product_color_choice .product_colors span {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
 
+.product_color_choice .product_colors span:first-child {
+  background: red;
+}
+
+.product_color_choice .product_colors span:last-child {background: chocolate;}
+
+.product_color_choice .product_colors span:hover {
+  opacity: .8;
+}
+
+.product_color_choice .product_colors span:nth-child(2) {
+  background: black;
+}
+
+.product_color_choice .product_colors span:nth-child(3) {
+  background: aqua;
+}
 .popup_gallary_img {
     width: 100%;
     height: 100%;
@@ -2493,5 +2516,9 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   }
   .popup_gallary{
     height: 220px;
+  }
+  .popup_info h3{
+    font-size: 45px;
+    line-height: 2.8rem;
   }
 }

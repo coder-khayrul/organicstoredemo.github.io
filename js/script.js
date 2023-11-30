@@ -281,8 +281,13 @@ var swiper = new Swiper(".mySwiper7", {
   navigation: {
     nextEl: '.swiper-button-next7',
     prevEl: '.swiper-button-prev7',
+   
   },
   breakpoints: {
+    460: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
     640: {
 
       slidesPerView: 3,
