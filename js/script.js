@@ -15,6 +15,44 @@ const popup_page = document.querySelector(".popup_content");
 const popup_product_img = document.querySelector(".popup_p_img");
 const copyRightYear = document.getElementById("currentYear");
 
+//product image hover effect
+
+
+const product_area = document.querySelector(".popup_img");
+const product_img = document.querySelector(".popup_p_img");
+
+ const img_move_effect = (hover_area , hover_img) => {
+  hover_area.addEventListener("mousemove", (e) => {
+  const x = e.clientX - e.target.offsetWidth;
+  const y = e.clientY - e.target.offsetTop;
+ hover_img.style.transformOrigin = `${x}px ${y}px`
+ hover_img.style.transform = "scale(1.8)"
+
+})
+hover_area.addEventListener("mouseleave", () => {
+  hover_img.style.transformOrigin = "center"
+  hover_img.style.transform = "scale(1)"
+})
+ }
+ img_move_effect(product_area, product_img)
+
+ const hero_slider_img_area = document.querySelector(".slider_img");
+const hero_slider_img = document.querySelector(".slider_img img");
+
+  hero_slider_img_area.addEventListener("mousemove", (e) => {
+    const m = e.clientX - e.target.offsetWidth;
+    const n = e.clientY - e.target.offsetTop;
+    product_img.style.transformOrigin = `${m}px ${n}px`
+    product_img.style.transform = "scale(1.2)"
+  
+  })
+  hero_slider_img_area.addEventListener("mouseleave", () => {
+    product_img.style.transformOrigin = "center"
+    product_img.style.transform = "scale(1)"
+  })
+ 
+
+
 //header sticky animation
 
 $(document).ready( () => {

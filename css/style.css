@@ -1147,6 +1147,7 @@ section#hero_section .hero_wrapper .single_slider .slider_content h1 {
 
 section#hero_section .hero_wrapper .single_slider .slider_img {
   width: 50%;
+  overflow: hidden;
 }
 
 section#hero_section .hero_wrapper .single_slider .slider_content .slider_button {margin-top: 40px;}
@@ -1984,7 +1985,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: #4d4d4d6e;
+  background: #4d4d4d99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1997,29 +1998,29 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 
 .popup_overlay .popup_content {
   width: 90vw;
-  height: 80vh;
+  height: 90vh;
   background: white;
   color: black;
   z-index: 2;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+  border-radius: 10px;
 }
 .popup_img {
-  height: 80vh;
+  overflow: hidden;
+  cursor: move;
 }
-
 .popup_img img {
   object-fit: cover;
   height: 100%;
 }
 
 .popup_info {
-  overflow-y: scroll;
   margin-right: 20px;
   padding: 20px 15px;
   height: 80vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .popup_info .wishlist {
   color: var(--primary_color);
