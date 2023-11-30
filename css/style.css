@@ -2192,7 +2192,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 @media only screen and (max-width: 991px) {
 
   section#hero_section .hero_wrapper .single_slider {
-    padding: 60px 50px;
+    padding: 100px 50px;
   }
   section#hero_section .hero_wrapper .single_slider .slider_content h1{
     font-size: 35px;
@@ -2249,7 +2249,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 @media only screen and (max-width: 768px) {
   section#hero_section .hero_wrapper .single_slider{
     flex-direction: column;
-    padding: 25px 50px;
+    padding: 70px 50px;
   }
   section#hero_section .hero_wrapper .single_slider .slider_content{
     width: 100%;
