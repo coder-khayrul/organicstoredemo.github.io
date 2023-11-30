@@ -15,9 +15,30 @@ const popup_page = document.querySelector(".popup_content");
 const popup_product_img = document.querySelector(".popup_p_img");
 const copyRightYear = document.getElementById("currentYear");
 
+//add to cart product number handler 
+const value_field = document.querySelector("#product_number");
+const increase_button = document.querySelector(".increase_button");
+const decrease_button = document.querySelector(".decrease_button");
+
+// Initialize product_number_value with the current value of value_field
+let product_number_value = parseInt(value_field.value);
+
+decrease_button.addEventListener("click", () => {
+  // Ensure the value is not less than 1
+  product_number_value = Math.max(1, product_number_value - 1);
+  value_field.value = product_number_value;
+});
+
+increase_button.addEventListener("click", () => {
+  // Increase the value
+  product_number_value += 1;
+  value_field.value = product_number_value;
+});
+
+
+
+
 //product image hover effect
-
-
 const product_area = document.querySelector(".popup_img");
 const product_img = document.querySelector(".popup_p_img");
 
@@ -255,6 +276,39 @@ $('.js-preloader').preloadinator({
 
 
 //****swiper script */
+var swiper = new Swiper(".mySwiper7", {
+ loop: false,
+  navigation: {
+    nextEl: '.swiper-button-next7',
+    prevEl: '.swiper-button-prev7',
+  },
+  breakpoints: {
+    640: {
+
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    768: {
+
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    991: {
+  
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    1024: {
+
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+  },
+
+});
+
+
+
 var swiper = new Swiper(".mySwiper6", {
   autoplay: true,
   keyboard: true,
