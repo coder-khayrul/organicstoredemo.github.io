@@ -17,23 +17,15 @@ const copyRightYear = document.getElementById("currentYear");
 
 //header sticky animation
 
-const header_element = document.querySelector("#header");
-const hero_element = document.querySelector("#hero_section");
-function handleScroll() {
-  const heroRect = hero_element.getBoundingClientRect();
-  
-  // Check if the top of the hero section is in the viewport
-  if (heroRect.top <= window.innerHeight && heroRect.bottom >= 0) {
-    // Add the animation class
-    header_element.classList.add("sticky_animation");
-
-    // Remove the animation class after the animation ends
-    header_element.addEventListener("animationend", () => {
-      header_element.classList.remove("sticky_animation");
-    }, { once: true });
-  }
-}
-window.addEventListener("scroll", handleScroll);
+$(document).ready( () => {
+  $(window).on("scroll", () => {
+    if($(window).scrollTop()){
+      $("#header").addClass("sticky_animation")
+    }else{
+      $("#header").removeClass("sticky_animation")
+    }
+  })
+})
 
 //for sign up and login page tab function
 const login_btn =document.getElementById("login_btn");
@@ -135,9 +127,6 @@ search_page_close_btn.addEventListener("click", () => {
   medium_search_page.style.transition = "2s"
   
 })
-
-
-
 
 //  popup image changing
 let popup_img = [
