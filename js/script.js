@@ -56,23 +56,33 @@ hover_area.addEventListener("mouseleave", () => {
 })
  }
  img_move_effect(product_area, product_img)
-
- const hero_slider_img_area = document.querySelector(".slider_img");
-const hero_slider_img = document.querySelector(".slider_img img");
-
-  hero_slider_img_area.addEventListener("mousemove", (e) => {
-    const m = e.clientX - e.target.offsetWidth;
-    const n = e.clientY - e.target.offsetTop;
-    product_img.style.transformOrigin = `${m}px ${n}px`
-    product_img.style.transform = "scale(1.2)"
-  
-  })
-  hero_slider_img_area.addEventListener("mouseleave", () => {
-    product_img.style.transformOrigin = "center"
-    product_img.style.transform = "scale(1)"
-  })
+ const hero_slider_img_area = document.querySelectorAll(".slider_img");
+ const hero_slider_img = document.querySelectorAll(".slider_img img");
+ console.log(hero_slider_img);
+ console.log(hero_slider_img_area);
  
-
+ const hero_slider_animation = (hero_animation_area, slide_imgs) => {
+   hero_animation_area.addEventListener("mousemove", (e) => {
+     const m = e.clientX - e.target.offsetWidth;
+     const n = e.clientY - e.target.offsetTop;
+ 
+     slide_imgs.forEach((img) => {
+       img.style.transformOrigin = `${m}px ${n}px`;
+       img.style.transform = "scale(1.2)";
+     });
+   });
+ 
+   hero_animation_area.addEventListener("mouseleave", () => {
+     slide_imgs.forEach((img) => {
+       img.style.transformOrigin = "center";
+       img.style.transform = "scale(1)";
+     });
+   });
+ };
+ 
+ hero_slider_img_area.forEach((area) => {
+   hero_slider_animation(area, hero_slider_img);
+ });
 
 //header sticky animation
 
