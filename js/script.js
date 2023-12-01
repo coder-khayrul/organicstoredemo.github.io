@@ -58,8 +58,7 @@ hover_area.addEventListener("mouseleave", () => {
  img_move_effect(product_area, product_img)
  const hero_slider_img_area = document.querySelectorAll(".slider_img");
  const hero_slider_img = document.querySelectorAll(".slider_img img");
- console.log(hero_slider_img);
- console.log(hero_slider_img_area);
+ 
  
  const hero_slider_animation = (hero_animation_area, slide_imgs) => {
    hero_animation_area.addEventListener("mousemove", (e) => {
