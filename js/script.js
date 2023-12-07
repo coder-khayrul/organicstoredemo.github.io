@@ -286,7 +286,8 @@ $('.js-preloader').preloadinator({
 
 //****swiper script */
 var swiper = new Swiper(".mySwiper7", {
- loop: false,
+
+ loop: true,
   navigation: {
     nextEl: '.swiper-button-next7',
     prevEl: '.swiper-button-prev7',
@@ -298,22 +299,18 @@ var swiper = new Swiper(".mySwiper7", {
       spaceBetween: 5,
     },
     640: {
-
       slidesPerView: 3,
       spaceBetween: 5,
     },
     768: {
-
       slidesPerView: 3,
       spaceBetween: 5,
     },
     991: {
-  
       slidesPerView: 3,
       spaceBetween: 5,
     },
     1024: {
-
       slidesPerView: 3,
       spaceBetween: 5,
     },
@@ -331,24 +328,21 @@ var swiper = new Swiper(".mySwiper6", {
     nextEl: '.swiper-button-next6',
     prevEl: '.swiper-button-prev6',
   },
+  disableOnInteraction: false,
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     991: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
@@ -364,24 +358,21 @@ var swiper = new Swiper(".mySwiper5", {
     nextEl: '.swiper-button-next5',
     prevEl: '.swiper-button-prev5',
   },
+  disableOnInteraction: false,
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     991: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
@@ -397,24 +388,21 @@ var swiper = new Swiper(".mySwiper4", {
     nextEl: '.swiper-button-next4',
     prevEl: '.swiper-button-prev4',
   },
+  disableOnInteraction: false,
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     991: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
