@@ -1129,7 +1129,7 @@
         <div class="organic_packages_wrapper">
           <div class="row justify-content-center ">
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single_package d-flex justify-content-center  mb-4">
+              <a href="#" class="single_package d-flex justify-content-center  mb-4">
                 <div class="package_info">
                   <h3>Make a Healthy Choice</h3>
                   <h4>Organic pack</h4>
@@ -1137,11 +1137,11 @@
                 <div class="package_img">
                   <img class="img-fluid" src="./img/img-02.jpg" alt="./img/img-02.jpg">
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single_package item_2 d-flex flex-column  justify-content-center align-items-center ">
+              <a href="#" class="single_package item_2 d-flex flex-column  justify-content-center align-items-center ">
                 <div class="single_package d-flex  mb-4">
                   <div class="package_info">
                     <h3>Make a Healthy Choice</h3>
@@ -1161,11 +1161,11 @@
                     <img class="img-fluid" src="./img/img-04.jpg" alt="./img/img-02.jpg">
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single_package d-flex justify-content-center  mb-4">
+              <a href="#" class="single_package d-flex justify-content-center  mb-4">
                 <div class="package_info">
                   <h3>Make a Healthy Choice</h3>
                   <h4>Organic pack</h4>
@@ -1173,7 +1173,7 @@
                 <div class="package_img">
                   <img class="img-fluid" src="./img/img-05.jpg" alt="./img/img-02.jpg">
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -1282,226 +1282,772 @@
             <p>If success is a process with a number of defined steps, then it is just like any other process. So, what
               is the first step in any process? </p>
           </div>
-          <div class="product_category d-flex flex-wrap justify-content-center ">
-            <button class="p_group me-4 mb-3" type="button" data-filter=".Newest">Newest</button>
-            <button class="p_group me-4 mb-3" type="button" data-filter=".Featured">Featured</button>
-            <button class="p_group me-4 mb-3" type="button" data-filter=".Best_Seller">Best Sellers</button>
-            <button class="p_group me-4 mb-3" type="button" data-filter=".On_sale">On sale</button>
-            <button class="p_group mb-3 " type="button" data-filter=".Cheapest">Cheapest</button>
+
+          <div class="product_category d-flex flex-wrap justify-content-center nav nav-tabs" id="myTab" role="tablist">
+            <button class="p_group me-4 mb-3 nav-link active" id="newest-tab" data-bs-toggle="tab"
+              data-bs-target="#newest-tab-pane" type="button" role="tab" aria-controls="newest-tab-pane"
+              aria-selected="false">Newest</button>
+
+            <button class="p_group me-4 mb-3 nav-link" id="featured-tab" data-bs-toggle="tab"
+              data-bs-target="#featured-tab-pane" type="button" role="tab" aria-controls="featured-tab-pane"
+              aria-selected="false">Featured</button>
+
+            <button class="p_group me-4 mb-3 nav-link" id="bestSeller-tab" data-bs-toggle="tab"
+              data-bs-target="#bestSeller-tab-pane" type="button" role="tab" aria-controls="bestSeller-tab-pane"
+              aria-selected="false">Best Sellers</button>
+
+            <button class="p_group me-4 mb-3 nav-link" id="onSale-tab" data-bs-toggle="tab"
+              data-bs-target="#onSale-tab-pane" type="button" role="tab" aria-controls="onSale-tab-pane"
+              aria-selected="false">On sale</button>
+
+            <button class="p_group mb-3 nav-link" id="cheapest-tab" data-bs-toggle="tab"
+              data-bs-target="#cheapest-tab-pane" type="button" role="tab" aria-controls="cheapest-tab-pane"
+              aria-selected="false">Cheapest</button>
           </div>
+
           <div class="product_slider">
             <!-- single product item 1-->
-            <div class="swiper mySwiper3">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide mix Newest Best_Seller Cheapest" data-order="1">        
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid " src="./img/p_a1.jpg" alt="./img/p_a1.jpg">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+            <div class=" tab-content" id="myTabContent">
+
+              <div class=" tab-pane fade show active" id="newest-tab-pane" role="tabpanel" aria-labelledby="newest-tab"
+                tabindex="0">
+                <div class="swiper mySwiper3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid " src="./img/p_a1.jpg" alt="./img/p_a1.jpg">
                           </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price">£ 10.00</span>
-                      </div>
-                    </div>         
-                </div>
-                <!-- single product item 2-->
-                <div class="swiper-slide mix Newest" data-order="2">                 
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/man_sut.jpg" alt="./img/man_sut.jpg">
-                          <img class="img-fluid back_img" src="./img/man_sut_back.jpg" alt="./img/man_sut_back.jpg">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
-                          </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
-                      </div>
-                    </div>               
-                </div>
-                <!-- single product item 3-->
-                <div class="swiper-slide mix Newest  On_sale Cheapest" data-order="3">          
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/watch.jpg" alt="./img/watch.jpg">
-                          <img class="img-fluid back_img" src="./img/watch_back.jpg" alt="./img/watch_back.jpg">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
-                          </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
-                          </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price">£ 10.00</span>
                         </div>
                       </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
-                      </div>
-                    </div>             
-                </div>
-                <!-- single product item 4-->
-                <div class="swiper-slide mix Featured Best_Seller Cheapest" data-order="4">                 
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid" src="./img/man_ganji.jpg" alt="./img/man_ganji.jpg">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                    </div>
+                    <!-- single product item 2-->
+                    <div class="swiper-slide mix Newest" data-order="2">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid font_img" src="./img/man_sut.jpg" alt="./img/man_sut.jpg">
+                            <img class="img-fluid back_img" src="./img/man_sut_back.jpg" alt="./img/man_sut_back.jpg">
                           </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
-                      </div>
-                    </div>              
-                </div>
-                <!-- single product item 5-->
-                <div class="swiper-slide mix Featured Best_Seller On_sale" data-order="5">                 
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid" src="./img/man_jcket.jpg" alt="./img/man_jcket.jpg">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
-                          </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
-                          </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
                         </div>
                       </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
-                      </div>
-                    </div>             
-                </div>
-                <!-- single product item 6-->
-                <div class="swiper-slide mix Featured Cheapest" data-order="6">                 
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid" src="./img/man_tshirt.jpg" alt="./img/man_tshirt.jpg">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                    </div>
+                    <!-- single product item 3-->
+                    <div class="swiper-slide mix Newest  On_sale Cheapest" data-order="3">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid font_img" src="./img/watch.jpg" alt="./img/watch.jpg">
+                            <img class="img-fluid back_img" src="./img/watch_back.jpg" alt="./img/watch_back.jpg">
                           </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
-                      </div>
-                    </div>              
-                </div>
-                <!-- single product item 7-->
-                <div class="swiper-slide mix  Featured Best_Seller" data-order="7">                
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid" src="./img/man_shart.jpg" alt="./img/man_shart.jpg">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
-                          </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
-                          </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
                         </div>
                       </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
-                      </div>
-                    </div>                 
-                </div>
-                <!-- single product item 8-->
-                <div class="swiper-slide mix Newest Featured Best_Seller" data-order="7">
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/ban_jersey.jpg" alt="./img/ban_jersey.jpg">
-                          <img class="img-fluid back_img" src="./img/ban_jersey_back.jpg"
-                            alt="./img/ban_jersey_back.jpg">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                    </div>
+                    <!-- single product item 4-->
+                    <div class="swiper-slide">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_ganji.jpg" alt="./img/man_ganji.jpg">
                           </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
                           </div>
                         </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
                       </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>Bangladesh CWC23 jersey</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                    </div>
+                    <!-- single product item 5-->
+                    <div class="swiper-slide mix Featured Best_Seller On_sale" data-order="5">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_jcket.jpg" alt="./img/man_jcket.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
                       </div>
-                    </div>                
+                    </div>
+                    <!-- single product item 6-->
+                    <div class="swiper-slide mix Featured Cheapest" data-order="6">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_tshirt.jpg" alt="./img/man_tshirt.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+              <!-- swiper wrapper 2 -->
+
+              <div class=" tab-pane fade" id="featured-tab-pane" role="tabpanel" aria-labelledby="featured-tab"
+                tabindex="0">
+                <div class="swiper mySwiper3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid " src="./img/p_a1.jpg" alt="./img/p_a1.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price">£ 10.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 2-->
+                    <div class="swiper-slide mix Newest" data-order="2">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid font_img" src="./img/g.jpg" alt="./img/g.jpg">
+                            <img class="img-fluid back_img" src="./img/f.jpg" alt="./img/f.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 3-->
+                    <div class="swiper-slide mix Newest  On_sale Cheapest" data-order="3">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid font_img" src="./img/watch.jpg" alt="./img/watch.jpg">
+                            <img class="img-fluid back_img" src="./img/watch_back.jpg" alt="./img/watch_back.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 4-->
+                    <div class="swiper-slide">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_ganji.jpg" alt="./img/man_ganji.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 5-->
+                    <div class="swiper-slide mix Featured Best_Seller On_sale" data-order="5">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/a.jpg" alt="./img/man_jcket.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 6-->
+                    <div class="swiper-slide mix Featured Cheapest" data-order="6">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/e.jpg" alt="./img/man_tshirt.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <!-- swiper wrapper3 -->
+
+              <div class=" tab-pane fade" id="bestSeller-tab-pane" role="tabpanel" aria-labelledby="bestSeller-tab"
+                tabindex="0">
+                <div class="swiper mySwiper3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide mix  Featured Best_Seller" data-order="7">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/g.jpg" alt="./img/g.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 8-->
+                    <div class="swiper-slide mix Newest Featured Best_Seller" data-order="7">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid font_img" src="./img/c.jpg" alt="./img/ban_jersey.jpg">
+                            <img class="img-fluid back_img" src="./img/g.jpg"
+                              alt="./img/ban_jersey_back.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>Bangladesh CWC23 jersey</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 4-->
+                    <div class="swiper-slide mix Featured Best_Seller Cheapest" data-order="4">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/b.jpg" alt="./img/man_ganji.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 5-->
+                    <div class="swiper-slide mix Featured Best_Seller On_sale" data-order="5">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/a.jpg" alt="./img/man_jcket.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 6-->
+                    <div class="swiper-slide mix Featured Cheapest" data-order="6">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_tshirt.jpg" alt="./img/man_tshirt.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <!-- swiper wrapper4 -->
+              <div class=" tab-pane fade" id="onSale-tab-pane" role="tabpanel" aria-labelledby="onSale-tab"
+                tabindex="0">
+                <div class="swiper mySwiper3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/g.jpg" alt="./img/g.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 8-->
+                    <div class="swiper-slide mix Newest Featured Best_Seller" data-order="7">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid font_img" src="./img/a.jpg" alt="./img/a.jpg">
+                            <img class="img-fluid back_img" src="./img/b.jpg"
+                              alt="./img/ban_jersey_back.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>Bangladesh CWC23 jersey</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 4-->
+                    <div class="swiper-slide mix Featured Best_Seller Cheapest" data-order="4">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_ganji.jpg" alt="./img/man_ganji.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 5-->
+                    <div class="swiper-slide mix Featured Best_Seller On_sale" data-order="5">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/d.jpg" alt="./img/man_jcket.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 6-->
+                    <div class="swiper-slide mix Featured Cheapest" data-order="6">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_tshirt.jpg" alt="./img/man_tshirt.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <!-- swiper wrapper4 -->
+              <div class=" tab-pane fade" id="cheapest-tab-pane" role="tabpanel" aria-labelledby="cheapest-tab"
+                tabindex="0">
+                <div class="swiper mySwiper3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/a.jpg" alt="./img/a.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 8-->
+                    <div class="swiper-slide mix Newest Featured Best_Seller" data-order="7">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid font_img" src="./img/e.jpg" alt="./img/e.jpg">
+                            <img class="img-fluid back_img" src="./img/f.jpg"
+                              alt="./img/f.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>Bangladesh CWC23 jersey</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 4-->
+                    <div class="swiper-slide mix Featured Best_Seller Cheapest" data-order="4">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/c.jpg" alt="./img/c.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 5-->
+                    <div class="swiper-slide mix Featured Best_Seller On_sale" data-order="5">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_jcket.jpg" alt="./img/man_jcket.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product item 6-->
+                    <div class="swiper-slide mix Featured Cheapest" data-order="6">
+                      <div class="single_product ms-2 mb-4 ">
+                        <div class="product_img_content">
+                          <div class="product_img">
+                            <img class="img-fluid" src="./img/man_tshirt.jpg" alt="./img/man_tshirt.jpg">
+                          </div>
+                          <div class="product_manage d-flex justify-content-center">
+                            <div class="product_option">
+                              <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                              <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                            </div>
+                            <div class="view_btn  ">
+                              <button type="submit">Quick View</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product_info">
+                          <span class="product_group">Accessories</span>
+                          <h4>La-ta-da Boho Chic Head Wrap</h4>
+                          <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+             
             </div>
           </div>
         </div>
+      </div>
       </div>
       </div>
       </div>
@@ -1700,6 +2246,7 @@
                     <!-- add next previous btn -->
                     <div class="swiper-button-next custom_position swiper-button-next4"></div>
                     <div class="swiper-button-prev custom_position swiper-button-prev4"></div>
+                    <div class="swiper-pagination swiper-pagination4"></div>
                   </div>
                 </div>
               </div>
@@ -1776,6 +2323,7 @@
                     <!-- add next previous btn -->
                     <div class="swiper-button-next custom_position swiper-button-next5"></div>
                     <div class="swiper-button-prev custom_position swiper-button-prev5"></div>
+                    <div class="swiper-pagination swiper-pagination5"></div>
                   </div>
                 </div>
               </div>
@@ -1852,6 +2400,7 @@
                     <!-- add next previous btn -->
                     <div class="swiper-button-next custom_position swiper-button-next6"></div>
                     <div class="swiper-button-prev custom_position swiper-button-prev6"></div>
+                    <div class="swiper-pagination swiper-pagination6"></div>
                   </div>
                 </div>
               </div>
@@ -2210,15 +2759,17 @@
 
   <!-- *************script files here******************* -->
   <!-- bootstrap JavaScript  -->
-  <script src="./js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
   <script src="./js/popper.min.js"></script>
   <!-- jquery script -->
   <script src="./js/jquery-3.7.1.min.js"></script>
   <!--mixitup javascript file-->
-  <script src="./js/mixitup.min.js"></script>
+  <!-- <script src="./js/mixitup.min.js"></script> -->
   <!-- Swiper JS -->
   <script src="./js/swiper-bundle.min.js"></script>
- 
+
   <!-- bottom to top toggle button -->
   <script src="./js/jquery.elevator.js"></script>
   <!--accordion menu javascript file-->

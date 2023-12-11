@@ -42,64 +42,89 @@ increase_button.addEventListener("click", () => {
 const product_area = document.querySelector(".popup_img");
 const product_img = document.querySelector(".popup_p_img");
 
- const img_move_effect = (hover_area , hover_img) => {
+const img_move_effect = (hover_area, hover_img) => {
   hover_area.addEventListener("mousemove", (e) => {
-  const x = e.clientX - e.target.offsetWidth;
-  const y = e.clientY - e.target.offsetTop;
- hover_img.style.transformOrigin = `${x}px ${y}px`
- hover_img.style.transform = "scale(1.8)"
+    const x = e.clientX - e.target.offsetWidth;
+    const y = e.clientY - e.target.offsetTop;
+    hover_img.style.transformOrigin = `${x}px ${y}px`
+    hover_img.style.transform = "scale(1.8)"
 
-})
-hover_area.addEventListener("mouseleave", () => {
-  hover_img.style.transformOrigin = "center"
-  hover_img.style.transform = "scale(1)"
-})
- }
- img_move_effect(product_area, product_img)
- const hero_slider_img_area = document.querySelectorAll(".slider_img");
- const hero_slider_img = document.querySelectorAll(".slider_img img");
- 
- 
- const hero_slider_animation = (hero_animation_area, slide_imgs) => {
-   hero_animation_area.addEventListener("mousemove", (e) => {
-     const m = e.clientX - e.target.offsetWidth;
-     const n = e.clientY - e.target.offsetTop;
- 
-     slide_imgs.forEach((img) => {
-       img.style.transformOrigin = `${m}px ${n}px`;
-       img.style.transform = "scale(1.2)";
-     });
-   });
- 
-   hero_animation_area.addEventListener("mouseleave", () => {
-     slide_imgs.forEach((img) => {
-       img.style.transformOrigin = "center";
-       img.style.transform = "scale(1)";
-     });
-   });
- };
- 
- hero_slider_img_area.forEach((area) => {
-   hero_slider_animation(area, hero_slider_img);
- });
+  })
+  hover_area.addEventListener("mouseleave", () => {
+    hover_img.style.transformOrigin = "center"
+    hover_img.style.transform = "scale(1)"
+  })
+}
+img_move_effect(product_area, product_img)
+const hero_slider_img_area = document.querySelectorAll(".slider_img");
+const hero_slider_img = document.querySelectorAll(".slider_img img");
+
+const hero_slider_animation = (hero_animation_area, slide_imgs) => {
+  hero_animation_area.addEventListener("mousemove", (e) => {
+    const m = e.clientX - e.target.offsetWidth;
+    const n = e.clientY - e.target.offsetTop;
+
+    slide_imgs.forEach((img) => {
+      img.style.transformOrigin = `${m}px ${n}px`;
+      img.style.transform = "scale(1.2)";
+    });
+  });
+
+  hero_animation_area.addEventListener("mouseleave", () => {
+    slide_imgs.forEach((img) => {
+      img.style.transformOrigin = "center";
+      img.style.transform = "scale(1)";
+    });
+  });
+};
+
+hero_slider_img_area.forEach((area) => {
+  hero_slider_animation(area, hero_slider_img);
+});
+
+
+//get elements
+const vitamin_img = document.querySelector(".vitamin_quantity_img img");
+const vitamin_img_area = document.querySelector(".vitamin_quantity_img");
+
+//vitamin section image hover effect
+
+const img_hover_effect = (area_img, main_img) => {
+  area_img.addEventListener("mousemove", (e) => {
+    const x = e.clientX - e.target.offsetWidth;
+    const y = e.clientY - e.target.offsetWidth;
+    main_img.style.transformOrigin = `${x}px ${y}px`
+    main_img.style.transform = "scale(1.2)"
+
+  })
+  area_img.addEventListener("mouseleave", () => {
+    main_img.style.transformOrigin = "center"
+    main_img.style.transform = "scale(1)"
+  })
+}
+img_hover_effect(vitamin_img_area, vitamin_img)
+
+
+
+
 
 //header sticky animation
 
-$(document).ready( () => {
+$(document).ready(() => {
   $(window).on("scroll", () => {
-    if($(window).scrollTop()){
+    if ($(window).scrollTop()) {
       $("#header").addClass("sticky_animation")
-    }else{
+    } else {
       $("#header").removeClass("sticky_animation")
     }
   })
 })
 
 //for sign up and login page tab function
-const login_btn =document.getElementById("login_btn");
-const signup_btn =document.getElementById("signup_btn");
-const login_page =document.getElementById("login_from");
-const signup_page =document.getElementById("signup_from");
+const login_btn = document.getElementById("login_btn");
+const signup_btn = document.getElementById("signup_btn");
+const login_page = document.getElementById("login_from");
+const signup_page = document.getElementById("signup_from");
 const login_signup_paragraph = document.querySelector(".msg_box p");
 const user_message = document.getElementById("user_msg");
 
@@ -113,7 +138,7 @@ const login_tab_handler = () => {
   user_message.textContent = "Hello Customer!"
   login_signup_paragraph.textContent = "Fill up personal information and start journey with us."
   signup_btn.style.position = "unset"
-  
+
 }
 const signup_tab_handler = () => {
   signup_btn.style.display = "none";
@@ -129,12 +154,6 @@ const signup_tab_handler = () => {
 login_btn.addEventListener("click", login_tab_handler)
 signup_btn.addEventListener("click", signup_tab_handler)
 
-
-
-
-
-
-
 // user page sign page & login page > get elements
 const user_popup_icon = document.getElementById("user_join_icon");
 const user_popup_page = document.querySelector(".user_join_popup");
@@ -148,7 +167,7 @@ const user_popup_page_handler = () => {
 }
 const user_popup_exit_handler = () => {
   user_popup_page.style.display = "none";
- 
+
 }
 user_popup_icon.addEventListener("click", user_popup_page_handler)
 user_popup_exit.addEventListener("click", user_popup_exit_handler)
@@ -165,17 +184,17 @@ const toggle_close_btn = document.querySelector(".toggle_close");
 
 category_select_item.addEventListener("click", () => {
   let toggle = true;
-  if(toggle){
+  if (toggle) {
     toggle_close_btn.style.display = "unset";
-toggle_open_btn.style.display = "none";
-toggle =false;
+    toggle_open_btn.style.display = "none";
+    toggle = false;
 
-  }else{
+  } else {
     toggle_close_btn.style.display = "none";
     toggle_open_btn.style.display = "block";
-    toggle =true;
+    toggle = true;
   }
- 
+
 })
 
 //medium screen search bar
@@ -186,14 +205,14 @@ const medium_search_page = document.querySelector(".mobile_popup_search");
 //medium screen search bar handling
 search_page_open_btn.addEventListener("click", () => {
   medium_search_page.style.display = "flex"
-   medium_search_page.style.animation = "mobile_popup_open 1s alternate forwards ease-in";
+  medium_search_page.style.animation = "mobile_popup_open 1s alternate forwards ease-in";
   medium_search_page.style.transition = "2s"
 })
 search_page_close_btn.addEventListener("click", () => {
 
   medium_search_page.style.animation = "mobile_popup_close 1s alternate forwards ease-in";
   medium_search_page.style.transition = "2s"
-  
+
 })
 
 //  popup image changing
@@ -281,17 +300,14 @@ $('.js-preloader').preloadinator({
   minTime: 2000
 });
 
-
-
-
 //****swiper script */
 var swiper = new Swiper(".mySwiper7", {
 
- loop: true,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next7',
     prevEl: '.swiper-button-prev7',
-   
+
   },
   breakpoints: {
     460: {
@@ -324,6 +340,10 @@ var swiper = new Swiper(".mySwiper6", {
   autoplay: true,
   keyboard: true,
   loop: true,
+  pagination: {
+    el: '.swiper-pagination6',
+    clickable: true,
+  },
   navigation: {
     nextEl: '.swiper-button-next6',
     prevEl: '.swiper-button-prev6',
@@ -354,6 +374,10 @@ var swiper = new Swiper(".mySwiper5", {
   autoplay: true,
   keyboard: true,
   loop: true,
+  pagination: {
+    el: '.swiper-pagination5',
+    clickable: true,
+  },
   navigation: {
     nextEl: '.swiper-button-next5',
     prevEl: '.swiper-button-prev5',
@@ -384,6 +408,10 @@ var swiper = new Swiper(".mySwiper4", {
   keyboard: true,
   loop: true,
   navigation: true,
+  pagination: {
+    el: '.swiper-pagination4',
+    clickable: true,
+  },
   navigation: {
     nextEl: '.swiper-button-next4',
     prevEl: '.swiper-button-prev4',
@@ -410,13 +438,15 @@ var swiper = new Swiper(".mySwiper4", {
 
 });
 
+
+
 var swiper = new Swiper(".mySwiper3", {
   // slidesPerView: 1,
   // mousewheel: true,
   keyboard: true,
-  autoplay: false,
+  autoplay: true,
   loop: true,
-
+  dynamicBullets: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -449,8 +479,6 @@ var swiper = new Swiper(".mySwiper3", {
   },
 
 });
-
-
 
 var swiper = new Swiper(".mySwiper2", {
   // slidesPerView: 1,
@@ -552,7 +580,3 @@ var swiper = new Swiper(".mySwiper-2", {
 
 // top to bottom toggle button 
 $.elevator();
-//Mixitup plugin call
-var mixer = mixitup('.product_slider');
-
-

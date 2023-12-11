@@ -1223,6 +1223,10 @@ section#product_section {
   padding: 60px 0px;
   background: white;
 }
+section#product_section .product_wrapper .product_slider .single_product .product_img_content img {
+  object-fit: cover;
+  height: 100%;
+}
 
 section#product_section .product_wrapper .section_title {
   text-align: center;
@@ -1244,6 +1248,7 @@ section#product_section .product_wrapper .product_slider .product_img_content {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  height: 345px;
 }
 
 section#product_section .product_wrapper .product_slider .single_product .product_manage .product_option a {
@@ -1315,6 +1320,7 @@ section#product_section .product_wrapper .product_slider .single_product {
 
 section#product_section .product_wrapper .product_slider .single_product .product_img_content .font_img {
   position: absolute;
+  object-fit: cover;
 }
 
 section#product_section .product_wrapper .product_slider .single_product .product_img_content .back_img {
@@ -1464,13 +1470,17 @@ section#organic_packages .organic_packages_wrapper .single_package .package_info
   position: absolute;
   padding: 65px 20px;
   text-align: center;
+  z-index: 9;
 }
 
 section#organic_packages .organic_packages_wrapper .single_package .package_info h3 {
   font-size: 24px;
   font-weight: 800;
+  color: black;
 }
-
+.package_img {
+  overflow: hidden;
+}
 section#organic_packages .organic_packages_wrapper .single_package .package_info h4 {
   font-family: "Niconne", cursive;
   font-weight: 400;
@@ -1505,7 +1515,12 @@ section#organic_packages .organic_packages_wrapper .single_package.item_2 .packa
 section#vitamin_quantity_section {
   padding: 60px 0px;
 }
-
+.vitamin_quantity_img {
+  padding: 0px 20px;
+}
+.vitamin_quantity_img img {
+  z-index: 99;
+}
 section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_section_title {
   margin-bottom: 100px;
 }
