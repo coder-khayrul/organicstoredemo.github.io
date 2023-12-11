@@ -455,22 +455,18 @@ var swiper = new Swiper(".mySwiper3d", {
   },
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     991: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 4,
       spaceBetween: 0,
     },
@@ -480,8 +476,7 @@ var swiper = new Swiper(".mySwiper3d", {
 
 
 var swiper = new Swiper(".mySwiper3c", {
-  // slidesPerView: 1,
-  // mousewheel: true,
+
   keyboard: true,
   autoplay: true,
   loop: true,
@@ -496,22 +491,18 @@ var swiper = new Swiper(".mySwiper3c", {
   },
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     991: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 4,
       spaceBetween: 0,
     },
@@ -520,8 +511,7 @@ var swiper = new Swiper(".mySwiper3c", {
 });
 
 var swiper = new Swiper(".mySwiper3b", {
-  // slidesPerView: 1,
-  // mousewheel: true,
+
   keyboard: true,
   autoplay: true,
   loop: true,
@@ -536,22 +526,18 @@ var swiper = new Swiper(".mySwiper3b", {
   },
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     991: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 4,
       spaceBetween: 0,
     },
@@ -560,8 +546,6 @@ var swiper = new Swiper(".mySwiper3b", {
 });
 
 var swiper = new Swiper(".mySwiper3a", {
-  // slidesPerView: 1,
-  // mousewheel: true,
   keyboard: true,
   autoplay: true,
   loop: true,
@@ -576,22 +560,18 @@ var swiper = new Swiper(".mySwiper3a", {
   },
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     991: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 4,
       spaceBetween: 0,
     },
@@ -600,8 +580,7 @@ var swiper = new Swiper(".mySwiper3a", {
 });
 
 var swiper = new Swiper(".mySwiper3", {
-  // slidesPerView: 1,
-  // mousewheel: true,
+
   keyboard: true,
   autoplay: true,
   loop: true,
@@ -616,22 +595,18 @@ var swiper = new Swiper(".mySwiper3", {
   },
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     991: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 4,
       spaceBetween: 0,
     },
@@ -655,17 +630,14 @@ var swiper = new Swiper(".mySwiper2", {
   },
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 5,
     },
@@ -685,17 +657,14 @@ var swiper = new Swiper(".mySwiper", {
 
   breakpoints: {
     640: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
     },
     1024: {
-      loop: true,
       slidesPerView: 2,
       spaceBetween: 5,
     },
@@ -705,31 +674,22 @@ var swiper = new Swiper(".mySwiper", {
 
 //****swiper script */
 var swiper = new Swiper(".mySwiper-2", {
-  // slidesPerView: 1,
   autoplay: true,
   loop: true,
   breakpoints: {
     400: {
-      autoplay: true,
-      loop: true,
       slidesPerView: 2,
       spaceBetween: 0,
     },
     600: {
-      autoplay: true,
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     900: {
-      autoplay: true,
-      loop: true,
       slidesPerView: 4,
       spaceBetween: 5,
     },
     1080: {
-      autoplay: true,
-      loop: true,
       slidesPerView: 5,
       spaceBetween: 5,
     },
