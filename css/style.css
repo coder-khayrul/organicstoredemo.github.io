@@ -1249,6 +1249,7 @@ section#product_section .product_wrapper .product_slider .product_img_content {
   justify-content: center;
   overflow: hidden;
   height: 345px;
+  background: #E2E2E2;
 }
 
 section#product_section .product_wrapper .product_slider .single_product .product_manage .product_option a {
