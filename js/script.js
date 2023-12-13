@@ -438,181 +438,30 @@ var swiper = new Swiper(".mySwiper4", {
 
 });
 
-var swiper = new Swiper(".mySwiper3d", {
-  // slidesPerView: 1,
-  // mousewheel: true,
-  keyboard: true,
+// owl carousel slider use for product section slider
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
   autoplay: true,
-  loop: true,
-  dynamicBullets: true,
-  navigation: {
-    nextEl: '.swiper-button-next3d',
-    prevEl: '.swiper-button-prev3d',
-  },
-  pagination: {
-    el: '.swiper-pagination3d',
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 0,
-    },
-  },
-
-});
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      768:{
+        items:3
+      },
+      1024:{
+          items:4
+      }
+  }
+})
 
 
-var swiper = new Swiper(".mySwiper3c", {
-
-  keyboard: true,
-  autoplay: true,
-  loop: true,
-  dynamicBullets: true,
-  navigation: {
-    nextEl: '.swiper-button-next3c',
-    prevEl: '.swiper-button-prev3c',
-  },
-  pagination: {
-    el: '.swiper-pagination3c',
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 0,
-    },
-  },
-
-});
-
-var swiper = new Swiper(".mySwiper3b", {
-
-  keyboard: true,
-  autoplay: true,
-  loop: true,
-  dynamicBullets: true,
-  navigation: {
-    nextEl: '.swiper-button-next3b',
-    prevEl: '.swiper-button-prev3b',
-  },
-  pagination: {
-    el: '.swiper-pagination3b',
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 0,
-    },
-  },
-
-});
-
-var swiper = new Swiper(".mySwiper3a", {
-  keyboard: true,
-  autoplay: true,
-  loop: true,
-  dynamicBullets: true,
-  navigation: {
-    nextEl: '.swiper-button-next3a',
-    prevEl: '.swiper-button-prev3a',
-  },
-  pagination: {
-    el: '.swiper-pagination3a',
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 0,
-    },
-  },
-
-});
-
-var swiper = new Swiper(".mySwiper3", {
-
-  keyboard: true,
-  autoplay: true,
-  loop: true,
-  dynamicBullets: true,
-  navigation: {
-    nextEl: '.swiper-button-next3',
-    prevEl: '.swiper-button-prev3',
-  },
-  pagination: {
-    el: '.swiper-pagination3',
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 0,
-    },
-  },
-
-});
 
 var swiper = new Swiper(".mySwiper2", {
   // slidesPerView: 1,
