@@ -236,6 +236,7 @@ a {
   color: var(--primary_color);
   border: 1px solid var(--primary_color);
   position: relative;
+  cursor: pointer;
 }
 .login_form_box .login_other_way .single_way span {
   z-index: 99;

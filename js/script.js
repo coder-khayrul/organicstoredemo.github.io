@@ -11,6 +11,7 @@ const single_slider_box = document.querySelector(".single_slider");
 const popup_exit_btn = document.querySelector(".exit_icon");
 const popup_overlay = document.querySelector(".popup_overlay");
 const popup_show_btn = document.querySelectorAll(".view_btn button");
+const product_card_img = document.querySelectorAll(".product_img img")
 const popup_page = document.querySelector(".popup_content");
 const popup_product_img = document.querySelector(".popup_p_img");
 const copyRightYear = document.getElementById("currentYear");
@@ -215,28 +216,21 @@ search_page_close_btn.addEventListener("click", () => {
 
 })
 
-//  popup image changing
-let popup_img = [
-  "./img/p_a1.jpg",
-  "./img/man_sut.jpg",
-  "./img/watch.jpg",
-  "./img/man_ganji.jpg",
-  "./img/man_jcket.jpg",
-  "./img/man_tshirt.jpg",
-  "./img/man_shart.jpg",
-  "./img/ban_jersey.jpg"
-];
-
 // popup screen show function
-for (let i = 0; i < 8; i++) {
-  popup_show_btn[i].addEventListener("click", function () {
-    let current_product = popup_img[i];
+popup_show_btn.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    let productContainer = btn.closest(".single_product")
+    const imgTag = productContainer.querySelector('.product_img img');
+    let current_product = (imgTag.src);
     popup_product_img.setAttribute("src", current_product);
     popup_page.style.transform = "scale(1)";
     popup_page.style.transition = ".4s";
     popup_overlay.style.display = "flex";
-  });
-}
+
+  }
+  )
+});
+
 popup_exit_btn.addEventListener("click", popup_hide);
 
 //popup screen hide function
@@ -441,23 +435,23 @@ var swiper = new Swiper(".mySwiper4", {
 // owl carousel slider use for product section slider
 
 $('.owl-carousel').owlCarousel({
-  loop:true,
+  loop: true,
   autoplay: true,
-  margin:10,
-  nav:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:2
-      },
-      768:{
-        items:3
-      },
-      1024:{
-          items:4
-      }
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    768: {
+      items: 3
+    },
+    1024: {
+      items: 4
+    }
   }
 })
 
