@@ -5,7 +5,7 @@
  */
  .owl-theme .owl-dots,.owl-theme .owl-nav {
     text-align: center;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 .owl-theme .owl-nav {position: absolute;width: 100%;top: 35%;}

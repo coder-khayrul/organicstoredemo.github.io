@@ -1250,6 +1250,7 @@ section#product_section .product_wrapper .product_slider .product_img_content {
   overflow: hidden;
   height: 345px;
   background: #E2E2E2;
+  z-index: 9;
 }
 
 section#product_section .product_wrapper .product_slider .single_product .product_manage .product_option a {
@@ -2243,6 +2244,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   color: white !important;
   font-size: 35px !important;
   transition: 0.3s;
+  z-index: 999;
 }
 
 .owl-theme .owl-nav button:hover {
