@@ -164,10 +164,12 @@ const user_popup_exit = document.querySelector("#user_popup_close");
 
 const user_popup_page_handler = () => {
   user_popup_page.style.display = "flex";
+  document.body.style.overflow = 'hidden'
 
 }
 const user_popup_exit_handler = () => {
   user_popup_page.style.display = "none";
+  document.body.style.overflow = 'scroll'
 
 }
 user_popup_icon.addEventListener("click", user_popup_page_handler)

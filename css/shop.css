@@ -1,0 +1,9 @@
+.comming_soon{
+    background-color: var(--primary_color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    color: white;
+}

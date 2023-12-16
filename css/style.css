@@ -195,11 +195,9 @@ a {
   margin-bottom: 20px;
   color: var(--primary_color);
 }
-
 .login_form_box .from_title {
   text-align: center;
 }
-
 .login_form_box .from_title p {
   color: #777;
 }
@@ -209,7 +207,6 @@ a {
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
-  /* margin-bottom: 0; */
 }
 .login_form_box .login_other_way .single_way > span {
   z-index: 9;
