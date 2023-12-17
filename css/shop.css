@@ -1294,12 +1294,14 @@ a.nav-link:hover {
 
 #product_container .columns aside{
     width: 300px;
-    background: var(--gray_black);
-    color: white;
+    background: white;
+    color: black;
+    border-right: 1px solid #969696;
 }
 #product_container .columns .main_page{
-    width: calc(100% - 330px);
+    width: calc(100% - 300px);
     color: white;
+    padding-left: 0px;
 }
 .single_slider {
   padding: 0px 40px;
@@ -1308,18 +1310,9 @@ a.nav-link:hover {
   background: var(--primary_color);
 }
 
-div#swiper-wrapper-e5b7ad5e75c29afb {}
-
-.swiper-wrapper {
-  /* height: 50vh; */
-}
-
 .slider_img {
   height: 100%;
   padding: 26px 0px;
-}
-
-.slider_img img {
 }
 
 .slider_content .slider_button button {
@@ -1383,4 +1376,34 @@ div#swiper-wrapper-e5b7ad5e75c29afb {}
 }
 .swiper-pagination-bullet-active{
   background: white !important;
+}
+.highlight_product_wrapper {
+    margin-left: 30px;
+}
+
+#product_container .columns aside .color_area h3 {
+    border-bottom: 1px solid #969696;
+}
+
+#product_container .columns aside .color_area h3 {
+    font-size: 22px;
+    margin-bottom: 0 !important;
+    padding: 10px 10px;
+}
+#product_container .columns aside .color_area .color_items span{
+  width: 20px;
+  height: 20px;
+}
+#product_container .columns aside .color_area .color_items span:first-child{
+  background: blue;
+}
+#product_container .columns aside .color_area .color_items {
+    padding: 10px;
+}
+.product_container_wrapper .breadcrumb_items ul {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0;
+    padding: 10px 0px;
+    font-size: 14px;
 }
