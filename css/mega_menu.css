@@ -9,7 +9,7 @@
 		background-color: #ffffff;
 		box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
 		padding: 20px 30px;
-		transition: all 0.5s ease;
+		transition: all 0.3s ease;
 		margin-top: 25px;
 		opacity: 0;
 		visibility: hidden;
@@ -250,19 +250,15 @@ ul>li .sub-menu.mega-menu>.list-item>ul>li>a:hover {
 			transform: translateX(100%);
 		}
 	}
-
 	.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item img {
 		margin-top: 0;
 	}
-
 	.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item.text-center .title {
 		margin-bottom: 20px;
 	}
-
 	.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item.text-center:last-child .title {
 		margin-bottom: 0px;
 	}
-
 	.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item {
 		flex: 0 0 100%;
 		padding: 0px;
@@ -276,7 +272,6 @@ ul>li .sub-menu.mega-menu>.list-item>ul>li>a:hover {
 	ul>li .sub-menu.mega-menu>.list-item>ul {
 		margin-bottom: 15px;
 	}
-
 	.menu-overlay {
 		position: fixed;
 		background-color: rgba(0, 0, 0, 0.5);
@@ -289,7 +284,6 @@ ul>li .sub-menu.mega-menu>.list-item>ul>li>a:hover {
 		opacity: 0;
 		transition: all 0.5s ease;
 	}
-
 	.menu-overlay.active {
 		visibility: visible;
 		opacity: 1;

@@ -23,7 +23,6 @@ const decrease_button = document.querySelector(".decrease_button");
 
 // Initialize product_number_value with the current value of value_field
 let product_number_value = parseInt(value_field.value);
-
 decrease_button.addEventListener("click", () => {
   // Ensure the value is not less than 1
   product_number_value = Math.max(1, product_number_value - 1);
@@ -228,7 +227,9 @@ popup_show_btn.forEach((btn) => {
     popup_page.style.transform = "scale(1)";
     popup_page.style.transition = ".4s";
     popup_overlay.style.display = "flex";
-
+    document.body.style.overflow = 'hidden'
+    
+   
   }
   )
 });
@@ -240,6 +241,7 @@ function popup_hide() {
   popup_page.style.transform = "scale(0)";
   popup_page.style.transition = ".4s";
   popup_overlay.style.display = "none";
+  document.body.style.overflow = 'scroll'
 
 }
 
