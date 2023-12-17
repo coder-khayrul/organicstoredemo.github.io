@@ -9,7 +9,7 @@ var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 1,
   // mousewheel: true,
   keyboard: true,
-  autoplay: true,
+  autoplay: false,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
