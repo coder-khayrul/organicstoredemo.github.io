@@ -1398,15 +1398,17 @@ a.nav-link:hover {
   padding: 10px 10px;
 }
 
-#product_container .columns aside .color_area .color_items div {
+#product_container .columns aside .color_area .color_items .color_box .color_div {
   width: 30px;
   height: 30px;
   border-radius: 3px;
+   transition: .3s;
 
 }
-#product_container .columns aside .color_area .color_items a{
+#product_container .columns aside .color_area .color_items .color_box{
   border: 1px solid transparent;
-  transition: .2s;
+  transition: .3s;
+  position: relative;
 }
 #product_container .columns aside .color_area .color_items {
   padding: 10px;
@@ -1419,32 +1421,85 @@ a.nav-link:hover {
   padding: 10px 0px;
   font-size: 14px;
 }
-#product_container .columns aside .color_area .color_items a:first-child div {
-  background: blue;
+
+#product_container .columns aside .color_area .color_items .color_box:first-child .color_div {
+  background-color: blue;
+  
+}
+#product_container .columns aside .color_area .color_items .color_box:nth-child(2) .color_div {
+  background-color: red;
+  
 }
 
-#product_container .columns aside .color_area .color_items a:nth-child(2) div {
-  background: red;
+#product_container .columns aside .color_area .color_items .color_box:nth-child(3) .color_div {
+  background-color: green;
+  
 }
 
-#product_container .columns aside .color_area .color_items a:nth-child(3) div {
-  background: green;
+#product_container .columns aside .color_area .color_items .color_box:nth-child(4) .color_div {
+  background-color: crimson;
+  
 }
 
-#product_container .columns aside .color_area .color_items a:nth-child(4) div {
-  background: crimson;
+#product_container .columns aside .color_area .color_items .color_box:nth-child(5) .color_div {
+  background-color: darkcyan;
+  
 }
 
-#product_container .columns aside .color_area .color_items a:nth-child(5) div {
-  background: darkcyan;
+#product_container .columns aside .color_area .color_items .color_box:last-child .color_div {
+  background-color: violet;
+  
 }
-
-#product_container .columns aside .color_area .color_items a:last-child div {
-  background: violet;
-}
-#product_container .columns aside .color_area .color_items a:hover div {
+#product_container .columns aside .color_area .color_items .color_box:hover .color_div {
   transform: scale(.8);
+   transition: .3s;
 }
-#product_container .columns aside .color_area .color_items a:hover {
-  border: 1px solid black;
+#product_container .columns aside .color_area .color_items .color_box:first-child:hover{
+   border: 1px solid blue;
+}
+#product_container .columns aside .color_area .color_items .color_box:nth-child(2):hover{
+   border: 1px solid red;
+}
+#product_container .columns aside .color_area .color_items .color_box:nth-child(3):hover{
+   border: 1px solid green;
+}
+#product_container .columns aside .color_area .color_items .color_box:nth-child(4):hover{
+   border: 1px solid crimson;
+}
+#product_container .columns aside .color_area .color_items .color_box:nth-child(5):hover{
+   border: 1px solid darkcyan;
+}
+#product_container .columns aside .color_area .color_items .color_box:last-child:hover{
+   border: 1px solid violet;
+}
+#product_container .columns aside .color_area .color_items .color_box:hover {
+   transition: .3s;
+}
+
+#product_container .columns aside .color_area .color_items .color_board {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background: white !important;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  box-shadow: 0px 4px 20px 0px #00000030;
+  transform: translate(-30%, -110%);
+  z-index: 999;
+}
+.color_box_location{
+  transform: translate(-30%, -110%);
+}
+#product_container .columns aside .color_area .color_items .color_board .color_field {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+#product_container .columns aside .color_area .color_items .color_board .color_name {
+  padding: 5px 0px;
+  display: block;
+  font-size: 14px;
+  color: #777;
 }
