@@ -56,7 +56,6 @@ color_areas.forEach((color_area) => {
   // Example usage
   const rgbCode = current_bg_color; // Replace with your RGB code
   const colorName = getClosestColorName(rgbCode);
-  console.log(`The closest color name is: ${colorName}`);
   color_uniqe_name.textContent = colorName
 
   })
