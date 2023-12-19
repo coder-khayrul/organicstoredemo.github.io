@@ -1002,15 +1002,15 @@
                 <div class="filter_price">
                   <div class="price_inputs d-flex justify-content-between ">
                     <div class="field">
-                      <span>Min($)</span>
-                      <input type="number" name="number" value="0" minlength="0" maxlength="10000" id="minNumber">
+                      <span>$</span>
+                      <input type="number" name="number" value="0" minlength="0" maxlength="1000" class="minNumber">
                     </div>
                     <div class="separator">
                       -
                     </div>
                     <div class="field">
-                      <span>Max($)</span>
-                      <input type="number" name="number" value="10000" minlength="0" maxlength="10000" id="minNumber">
+                      <span>$</span>
+                      <input type="number" name="number" value="1000" minlength="0" maxlength="1000" class="maxNumber">
                     </div>
                   </div>
                   <div class="price_ragne">
@@ -1018,8 +1018,8 @@
 
                     </div>
                     <div class="range_div">
-                      <input type="range" name="range" min="0" max="10000" value="0" class="min_price_range">
-                      <input type="range" name="range" min="0" max="10000" value="10000" class="max_price_range">
+                      <input type="range" name="range" min="0" max="1000" value="0" class="min_price_range">
+                      <input type="range" name="range" min="0" max="1000" value="10000" class="max_price_range">
                     </div>
                   </div>
                 </div>
@@ -1068,7 +1068,7 @@
 
             </aside>
             <div class="main_page">
-              <div class="highlight_product_slider">
+              <div class="main_page_wrapper">
                 <div class="highlight_product_wrapper">
                   <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -1124,14 +1124,41 @@
                     <div class="swiper-pagination swiper-pagination2"></div>
                   </div>
                 </div>
+                <div class="advace_searchBar">
+                  <div class="single_search_bar">
+                    <select class="">
+                      <option value="0" disabled selected>Select Category</option>
+                      <option value="0">Category-1</option>
+                      <option value="0">Category-1</option>
+                      <option value="0">Category-1</option>
+                      <option value="0">Category-1</option>
+
+                    </select>
+                  </div>
+                  <div class="single_search_bar">
+                    <select class="">
+                      <option value="0" disabled selected>Select Item</option>
+                      <option value="0">Item-1</option>
+                      <option value="0">Item-1</option>
+                      <option value="0">Item-1</option>
+
+                    </select>
+                  </div>
+                  <div class="single_search_bar">
+                    <select class="">
+                      <option value="0" disabled selected>Select Category2</option>
+                      <option value="0">Item-1</option>
+                      <option value="0">Item-1</option>
+                      <option value="0">Item-1</option>
+                    </select>
+                  </div>
+                  <div class="single_search_bar_button">
+                    <button>SEARCH</button>
+                  </div>
+                </div>
               </div>
             </div>
-
-
           </div>
-
-
-
         </div>
       </div>
 
