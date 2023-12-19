@@ -18,6 +18,7 @@
   --golden_color: #d99f34;
   --light_primary_color: #ecf1e6;
   --gray_black: #333333;
+  --gray_more_black: rgba(0, 0, 0, .105);
 }
 
 p {
@@ -1297,7 +1298,7 @@ a.nav-link:hover {
   width: 300px;
   background: white;
   color: black;
-  border-right: 1px solid #969696;
+  border-right: 1px solid var(--gray_more_black);
 }
 
 #product_container .columns .main_page {
@@ -1308,7 +1309,7 @@ a.nav-link:hover {
 
 .single_slider {
   padding: 0px 40px;
-  height: 60vh;
+  height: 55vh;
   color: black;
   background: var(--primary_color);
 }
@@ -1329,15 +1330,17 @@ a.nav-link:hover {
 .slider_content .slider_button button a {
   color: var(--primary_color);
   font-weight: 600;
+  font-size: 14px;
 }
 
 .slider_content p {
   color: white;
-  margin-top: 15px;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .slider_content h1 {
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 700;
 }
 
@@ -1346,7 +1349,7 @@ a.nav-link:hover {
 }
 
 .slider_content h1 .span2 {
-  font-size: 30px;
+  font-size: 22px;
   color: black;
 }
 
@@ -1358,7 +1361,7 @@ a.nav-link:hover {
 .slider_content b {
   color: white;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 14px;
 }
 
@@ -1388,30 +1391,29 @@ a.nav-link:hover {
   margin-left: 30px;
 }
 
-#product_container .columns aside .color_area h3 {
-  border-bottom: 1px solid #969696;
-}
-
-#product_container .columns aside .color_area h3 {
+#product_container .columns aside .single_sidebox h3 {
   font-size: 22px;
   margin-bottom: 0 !important;
   padding: 10px 10px;
+  border-bottom: 1px solid var(--gray_more_black);
 }
 
 #product_container .columns aside .color_area .color_items .color_box .color_div {
   width: 30px;
   height: 30px;
   border-radius: 3px;
-   transition: .3s;
+  transition: .3s;
 
 }
-#product_container .columns aside .color_area .color_items .color_box{
+
+#product_container .columns aside .color_area .color_items .color_box {
   border: 1px solid transparent;
   transition: .3s;
   position: relative;
 }
+
 #product_container .columns aside .color_area .color_items {
-  padding: 10px;
+  padding: 30px 10px;
 }
 
 .product_container_wrapper .breadcrumb_items ul {
@@ -1424,56 +1426,65 @@ a.nav-link:hover {
 
 #product_container .columns aside .color_area .color_items .color_box:first-child .color_div {
   background-color: blue;
-  
+
 }
+
 #product_container .columns aside .color_area .color_items .color_box:nth-child(2) .color_div {
   background-color: red;
-  
+
 }
 
 #product_container .columns aside .color_area .color_items .color_box:nth-child(3) .color_div {
   background-color: green;
-  
+
 }
 
 #product_container .columns aside .color_area .color_items .color_box:nth-child(4) .color_div {
   background-color: crimson;
-  
+
 }
 
 #product_container .columns aside .color_area .color_items .color_box:nth-child(5) .color_div {
   background-color: darkcyan;
-  
+
 }
 
 #product_container .columns aside .color_area .color_items .color_box:last-child .color_div {
   background-color: violet;
-  
+
 }
+
 #product_container .columns aside .color_area .color_items .color_box:hover .color_div {
   transform: scale(.8);
-   transition: .3s;
+  transition: .3s;
 }
-#product_container .columns aside .color_area .color_items .color_box:first-child:hover{
-   border: 1px solid blue;
+
+#product_container .columns aside .color_area .color_items .color_box:first-child:hover {
+  border: 1px solid blue;
 }
-#product_container .columns aside .color_area .color_items .color_box:nth-child(2):hover{
-   border: 1px solid red;
+
+#product_container .columns aside .color_area .color_items .color_box:nth-child(2):hover {
+  border: 1px solid red;
 }
-#product_container .columns aside .color_area .color_items .color_box:nth-child(3):hover{
-   border: 1px solid green;
+
+#product_container .columns aside .color_area .color_items .color_box:nth-child(3):hover {
+  border: 1px solid green;
 }
-#product_container .columns aside .color_area .color_items .color_box:nth-child(4):hover{
-   border: 1px solid crimson;
+
+#product_container .columns aside .color_area .color_items .color_box:nth-child(4):hover {
+  border: 1px solid crimson;
 }
-#product_container .columns aside .color_area .color_items .color_box:nth-child(5):hover{
-   border: 1px solid darkcyan;
+
+#product_container .columns aside .color_area .color_items .color_box:nth-child(5):hover {
+  border: 1px solid darkcyan;
 }
-#product_container .columns aside .color_area .color_items .color_box:last-child:hover{
-   border: 1px solid violet;
+
+#product_container .columns aside .color_area .color_items .color_box:last-child:hover {
+  border: 1px solid violet;
 }
+
 #product_container .columns aside .color_area .color_items .color_box:hover {
-   transition: .3s;
+  transition: .3s;
 }
 
 #product_container .columns aside .color_area .color_items .color_board {
@@ -1489,17 +1500,151 @@ a.nav-link:hover {
   transform: translate(-30%, -110%);
   z-index: 999;
 }
-.color_box_location{
+
+.color_box_location {
   transform: translate(-30%, -110%);
 }
+
 #product_container .columns aside .color_area .color_items .color_board .color_field {
   width: 100px;
   height: 100px;
   background: orange;
 }
+
 #product_container .columns aside .color_area .color_items .color_board .color_name {
   padding: 5px 0px;
   display: block;
   font-size: 14px;
   color: #777;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 30px !important;
+  color: white !important;
+}
+
+/*filter by product size style*/
+#product_container .columns aside .product_size_area>ul {
+  padding: 30px 10px;
+}
+#product_container .columns aside .product_size_area>ul li a{
+  color: black;
+}
+#product_container .columns aside .product_size_area>ul li {
+  margin-bottom: 10px;
+}
+
+#product_container .columns aside .product_size_area>ul li span {
+  width: 30px;
+}
+
+#product_container .columns aside .product_size_area>ul li .size_range {
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border-radius: 20px;
+  width: 45px;
+  transition: .3s;
+  border: 1px solid var(--gray_more_black);
+}
+
+#product_container .columns aside .product_size_area>ul li:hover .size_range {
+  background: var(--primary_color);
+  color: white;
+  transition: .3s;
+  border: 1px solid var(--primary_color);
+}
+
+#product_container .columns aside .product_size_area>ul li .size_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  border-bottom: 2px solid transparent;
+}
+
+#product_container .columns aside .product_size_area>ul li:hover .size_name {
+  border-bottom: 2px solid black;
+  transition: .3s;
+}
+/*filter by price*/
+#product_container .columns aside .filter_price {
+  padding: 30px 10px;
+}
+
+#product_container .columns aside .filter_price .price_inputs {
+  align-items: center;
+}
+
+#product_container .columns aside .filter_price .price_inputs .field {
+  display: flex;
+  align-items: center;
+}
+
+#product_container .columns aside .filter_price .price_inputs .field input {
+  width: 65px;
+  margin-left: 10px;
+  font-size: 15px;
+  padding: 5px;
+  appearance: none;
+  border-radius: 3px;
+  border: 1px solid var(--gray_more_black);
+}
+#product_container .columns aside .filter_price .price_inputs .field input:focus{
+  border: 1px solid var(--primary_color);
+}
+#product_container .columns aside .filter_price .price_inputs .field span {
+  font-size: 15px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+#product_container .columns aside .filter_price .price_ragne{
+  height: 5px;
+  background-color: var(--gray_more_black);
+  margin: 30px 0;
+}
+#product_container .columns aside .filter_price .price_ragne .price_progress {
+  height: 5px;
+  background: var(--primary_color);
+  border-radius: 50px;
+  position: absolute;
+  
+}
+
+#product_container .columns aside .filter_price .price_ragne {
+  position: relative;
+}
+
+#product_container .columns aside .filter_price .price_ragne .range_div {
+  position: relative;
+}
+#product_container .columns aside .filter_price .price_ragne .range_div input {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: var(--primary_color);
+  background:none;
+  appearance: none;
+  -moz-appearance: textfield;
+  pointer-events: none;
+}
+#product_container .columns aside .filter_price .price_ragne .range_div input::-webkit-slider-thumb{
+  width: 15px;
+  height: 15px;
+  background: var(--primary_color);
+  border-radius: 100%;
+  -webkit-appearance: none;
+  pointer-events: auto;
+}
+#product_container .columns aside .filter_price .price_ragne .range_div input::-moz-range-thumb{
+  width: 15px;
+  height: 15px;
+  background: var(--primary_color);
+  border-radius: 100%;
+  -moz-appearance: none;
+  pointer-events: auto;
 }

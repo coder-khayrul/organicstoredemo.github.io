@@ -64,7 +64,21 @@ color_areas.forEach((color_area) => {
   })
 })
 
+//script for price range making
+const price_inputs = document.querySelectorAll(".range_div input");
+const progress_bar = document.querySelector(".price_progress");
+progress_bar.style.left = "30%";
+progress_bar.style.right = `25%`;
+price_inputs.forEach( input  => {
+  input.addEventListener("input", () => {
+    let minValue = parseInt(price_inputs[0].value);
+    let maxValue = parseInt(price_inputs[1].value)
 
+    progress_bar.style.left = `${minValue}%`;
+    progress_bar.style.right = `${100- maxValue}%`;
+    
+  })
+})
 
 var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 1,
