@@ -105,7 +105,6 @@ price_ranges.forEach(input => {
   })
 })
 
-
 var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 1,
   // mousewheel: true,
