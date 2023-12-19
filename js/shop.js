@@ -67,15 +67,23 @@ color_areas.forEach((color_area) => {
 //script for price range making
 const price_inputs = document.querySelectorAll(".range_div input");
 const progress_bar = document.querySelector(".price_progress");
-progress_bar.style.left = "30%";
-progress_bar.style.right = `25%`;
+let price_gap = 1000;
+
 price_inputs.forEach( input  => {
-  input.addEventListener("input", () => {
+  input.addEventListener("input", (e) => {
     let minValue = parseInt(price_inputs[0].value);
     let maxValue = parseInt(price_inputs[1].value)
-
-    progress_bar.style.left = `${minValue}%`;
-    progress_bar.style.right = `${100- maxValue}%`;
+    if(maxValue - minValue < price_gap){
+      if(e.target.className ==="min_price_range"){
+        price_inputs[0].value = maxValue - price_gap
+      }else{
+        price_inputs[1].value = minValue + price_gap
+      }
+    }else{
+       progress_bar.style.left = (minValue / price_inputs[0].max)*100 + "%";
+    progress_bar.style.right = 100- (maxValue / price_inputs[1].max) * 100 +"%"
+    }
+   
     
   })
 })
