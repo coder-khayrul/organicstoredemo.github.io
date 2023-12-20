@@ -85,7 +85,7 @@ div#offcanvasExample {
 .user_popup_container {
   width: 100%;
   background: rgb(0 0 0 / 42%);
-  z-index: 9;
+  z-index: 9999;
   position: absolute;
 }
 
@@ -1851,4 +1851,60 @@ input[type="number"]::-webkit-inner-spin-button {
 .offcanvas-lg.offcanvas-start{
   width: 300px !important;
   padding-left: 10px !important;
+}
+@media only screen and (max-width: 850px) {
+.slider_content h1{
+  font-size: 30px;
+}
+.slider_content h1 .span2{
+  font-size: 20px;
+}
+.slider_content b{
+  font-size: 13px;
+}
+.slider_content p {
+  font-size: 14px;
+}
+}
+@media only screen and (max-width: 700px) {
+
+  .slider_content{
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .single_slider{
+    height: 40vh;
+  }
+  .slider_content b{
+    font-size: 12px;
+  }
+  .slider_content .slider_button{
+    margin-top: 10px;
+  }
+  .slider_content .slider_button button{
+    padding: 5px 25px;
+  }
+  .slider_content{
+    width: 150%;
+  }
+  .slider_content h1{
+    font-size: 22px;
+  }
+  .slider_content h1 .span2{
+    font-size: 16px;
+  }
+ 
+}
+@media only screen and (max-width: 580px) {
+  #product_container .columns .main_page .main_page_wrapper .advace_searchBar{
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+  }
+  #product_container .columns .main_page .main_page_wrapper .advace_searchBar .single_search_bar_button button{
+    width: 100%;
+  }
+  #product_container .columns .main_page .main_page_wrapper .product_area .container_title h3{
+    display: none;
+  }
 }
