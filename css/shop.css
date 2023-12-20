@@ -1253,7 +1253,9 @@ a.nav-link:hover {
   #desktop_menu {
     display: none !important;
   }
-
+  #product_container .columns aside .color_area .color_items .color_box:last-child .color_board{
+   transform: translate(-70%, 30%)
+  }
   ul.navbar-nav li:last-child {
     display: none;
   }
