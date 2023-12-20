@@ -1858,6 +1858,9 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 100vh;
  overflow: scroll;
  }
+ #product_container .columns aside .color_area .color_items .color_board{
+  transform: translate(-30%, 30%)
+ }
 }
 @media only screen and (max-width: 850px) {
 .slider_content h1{
