@@ -1843,15 +1843,16 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--primary_color);
   transition: .3s;
 }
-.offcanvas-lg.offcanvas-start{
-  width: 300px !important;
-  padding-left: 10px !important;
-}
+
 }
 
 @media only screen and (max-width: 991px) {
   #product_container .columns .main_page {
     width: 100%;
+  }
+  .offcanvas-lg.offcanvas-start{
+    width: 300px !important;
+    padding-left: 10px !important;
   }
   #product_container .columns aside{
     height: 100vh;
