@@ -1989,7 +1989,7 @@ abbr:hover{
   height: 100%;
   display: none;
   flex-direction: column;
-  overflow-y: auto;
+  overflow-y: hidden;
   align-items: center;
   justify-content: center;
   z-index: 99998;
@@ -2008,7 +2008,8 @@ abbr:hover{
   background: white;
   height: 510px;
   z-index: 9;
-  padding: 20px;
+  padding: 20px 20px;
+
 }
 
 .quick_view_area .quick_view_wrapper .product_left .mySwiper2 img {
@@ -2035,7 +2036,7 @@ abbr:hover{
 }
 
 
-.quick_view_area .quick_view_wrapper .product_right .product_title h3:after {
+.quick_view_area .quick_view_wrapper .product_right .product_title h3:after , .product_title-sm h3:after{
   content: " ";
   width: 60px;
   height: 2px;
@@ -2134,7 +2135,16 @@ abbr:hover{
   transform: scale(.8);
   transition: .4s;
 }
-
+ .product_title-sm{
+  display: none;
+  margin-bottom: 20px;
+}
+.img_area {
+  width: 100%;
+  overflow: hidden;
+  background: #ededed;
+  border-radius: 10px;
+}
 
 
 
@@ -2279,7 +2289,31 @@ abbr:hover{
 
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 576px) {
+  .quick_view_area .close_button span {
+    color: white;
+  }
+  .quick_view_area .close_button{
+    right: 0;
+    top: 5px;
+    background: var(--primary_color);
+    z-index: 999;
+  }
+  
+  .quick_view_area .quick_view_wrapper{
+    padding-bottom: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .quick_view_area .quick_view_wrapper .product_left .mySwiper2 img{
+    height: 510px;
+  }
+  .product_right .product_title{
+    display: none;
+  }
+  .product_right .product_title-sm{
+    display: block;
+  }
   .single_slider {
     height: 30vh;
   }
