@@ -2145,7 +2145,19 @@ abbr:hover{
   background: #ededed;
   border-radius: 10px;
 }
+.material_box ul {
+  padding: 30px 10px;
+}
+.material_box ul li label {
+  color: #333;
+  transition: .3s;
+  cursor: pointer;
+}
 
+.material_box ul li label:hover {
+  color: var(--primary_color);
+  transition: .3s;
+}
 
 
 /** responsive view***/
@@ -2174,17 +2186,6 @@ abbr:hover{
   .slider_content h1 .span2 {
     font-size: 20px;
   }
-
-  #product_container .columns .main_page .main_page_wrapper .toggle_sideBar {
-    display: block;
-    color: white;
-    display: grid;
-    place-items: center;
-    font-size: 18px;
-    margin-right: 15px;
-    cursor: pointer;
-  }
-
   #product_container .columns aside::-webkit-scrollbar {
     width: 8px;
   }
@@ -2214,6 +2215,16 @@ abbr:hover{
 }
 
 @media only screen and (max-width: 991px) {
+  
+  #product_container .columns .main_page .main_page_wrapper .toggle_sideBar {
+    display: block;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
   #product_container .columns .main_page {
     width: 100%;
   }
@@ -2290,6 +2301,9 @@ abbr:hover{
 }
 
 @media only screen and (max-width: 576px) {
+  #product_container .columns .main_page .main_page_wrapper .product_stor {
+    padding: 30px 45px;
+  }
   .quick_view_area .close_button span {
     color: white;
   }
@@ -2313,9 +2327,6 @@ abbr:hover{
   }
   .product_right .product_title-sm{
     display: block;
-  }
-  .single_slider {
-    height: 30vh;
   }
 
   #product_container .columns .main_page .main_page_wrapper .advace_searchBar {
