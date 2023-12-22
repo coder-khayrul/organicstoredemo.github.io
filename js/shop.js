@@ -111,6 +111,7 @@ const quick_view_close_btn = document.querySelector(".close_button span")
 const quick_view_show_btn = document.querySelectorAll(".quick_view");
 const quick_view_close = () => {
   quick_view_body.style.display = "none"
+  document.body.style.overflow = "scroll"
 }
 const quick_view_show = () => {
   quick_view_body.style.display = "flex"
