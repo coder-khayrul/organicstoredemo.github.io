@@ -114,6 +114,7 @@ const quick_view_close = () => {
 }
 const quick_view_show = () => {
   quick_view_body.style.display = "flex"
+  document.body.style.overflow = "hidden"
 }
 quick_view_show_btn.forEach(button => {
   button.addEventListener("click", quick_view_show)
@@ -131,7 +132,7 @@ const image_hover_effect = (hero_animation_area, slide_imgs) => {
 
     slide_imgs.forEach((img) => {
       img.style.transformOrigin = `${m}px ${n}px`;
-      img.style.transform = "scale(1.2)";
+      img.style.transform = "scale(1.5)";
     });
   });
   hero_animation_area.addEventListener("mouseleave", () => {
