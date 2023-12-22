@@ -105,6 +105,84 @@ price_ranges.forEach(input => {
   })
 })
 
+//quick view popup handler
+const quick_view_body = document.querySelector(".quick_view_area");
+const quick_view_close_btn = document.querySelector(".close_button span")
+const quick_view_show_btn = document.querySelectorAll(".quick_view");
+const quick_view_close = () => {
+  quick_view_body.style.display = "none"
+}
+const quick_view_show = () => {
+  quick_view_body.style.display = "flex"
+}
+quick_view_show_btn.forEach(button => {
+  button.addEventListener("click", quick_view_show)
+})
+
+quick_view_close_btn.addEventListener("click", quick_view_close)
+//img hover effect
+const shop_img_area = document.querySelectorAll(".img_area");
+const shop_img = document.querySelectorAll(".img_area img");
+
+const image_hover_effect = (hero_animation_area, slide_imgs) => {
+  hero_animation_area.addEventListener("mousemove", (e) => {
+    const m = e.clientX - e.target.offsetWidth;
+    const n = e.clientY - e.target.offsetTop;
+
+    slide_imgs.forEach((img) => {
+      img.style.transformOrigin = `${m}px ${n}px`;
+      img.style.transform = "scale(1.2)";
+    });
+  });
+  hero_animation_area.addEventListener("mouseleave", () => {
+    slide_imgs.forEach((img) => {
+      img.style.transformOrigin = "center";
+      img.style.transform = "scale(1)";
+    });
+  });
+};
+
+shop_img_area.forEach((area) => {
+  image_hover_effect(area, shop_img);
+});
+
+
+
+var swiper = new Swiper(".mySwiper3", {
+  spaceBetween: 1,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  breakpoints: {
+    // when window width is >= 320px
+    380: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    668: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    }
+  }
+})
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+  thumbs: {
+    swiper: swiper,
+  }
+}
+);
+
+
 var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 1,
   // mousewheel: true,
@@ -135,3 +213,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 
 });
+
+
+

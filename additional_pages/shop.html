@@ -23,6 +23,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
   <!--preloader-->
   <div class="preloader js-preloader flex-center">
@@ -32,105 +33,209 @@
       <div class="dot"></div>
     </div>
   </div>
+  <!--product_quick view-->
+  <div class="quick_view_area">
+  
+    <div class="popup_bg"></div>
+    <div class="quick_view_bottom d-none ">
+      <div class="cart_count d-flex">
+        <input type="number">
+        <button>Add To Cart</button>
+      </div>
+      <div class="popup__option">
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-code-compare"></i></a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="quick_view_wrapper">
+      <div class="close_button">
+        <span><i class="fa-regular fa-circle-xmark"></i></span>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="product_left">
+            <!-- Swiper -->
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide img_area">
+                  <img class="img-fluid " src="../img/p1.png" alt="../img/p1.png" />
+                </div>
+                <div class="swiper-slide img_area">
+                  <img class="img-fluid " src="../img/p2.png" alt="../img/p2.png" />
+                </div>
+                <div class="swiper-slide img_area">
+                  <img class="img-fluid " src="../img/p3.png" alt="../img/p3.png" />
+                </div>
+                <div class="swiper-slide img_area">
+                  <img class="img-fluid " src="../img/p4.png" alt="../img/p4.png" />
+                </div>
+                <div class="swiper-slide img_area">
+                  <img class="img-fluid " src="../img/p5.png" alt="../img/p5.png" />
+                </div>
+                <div class="swiper-slide img_area">
+                  <img class="img-fluid " src="../img/p6.png" alt="../img/p6.png" />
+                </div>
+              </div>
+              <div class="swiper-button-next swiper-button-next2 custom-color"></div>
+              <div class="swiper-button-prev swiper-button-prev2 custom-color"></div>
+            </div>
+
+            <div thumbsSlider="" class="swiper mySwiper3 thumbs-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid " src="../img/p1.png" alt="../img/p1.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid " src="../img/p2.png" alt="../img/p2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid " src="../img/p3.png" alt="../img/p3.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid " src="../img/p4.png" alt="../img/p4.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid " src="../img/p5.png" alt="../img/p5.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid " src="../img/p6.png" alt="../img/p6.png" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="product_right">
+            <div class="product_title">
+              <h3>Black Modern T-shirt</h3>
+            </div>
+            <div class="description">
+              <div class="expand_content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nemo necessitatibus facilis.
+                  Aliquam praesentium fugiat architecto. Obcaecati commodi ducimus est ea accusamus, consequuntur
+                  officiis, temporibus molestiae quia nulla tempore perspiciatis?</p>
+              </div>
+              <div class="block_expand_overlay d-flex justify-content-center ">
+                <button id="expand_btn">Show More</button>
+              </div>
+            </div>
+            <ul class="product_status ps-0 ">
+              <li class="list-unstyled d-flex align-items-center  "><span class="list_circle me-2"></span><span>IN STOCK</span></li>
+              <li class="brand_name list-unstyled  d-flex align-items-center "><span class="list_circle ms-1 me-2"></span><span class="me-1">Brand:</span><a href="#" class="text-decoration-underline "> Ny-Fashion</a></li>
+            </ul>
+            <div class="product_price d-flex flex-column ">
+              <span>$392.00</span>
+              <span>Ex Tax: $392.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
   <!--header section start here-->
   <header id="header">
-     <!--signup and sign in page popup start-->
-   <div class="user_popup_container">
-    <div class="container-xxl">
-      <div class="user_join_popup">
-        <div class="page_wrapper ">
-          <div class="row">
-            <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
-            <div class="col-12 col-md-6">
-              <div class="position-relative popup_from d-flex justify-content-center align-items-center">
-                <form name="user_form" action="" id="signup_from" autocomplete="on" class="signup_form_box">
-                  <h2>Create Your Account</h2>
-                  <div class="social_site">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                  </div>
-                  <div class="d-flex justify-content-center ">
-                    <span>or use your email address</span>
-                  </div>
-                  <div class="input_box">
-                    <label for="name"></label>
-                    <input type="name" name="name" id="name" placeholder="Your full name" required>
-                  </div>
-                  <div class="input_box">
-                    <label for="input_email"></label>
-                    <input type="email" name="email" id="input_email" placeholder="Your email" required>
-                  </div>
-                  <div class="input_box">
-                    <label for="Password"></label>
-                    <input type="password" name="Password" id="Password" placeholder="New Password" required>
-                  </div>
-                  <div class="cdt_div">
-                    <div class="checkbox_ctn">
-                      <label for="checkbox"></label>
-                      <input type="checkbox" name="checkbox" id="checkbox"> <span>Remember me</span>
+    <!--signup and sign in page popup start-->
+    <div class="user_popup_container">
+      <div class="container-xxl">
+        <div class="user_join_popup">
+          <div class="page_wrapper ">
+            <div class="row">
+              <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
+              <div class="col-12 col-md-6">
+                <div class="position-relative popup_from d-flex justify-content-center align-items-center">
+                  <form name="user_form" action="" id="signup_from" autocomplete="on" class="signup_form_box">
+                    <h2>Create Your Account</h2>
+                    <div class="social_site">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
                     </div>
-                    <a href="#">forgot password?</a>
-                  </div>
-                  <div class="login_btn">
-                    <button type="submit">SIGN UP</button>
-                  </div>
-                  <div class="page_links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                </form>
-                <div class="login_form_box" id="login_from">
-                  <div class="from_title">
-                    <h2>Login</h2>
-                    <p>Enter your Email and Password to login.</p>
-                  </div>
-                  <form action="" name="" id="" class="login_form" autocomplete="on">
-                    <input type="email" name="email" id="loginEmail" placeholder="Email">
-                    <input type="password" name="password" id="loginPassword" placeholder="password">
-                    <div class="optional_items mb-5">
-                      <div class="remember_field">
-                        <input type="checkbox" name="remember" id="remember">
-                        <label for="remember">Remember me</label>
-
-                      </div>
-                      <div class="forget_item">
-                        <a href="#">Forget your email?</a>
-                      </div>
+                    <div class="d-flex justify-content-center ">
+                      <span>or use your email address</span>
                     </div>
-                    <button type="submit">Login</button>
+                    <div class="input_box">
+                      <label for="name"></label>
+                      <input type="name" name="name" id="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="input_box">
+                      <label for="input_email"></label>
+                      <input type="email" name="email" id="input_email" placeholder="Your email" required>
+                    </div>
+                    <div class="input_box">
+                      <label for="Password"></label>
+                      <input type="password" name="Password" id="Password" placeholder="New Password" required>
+                    </div>
+                    <div class="cdt_div">
+                      <div class="checkbox_ctn">
+                        <label for="checkbox"></label>
+                        <input type="checkbox" name="checkbox" id="checkbox"> <span>Remember me</span>
+                      </div>
+                      <a href="#">forgot password?</a>
+                    </div>
+                    <div class="login_btn">
+                      <button type="submit">SIGN UP</button>
+                    </div>
+                    <div class="page_links">
+                      <a href="#">Privacy Policy</a>
+                      <a href="#">Terms & Conditions</a>
+                    </div>
                   </form>
-                  <span class="or_devider">Or</span>
-                  <div class="login_other_way">
-                    <div class="single_way">
-                      <div class="social-login">
-                        <i class="fa-brands fa-google"></i>
-                      </div>
-                      <span>Connect with google</span>
+                  <div class="login_form_box" id="login_from">
+                    <div class="from_title">
+                      <h2>Login</h2>
+                      <p>Enter your Email and Password to login.</p>
                     </div>
-                    <div class="single_way">
-                      <div class="social-login">
-                        <i class="fa-brands fa-facebook-f"></i>
+                    <form action="" name="" id="" class="login_form" autocomplete="on">
+                      <input type="email" name="email" id="loginEmail" placeholder="Email">
+                      <input type="password" name="password" id="loginPassword" placeholder="password">
+                      <div class="optional_items mb-5">
+                        <div class="remember_field">
+                          <input type="checkbox" name="remember" id="remember">
+                          <label for="remember">Remember me</label>
+
+                        </div>
+                        <div class="forget_item">
+                          <a href="#">Forget your email?</a>
+                        </div>
                       </div>
-                      <span>Connect with facebook</span>
+                      <button type="submit">Login</button>
+                    </form>
+                    <span class="or_devider">Or</span>
+                    <div class="login_other_way">
+                      <div class="single_way">
+                        <div class="social-login">
+                          <i class="fa-brands fa-google"></i>
+                        </div>
+                        <span>Connect with google</span>
+                      </div>
+                      <div class="single_way">
+                        <div class="social-login">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <span>Connect with facebook</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 pe-0">
-              <div class="msg_box_container">
-                <div class="msg_box d-flex flex-column ">
-                  <div class="cir_photo">
-                    <img src="../img/profile_sml.jpg" alt="profile picture">
-                  </div>
-                  <h3 id="user_msg">Wellcome Back!</h3>
-                  <p>Login here by filling you're username and password or use your favorite social network account
-                    to
-                    enter to the site</p>
-                  <div class="signup-login_buttons">
-                    <button id="login_btn" type="submit">LOGIN</button>
-                    <button id="signup_btn" type="submit">SIGN UP</button>
+              <div class="col-12 col-md-6 pe-0">
+                <div class="msg_box_container">
+                  <div class="msg_box d-flex flex-column ">
+                    <div class="cir_photo">
+                      <img src="../img/profile_sml.jpg" alt="profile picture">
+                    </div>
+                    <h3 id="user_msg">Wellcome Back!</h3>
+                    <p>Login here by filling you're username and password or use your favorite social network account
+                      to
+                      enter to the site</p>
+                    <div class="signup-login_buttons">
+                      <button id="login_btn" type="submit">LOGIN</button>
+                      <button id="signup_btn" type="submit">SIGN UP</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -139,8 +244,7 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--signup and sign in page popup end-->
+    <!--signup and sign in page popup end-->
     <!--mobile search page-->
     <div class="mobile_popup_search">
       <div class="popup_search_wrapper">
@@ -217,7 +321,8 @@
       <!--top header section start here-->
       <div class="top_header d-flex justify-content-between align-items-center ">
         <div class="logo">
-          <a class="navbar-brand" class="img-fluid " href="../index.html"><img src="../img/logo.png" alt="./img/logo.png">
+          <a class="navbar-brand" class="img-fluid " href="../index.html"><img src="../img/logo.png"
+              alt="./img/logo.png">
           </a>
         </div>
         <form autocomplete="on" action="" class="main_search_bar d-none d-lg-flex align-content-center">
@@ -289,7 +394,8 @@
                     aria-labelledby="pills-home-tab" tabindex="0">
                     <ul class="accordion-menu">
                       <li>
-                        <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i><a href="../index.html">Home</a>
+                        <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i><a
+                            href="../index.html">Home</a>
                           <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <ul class="submenuItems">
@@ -308,7 +414,8 @@
                         </ul>
                       </li>
                       <li>
-                        <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i> <a href="../additional_pages/shop.html">Shop</a>
+                        <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i> <a
+                            href="../additional_pages/shop.html">Shop</a>
                           <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <ul class="submenuItems">
@@ -998,124 +1105,126 @@
             </ul>
           </div>
           <div class="columns d-flex ">
-            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasExampleLabel">
-            <aside class="left_sidebar">  
-              <div class="color_area single_sidebox">
-                <h3>Color</h3>
-                <div class="color_items d-flex justify-content-between ">
-                  <a class="color_box" href="#">
-                    <div class="color_board align-items-center justify-content-center ">
-                      <div class="color_field"></div>
-                      <span class="color_name">Orange</span>
-                    </div>
-                    <div class="color_div"></div>
-                  </a>
-                  <a class="color_box" href="#">
-                    <div class="color_board align-items-center justify-content-center ">
-                      <div class="color_field"></div>
-                      <span class="color_name">Orange</span>
-                    </div>
-                    <div class="color_div"></div>
-                  </a>
-                  <a class="color_box" href="#">
-                    <div class="color_board align-items-center justify-content-center ">
-                      <div class="color_field"></div>
-                      <span class="color_name">Orange</span>
-                    </div>
-                    <div class="color_div"></div>
-                  </a>
-                  <a class="color_box" href="#">
-                    <div class="color_board align-items-center justify-content-center ">
-                      <div class="color_field"></div>
-                      <span class="color_name">Orange</span>
-                    </div>
-                    <div class="color_div"></div>
-                  </a>
-                  <a class="color_box" href="#">
-                    <div class="color_board align-items-center justify-content-center ">
-                      <div class="color_field"></div>
-                      <span class="color_name">Orange</span>
-                    </div>
-                    <div class="color_div"></div>
-                  </a>
-                  <a class="color_box" href="#">
-                    <div class="color_board align-items-center justify-content-center ">
-                      <div class="color_field"></div>
-                      <span class="color_name">Orange</span>
-                    </div>
-                    <div class="color_div"></div>
-                  </a>
-                </div>
-              </div>
-              <div class="price_area single_sidebox">
-                <h3>Filter by price</h3>
-                <div class="filter_price">
-                  <div class="price_inputs d-flex justify-content-between ">
-                    <div class="field">
-                      <span>$</span>
-                      <input type="number" name="number" value="0" minlength="0" maxlength="1000" class="minNumber">
-                    </div>
-                    <div class="separator">
-                      -
-                    </div>
-                    <div class="field">
-                      <span>$</span>
-                      <input type="number" name="number" value="1000" minlength="0" maxlength="1000" class="maxNumber">
-                    </div>
-                  </div>
-                  <div class="price_ragne">
-                    <div class="price_progress">
-                    </div>
-                    <div class="range_div">
-                      <input type="range" name="range" min="0" max="1000" value="0" class="min_price_range">
-                      <input type="range" name="range" min="0" max="1000" value="10000" class="max_price_range">
-                    </div>
+            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasSidebar"
+              aria-labelledby="offcanvasExampleLabel">
+              <aside class="left_sidebar">
+                <div class="color_area single_sidebox">
+                  <h3>Color</h3>
+                  <div class="color_items d-flex justify-content-between ">
+                    <a class="color_box" href="#">
+                      <div class="color_board align-items-center justify-content-center ">
+                        <div class="color_field"></div>
+                        <span class="color_name">Orange</span>
+                      </div>
+                      <div class="color_div"></div>
+                    </a>
+                    <a class="color_box" href="#">
+                      <div class="color_board align-items-center justify-content-center ">
+                        <div class="color_field"></div>
+                        <span class="color_name">Orange</span>
+                      </div>
+                      <div class="color_div"></div>
+                    </a>
+                    <a class="color_box" href="#">
+                      <div class="color_board align-items-center justify-content-center ">
+                        <div class="color_field"></div>
+                        <span class="color_name">Orange</span>
+                      </div>
+                      <div class="color_div"></div>
+                    </a>
+                    <a class="color_box" href="#">
+                      <div class="color_board align-items-center justify-content-center ">
+                        <div class="color_field"></div>
+                        <span class="color_name">Orange</span>
+                      </div>
+                      <div class="color_div"></div>
+                    </a>
+                    <a class="color_box" href="#">
+                      <div class="color_board align-items-center justify-content-center ">
+                        <div class="color_field"></div>
+                        <span class="color_name">Orange</span>
+                      </div>
+                      <div class="color_div"></div>
+                    </a>
+                    <a class="color_box" href="#">
+                      <div class="color_board align-items-center justify-content-center ">
+                        <div class="color_field"></div>
+                        <span class="color_name">Orange</span>
+                      </div>
+                      <div class="color_div"></div>
+                    </a>
                   </div>
                 </div>
-              </div>
-              <div class="product_size_area single_sidebox">
-                <h3>Filter by size</h3>
-                <ul>
-                  <li class="list-unstyled">
-                    <a href="#" class="d-flex justify-content-between align-items-center ">
-                      <span class="size_name">XS</span>
-                      <span class="size_range">18</span>
-                    </a>
-                  </li>
-                  <li class="list-unstyled">
-                    <a href="#" class="d-flex justify-content-between align-items-center ">
-                      <span class="size_name">S</span>
-                      <span class="size_range">21</span>
-                    </a>
-                  </li>
-                  <li class="list-unstyled">
-                    <a href="#" class="d-flex justify-content-between align-items-center ">
-                      <span class="size_name">M</span>
-                      <span class="size_range">23</span>
-                    </a>
-                  </li>
-                  <li class="list-unstyled">
-                    <a href="#" class="d-flex justify-content-between align-items-center ">
-                      <span class="size_name">L</span>
-                      <span class="size_range">15</span>
-                    </a>
-                  </li>
-                  <li class="list-unstyled">
-                    <a href="#" class="d-flex justify-content-between align-items-center ">
-                      <span class="size_name">XL</span>
-                      <span class="size_range">25</span>
-                    </a>
-                  </li>
-                  <li class="list-unstyled">
-                    <a href="#" class="d-flex justify-content-between align-items-center ">
-                      <span class="size_name">XXL</span>
-                      <span class="size_range">30</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </aside>
-          </div>
+                <div class="price_area single_sidebox">
+                  <h3>Filter by price</h3>
+                  <div class="filter_price">
+                    <div class="price_inputs d-flex justify-content-between ">
+                      <div class="field">
+                        <span>$</span>
+                        <input type="number" name="number" value="0" minlength="0" maxlength="1000" class="minNumber">
+                      </div>
+                      <div class="separator">
+                        -
+                      </div>
+                      <div class="field">
+                        <span>$</span>
+                        <input type="number" name="number" value="1000" minlength="0" maxlength="1000"
+                          class="maxNumber">
+                      </div>
+                    </div>
+                    <div class="price_ragne">
+                      <div class="price_progress">
+                      </div>
+                      <div class="range_div">
+                        <input type="range" name="range" min="0" max="1000" value="0" class="min_price_range">
+                        <input type="range" name="range" min="0" max="1000" value="10000" class="max_price_range">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product_size_area single_sidebox">
+                  <h3>Filter by size</h3>
+                  <ul>
+                    <li class="list-unstyled">
+                      <a href="#" class="d-flex justify-content-between align-items-center ">
+                        <span class="size_name">XS</span>
+                        <span class="size_range">18</span>
+                      </a>
+                    </li>
+                    <li class="list-unstyled">
+                      <a href="#" class="d-flex justify-content-between align-items-center ">
+                        <span class="size_name">S</span>
+                        <span class="size_range">21</span>
+                      </a>
+                    </li>
+                    <li class="list-unstyled">
+                      <a href="#" class="d-flex justify-content-between align-items-center ">
+                        <span class="size_name">M</span>
+                        <span class="size_range">23</span>
+                      </a>
+                    </li>
+                    <li class="list-unstyled">
+                      <a href="#" class="d-flex justify-content-between align-items-center ">
+                        <span class="size_name">L</span>
+                        <span class="size_range">15</span>
+                      </a>
+                    </li>
+                    <li class="list-unstyled">
+                      <a href="#" class="d-flex justify-content-between align-items-center ">
+                        <span class="size_name">XL</span>
+                        <span class="size_range">25</span>
+                      </a>
+                    </li>
+                    <li class="list-unstyled">
+                      <a href="#" class="d-flex justify-content-between align-items-center ">
+                        <span class="size_name">XXL</span>
+                        <span class="size_range">30</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
             <div class="main_page">
               <div class="main_page_wrapper">
                 <div class="highlight_product_wrapper">
@@ -1210,13 +1319,14 @@
                 </div>
                 <div class="product_area">
                   <div class="product_container_header d-flex justify-content-between align-items-center ">
-                    
+
                     <div class="container_title d-flex align-items-center ">
                       <div class="toggle_sideBar">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
                           <i class="fa-solid fa-filter"></i>
                         </button>
-                        
+
                       </div>
                       <h3>All Products</h3>
                     </div>
@@ -1243,6 +1353,11 @@
                       <div class="single_shop_product mb-5">
                         <div class="product_img">
                           <img class="img-fluid " src="../img/p6.png" alt="">
+                          <div class="quick_view_icon">
+                            <span class="quick_view"><abbr title="Qucik View"><i
+                                  class="fa-solid fa-magnifying-glass-plus"></i></abbr> </span>
+
+                          </div>
                         </div>
                         <div class="product_info">
                           <div class="info_header d-flex justify-content-between align-items-center ">
@@ -1259,13 +1374,13 @@
                               <button>Add To Cart</button>
                             </div>
                             <div class="cart_icon d-flex justify-content-between ">
-                              <span><i class="fa-regular fa-heart"></i></span>
-                              <span><i class="fa-solid fa-code-compare"></i></span>
+                              <a href="#" class="me-2"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-code-compare"></i></a>
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#">Buy Now</a>
-                            <a href="#">Question</a>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1274,6 +1389,10 @@
                       <div class="single_shop_product mb-5">
                         <div class="product_img">
                           <img class="img-fluid " src="../img/p1.png" alt="">
+                          <div class="quick_view_icon">
+                            <span class="quick_view"><abbr title="Qucik View"><i
+                                  class="fa-solid fa-magnifying-glass-plus"></i></abbr> </span>
+                          </div>
                         </div>
                         <div class="product_info">
                           <div class="info_header d-flex justify-content-between align-items-center ">
@@ -1290,13 +1409,13 @@
                               <button>Add To Cart</button>
                             </div>
                             <div class="cart_icon d-flex justify-content-between ">
-                              <span><i class="fa-regular fa-heart"></i></span>
-                              <span><i class="fa-solid fa-code-compare"></i></span>
+                              <a href="#" class="me-2"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-code-compare"></i></a>
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#">Buy Now</a>
-                            <a href="#">Question</a>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1305,6 +1424,10 @@
                       <div class="single_shop_product mb-5">
                         <div class="product_img">
                           <img class="img-fluid " src="../img/p2.png" alt="">
+                          <div class="quick_view_icon">
+                            <span class="quick_view"><abbr title="Qucik View"><i
+                                  class="fa-solid fa-magnifying-glass-plus"></i></abbr> </span>
+                          </div>
                         </div>
                         <div class="product_info">
                           <div class="info_header d-flex justify-content-between align-items-center ">
@@ -1321,13 +1444,13 @@
                               <button>Add To Cart</button>
                             </div>
                             <div class="cart_icon d-flex justify-content-between ">
-                              <span><i class="fa-regular fa-heart"></i></span>
-                              <span><i class="fa-solid fa-code-compare"></i></span>
+                              <a href="#" class="me-2"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-code-compare"></i></a>
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#">Buy Now</a>
-                            <a href="#">Question</a>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1336,6 +1459,10 @@
                       <div class="single_shop_product mb-5">
                         <div class="product_img">
                           <img class="img-fluid " src="../img/p5.png" alt="">
+                          <div class="quick_view_icon">
+                            <span class="quick_view"><abbr title="Qucik View"><i
+                                  class="fa-solid fa-magnifying-glass-plus"></i></abbr> </span>
+                          </div>
                         </div>
                         <div class="product_info">
                           <div class="info_header d-flex justify-content-between align-items-center ">
@@ -1352,13 +1479,13 @@
                               <button>Add To Cart</button>
                             </div>
                             <div class="cart_icon d-flex justify-content-between ">
-                              <span><i class="fa-regular fa-heart"></i></span>
-                              <span><i class="fa-solid fa-code-compare"></i></span>
+                              <a href="#" class="me-2"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-code-compare"></i></a>
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#">Buy Now</a>
-                            <a href="#">Question</a>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1367,6 +1494,10 @@
                       <div class="single_shop_product mb-5">
                         <div class="product_img">
                           <img class="img-fluid " src="../img/p3.png" alt="">
+                          <div class="quick_view_icon">
+                            <span class="quick_view"><abbr title="Qucik View"><i
+                                  class="fa-solid fa-magnifying-glass-plus"></i></abbr> </span>
+                          </div>
                         </div>
                         <div class="product_info">
                           <div class="info_header d-flex justify-content-between align-items-center ">
@@ -1374,7 +1505,7 @@
                             <a href="#">Model 56</a>
                           </div>
                           <div class="product_title">
-                            <h3>Black Vintage T-shirt</h3>
+                            <h3><a href="#"></a>Black Vintage T-shirt</h3>
                             <span>$300.00</span>
                           </div>
                           <div class="product_option d-flex justify-content-between align-items-center ">
@@ -1383,13 +1514,13 @@
                               <button>Add To Cart</button>
                             </div>
                             <div class="cart_icon d-flex justify-content-between ">
-                              <span><i class="fa-regular fa-heart"></i></span>
-                              <span><i class="fa-solid fa-code-compare"></i></span>
+                              <a href="#" class="me-2"><i class="fa-regular fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-code-compare"></i></a>
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#">Buy Now</a>
-                            <a href="#">Question</a>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
