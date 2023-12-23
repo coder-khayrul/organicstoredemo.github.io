@@ -1,0 +1,149 @@
+/* Rubik font  */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* niconne font */
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+/* font-family: 'Niconne', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+:root {
+    --primary_color: #88b813;
+    --border_color: rgba(130, 130, 130, 0.25);
+    --golden_color: #d99f34;
+    --light_primary_color: #ecf1e6;
+    --gray_black: #333333;
+    --gray_more_black: rgba(0, 0, 0, .105);
+  }
+  
+/*footer section style start here*/
+footer#footer_section {
+    padding: 20px 0px;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item .f_social_links a,
+  .popup_info .social_link a {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background: white;
+    border: 1px solid var(--primary_color);
+    color: var(--primary_color);
+    transition: 0.3s;
+  }
+  footer#footer_section .footer-wrapper .single_footer_item .f_social_links a:hover {
+    background: var(--primary_color);
+    color: white;
+    transition: 0.5s;
+    transform: translate(0px, -10px);
+    box-shadow: rgb(0 0 0 / 45%) 0px 60px 40px -7px;
+  }
+  footer#footer_section .footer-wrapper .single_footer_item ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #666;
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item a {
+    padding: 5px 10px;
+    font-size: 14px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #9999996b;
+    color: #555;
+    transition: 0.3s;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item a:hover {
+    background: var(--primary_color);
+    transition: 0.3s;
+    color: white;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item p {
+    line-height: 1.6rem;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item .address p {
+    color: #666;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item .address i {
+    color: var(--primary_color);
+    font-size: 15px;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item ul li:hover {
+    color: var(--primary_color);
+    transition: 0.3s;
+    transform: translate(10px, 0px);
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item ul li:before {
+    content: "";
+    height: 2px;
+    width: 20px;
+    background: var(--primary_color);
+    display: block;
+    left: -30px;
+    position: absolute;
+    bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  footer#footer_section .copyright_section p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  footer#footer_section .copyright_section p span {
+    color: var(--primary_color);
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  footer#footer_section .copyright_section p span:hover {
+    text-decoration: overline;
+  }
+  
+  footer#footer_section .copyright_section {
+    border-top: 1px solid #999;
+  }
+   
+  footer#footer_section .footer-wrapper .single_footer_item ul li:hover li:before {
+    width: 50px;
+  }
+  
+  footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
+    width: 25px;
+    transition: 0.3s;
+  }
+  
+  .address_item_box p {
+    margin-bottom: 0 !important;
+  }
+  .jq-top,
+  .jq-item,
+  .jq-bottom,
+  .jq-items-toggle {
+    color: var(--primary_color) !important;
+  }
+  /*footer section style end here*/
