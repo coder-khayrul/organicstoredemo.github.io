@@ -2170,11 +2170,13 @@ abbr:hover{
   display: grid;
   grid-template-columns: 55px auto 200px;
   background: #ededed;
-  padding: 10px 5px;
-  position: fixed;
+  padding: 10px 15px;
+  position: absolute;
   width: 100%;
-  bottom: 49px;
+  grid-column-gap: 10px;
+  bottom: 0;
   z-index: 99;
+  left: 0;
 }
 
 .quick_view_area .quick_view_wrapper .quick_view_bottom .cart_count {
@@ -2209,9 +2211,8 @@ abbr:hover{
 }
 
 .popup__option {
-  gap: 16px;
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
 }
 
 .popup__option a {
