@@ -2009,7 +2009,6 @@ abbr:hover{
   height: 510px;
   z-index: 9;
   padding: 20px 20px;
-
 }
 
 .quick_view_area .quick_view_wrapper .product_left .mySwiper2 img {
@@ -2158,6 +2157,104 @@ abbr:hover{
   color: var(--primary_color);
   transition: .3s;
 }
+.quick_view_area .quick_view_wrapper .quick_view_bottom .cart_count input {
+  text-align: center;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--gray_black);
+  padding: 5px 0px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.quick_view_area .quick_view_wrapper .quick_view_bottom {
+  display: grid;
+  grid-template-columns: 55px auto 200px;
+  background: #ededed;
+  padding: 10px 5px;
+  position: fixed;
+  width: 100%;
+  bottom: 49px;
+  z-index: 99;
+}
+
+.quick_view_area .quick_view_wrapper .quick_view_bottom .cart_count {
+  width: 100%;
+}
+
+.quick_view_area .quick_view_wrapper .quick_view_bottom .cart_button {
+  width: 100%;
+  background: rgba(13, 82, 214, 1);
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.quick_view_area  .wrapper{height: 100%;overflow: scroll;overflow-x: hidden;width: 100%;padding-bottom: 100px;}
+.quick_view_area .quick_view_wrapper .quick_view_bottom .cart_button span {
+  font-size: 18px;
+}
+
+.quick_view_area .quick_view_wrapper .quick_view_bottom .cart_button button {
+  border: none;
+  background: transparent;
+  color: white;
+  margin-left: 10px;
+  transition: .3s;
+}
+
+.quick_view_area .quick_view_wrapper .quick_view_bottom .cart_button:hover {
+  background: rgb(54 116 235);
+  transition: .3s;
+}
+
+.popup__option {
+  gap: 16px;
+  display: flex;
+  justify-content: end;
+}
+
+.popup__option a {
+  background: black;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  border-radius: 10px;
+  color: white;
+}
+
+.popup__option a:first-child {
+  background: rgba(221, 14, 28, 1);
+}
+
+.popup__option a:nth-child(2) {
+  background: rgba(13, 82, 214, 1);
+}
+
+.popup__option a:last-child {
+  background: rgba(80, 173, 85, 1);
+}
+.swiper-pagination3 {
+  position: absolute;
+  display: unset;
+  left: unset !important;
+  bottom: 5px !important;
+}
+
+.swiper-pagination3 span {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+}
+
+.swiper-pagination.swiper-pagination3 .swiper-pagination-bullet-active {
+  background: var(--primary_color) !important;
+}
+
+.mySwiper3 .swiper-wrapper {
+  padding-bottom: 35px;
+}
+
 
 
 /** responsive view***/

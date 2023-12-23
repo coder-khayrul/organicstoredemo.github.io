@@ -35,24 +35,29 @@
   </div>
   <!--product_quick view-->
   <div class="quick_view_area">
-  
+
     <div class="popup_bg"></div>
-    <div class="quick_view_bottom d-none ">
-      <div class="cart_count d-flex">
-        <input type="number">
-        <button>Add To Cart</button>
-      </div>
-      <div class="popup__option">
-        <a href="#"><i class="fa-regular fa-heart"></i></a>
-        <a href="#"><i class="fa-solid fa-code-compare"></i></a>
-        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </div>
     <div class="quick_view_wrapper">
+      <div class="quick_view_bottom">
+        <div class="cart_count d-flex">
+          <input type="number">
+
+        </div>
+        <div class="cart_button d-flex align-items-center justify-content-center ">
+          <span><i class="fa-solid fa-cart-plus"></i></span>
+          <button>Add To Cart</button>
+        </div>
+        <div class="popup__option">
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+          <a href="#"><i class="fa-solid fa-code-compare"></i></a>
+          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
       <div class="close_button">
         <span><i class="fa-regular fa-circle-xmark"></i></span>
       </div>
-      <div class="row">
+      <div class="wrapper">
+<div class="row">
         <div class="col-sm-6">
           <div class="product_left">
             <div class="product_title product_title-sm">
@@ -63,37 +68,38 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide ">
                   <div class="img_area">
-                    <img class="img-fluid " src="../img/p1.png" alt="../img/p1.png" /> 
-                  </div>      
+                    <img class="img-fluid " src="../img/p1.png" alt="../img/p1.png" />
+                  </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="img_area">
                     <img class="img-fluid " src="../img/p2.png" alt="../img/p2.png" />
-                  </div>         
+                  </div>
                 </div>
                 <div class="swiper-slide ">
                   <div class="img_area">
-                    <img class="img-fluid " src="../img/p3.png" alt="../img/p3.png" /> 
+                    <img class="img-fluid " src="../img/p3.png" alt="../img/p3.png" />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class=" img_area">
- <img class="img-fluid " src="../img/p4.png" alt="../img/p4.png" />
+                    <img class="img-fluid " src="../img/p4.png" alt="../img/p4.png" />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class=" img_area">
-                     <img class="img-fluid " src="../img/p5.png" alt="../img/p5.png" />
+                    <img class="img-fluid " src="../img/p5.png" alt="../img/p5.png" />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class=" img_area">
-                     <img class="img-fluid " src="../img/p6.png" alt="../img/p6.png" /> 
+                    <img class="img-fluid " src="../img/p6.png" alt="../img/p6.png" />
                   </div>
                 </div>
               </div>
               <div class="swiper-button-next swiper-button-next2 custom-color"></div>
               <div class="swiper-button-prev swiper-button-prev2 custom-color"></div>
+              
             </div>
 
             <div thumbsSlider="" class="swiper mySwiper3 thumbs-slider">
@@ -117,6 +123,7 @@
                   <img class="img-fluid " src="../img/p6.png" alt="../img/p6.png" />
                 </div>
               </div>
+              <div class="swiper-pagination swiper-pagination3"></div>
             </div>
 
           </div>
@@ -137,8 +144,11 @@
               </div>
             </div>
             <ul class="product_status ps-0 ">
-              <li class="list-unstyled d-flex align-items-center  "><span class="list_circle me-2"></span><span>IN STOCK</span></li>
-              <li class="brand_name list-unstyled  d-flex align-items-center "><span class="list_circle ms-1 me-2"></span><span class="me-1">Brand:</span><a href="#" class="text-decoration-underline "> Ny-Fashion</a></li>
+              <li class="list-unstyled d-flex align-items-center  "><span class="list_circle me-2"></span><span>IN
+                  STOCK</span></li>
+              <li class="brand_name list-unstyled  d-flex align-items-center "><span
+                  class="list_circle ms-1 me-2"></span><span class="me-1">Brand:</span><a href="#"
+                  class="text-decoration-underline "> Ny-Fashion</a></li>
             </ul>
             <div class="product_price d-flex flex-column ">
               <span>$392.00</span>
@@ -147,6 +157,8 @@
           </div>
         </div>
       </div>
+      </div>
+      
 
 
     </div>
@@ -1199,7 +1211,7 @@
                 </div>
                 <div class="product_size_area single_sidebox">
                   <h3>Filter by size</h3>
-                  <ul  class="mb-0 ">
+                  <ul class="mb-0 ">
                     <li class="list-unstyled">
                       <a href="#" class="d-flex justify-content-between align-items-center ">
                         <span class="size_name">XS</span>
@@ -1241,13 +1253,20 @@
                 <div class="single_sidebox material_box">
                   <h3>Materials</h3>
                   <ul class="mb-0 ">
-                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item1" id="material_item1"><label class="ms-2" for="material_item1">100% cotton</label></li>
-                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item2" id="material_item2"><label class="ms-2" for="material_item2">Bamboo</label></li>
-                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item3" id="material_item3"><label class="ms-2" for="material_item3">Bio cotton</label></li>
-                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item4" id="material_item4"><label class="ms-2" for="material_item4">Cashmere</label></li>
-                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item5" id="material_item5"><label class="ms-2" for="material_item5">Cotton</label></li>
-                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item6" id="material_item6"><label class="ms-2" for="material_item6">Rayon</label></li>
-                    <li class="list-unstyled"><input type="checkbox" name="material_item7" id="material_item7"><label class="ms-2" for="material_item7">Viscose</label></li>
+                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item1"
+                        id="material_item1"><label class="ms-2" for="material_item1">100% cotton</label></li>
+                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item2"
+                        id="material_item2"><label class="ms-2" for="material_item2">Bamboo</label></li>
+                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item3"
+                        id="material_item3"><label class="ms-2" for="material_item3">Bio cotton</label></li>
+                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item4"
+                        id="material_item4"><label class="ms-2" for="material_item4">Cashmere</label></li>
+                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item5"
+                        id="material_item5"><label class="ms-2" for="material_item5">Cotton</label></li>
+                    <li class="list-unstyled mb-2"><input type="checkbox" name="material_item6"
+                        id="material_item6"><label class="ms-2" for="material_item6">Rayon</label></li>
+                    <li class="list-unstyled"><input type="checkbox" name="material_item7" id="material_item7"><label
+                        class="ms-2" for="material_item7">Viscose</label></li>
                   </ul>
                 </div>
               </aside>

@@ -155,6 +155,10 @@ var swiper = new Swiper(".mySwiper3", {
   slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
+  pagination: {
+    el: ".swiper-pagination3",
+    clickable: true,
+  },
   breakpoints: {
     // when window width is >= 320px
     380: {
@@ -169,11 +173,13 @@ var swiper = new Swiper(".mySwiper3", {
     668: {
       slidesPerView: 3,
       spaceBetween: 10
-    }
+    },
+   
   }
 })
 var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 30,
+
   navigation: {
     nextEl: ".swiper-button-next2",
     prevEl: ".swiper-button-prev2",
