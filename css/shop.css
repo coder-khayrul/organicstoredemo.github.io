@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -1618,8 +1619,8 @@ a.nav-link:hover {
   height: 34px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+#product_container .columns aside .filter_price .price_inputs .field input[type="number"]::-webkit-outer-spin-button,
+#product_container .columns aside .filter_price .price_inputs .field input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
@@ -1980,7 +1981,7 @@ abbr:hover{
   transition: .5s;
   z-index: 99;
   background-color: white;
-  border-bottom: 1px solid #00000026;
+  /* border-bottom: 1px solid #00000026; */
   border-right: 1px solid #00000026;
   border-left: 1px solid #00000026;
   overflow: hidden;

@@ -2146,6 +2146,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   font-size: 10px;
   border: 2px solid transparent;
   z-index: 99;
+  cursor: pointer;
 }
 
 .popup_gallary_img img {

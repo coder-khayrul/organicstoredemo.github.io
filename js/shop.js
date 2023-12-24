@@ -71,6 +71,13 @@ list_view_button.addEventListener("click", list_view_handler)
 
 
 
+//product add to cart 
+// let product_number_value = parseInt(value_field.value);
+// decrease_button.addEventListener("click", () => {
+//   // Ensure the value is not less than 1
+//   product_number_value = Math.max(1, product_number_value - 1);
+//   value_field.value = product_number_value;
+// });
 
 
 
