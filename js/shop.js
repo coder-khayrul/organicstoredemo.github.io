@@ -25,9 +25,9 @@ const list_view_handler = () => {
   product_content.forEach(content => {
     content.classList.remove("product_info_grid")
     content.classList.remove("product_info_style")
-    content.classList.add("product_info_list_border_radius"); 
-    content.classList.remove("product_info_grid_border_radius"); 
-    
+    content.classList.add("product_info_list_border_radius");
+    content.classList.remove("product_info_grid_border_radius");
+
   })
   single_boxs.forEach(box => {
     box.classList.add("single_shop_product_style")
@@ -48,13 +48,13 @@ const grid_view_handler = () => {
   product_img.forEach(img => {
     img.classList.add("product_img_border")
     img.classList.remove("product_img_border_list")
-    
+
   })
   product_content.forEach(content => {
     content.classList.add("product_info_grid")
     content.classList.add("product_info_style")
-    content.classList.remove("product_info_list_border_radius"); 
-    content.classList.add("product_info_grid_border_radius"); 
+    content.classList.remove("product_info_list_border_radius");
+    content.classList.add("product_info_grid_border_radius");
   })
   single_boxs.forEach(box => {
     box.style.display = "block"
@@ -69,15 +69,30 @@ const grid_view_handler = () => {
 grid_view_button.addEventListener("click", grid_view_handler)
 list_view_button.addEventListener("click", list_view_handler)
 
+//sciprt for expand product description
+const show_more_button = document.querySelector("#expand_btn");
+const show_more_button_text = document.querySelector("#expand_btn span");
+const expand_content = document.querySelector(".expand_content");
+const button_icon = document.querySelector(".description button i");
+
+  let content_show = true;
+const description_toggler = () => {
+
+  if (content_show) {  
+    show_more_button_text.textContent = "Show less"
+    expand_content.classList.remove("expand_content_hide")
+    button_icon.style.transform = "rotate(180deg)"
+   
+  } else {
+    show_more_button_text.textContent = "Show more"
+    expand_content.classList.add("expand_content_hide")
+    button_icon.style.transform = "rotate(0deg)"
+  }
+  content_show = !content_show
+}
+show_more_button.addEventListener("click", description_toggler)
 
 
-//product add to cart 
-// let product_number_value = parseInt(value_field.value);
-// decrease_button.addEventListener("click", () => {
-//   // Ensure the value is not less than 1
-//   product_number_value = Math.max(1, product_number_value - 1);
-//   value_field.value = product_number_value;
-// });
 
 
 
@@ -152,13 +167,13 @@ price_inputs.forEach(input => {
   input.addEventListener("input", (e) => {
     let minValue = parseInt(price_inputs[0].value);
     let maxValue = parseInt(price_inputs[1].value)
-    if (maxValue - minValue >= price_gap && maxValue <= 1000)  {
+    if (maxValue - minValue >= price_gap && maxValue <= 1000) {
       if (e.target.className === "minNumber") {
-        price_ranges[0].value = minValue; 
+        price_ranges[0].value = minValue;
         progress_bar.style.left = (minValue / price_ranges[0].max) * 100 + "%";
       } else {
         price_ranges[1].value = maxValue;
-      progress_bar.style.right = 100 - (maxValue / price_ranges[1].max) * 100 
+        progress_bar.style.right = 100 - (maxValue / price_ranges[1].max) * 100
       }
     }
   })
@@ -227,13 +242,13 @@ shop_img_area.forEach((area) => {
 });
 
 //to added footer
- // Fetch and inject the header
- fetch('../additional_pages/footer.html')
- .then(response => response.text())
- .then(html => {
-     document.getElementById('footer_container').innerHTML = html;
- })
- .catch(error => console.error('Error fetching header:', error));
+// Fetch and inject the header
+fetch('../additional_pages/footer.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('footer_container').innerHTML = html;
+  })
+  .catch(error => console.error('Error fetching header:', error));
 
 var swiper = new Swiper(".mySwiper3", {
   spaceBetween: 1,
@@ -259,7 +274,7 @@ var swiper = new Swiper(".mySwiper3", {
       slidesPerView: 3,
       spaceBetween: 10
     },
-   
+
   }
 })
 var swiper2 = new Swiper(".mySwiper2", {
