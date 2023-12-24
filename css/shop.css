@@ -2040,9 +2040,9 @@ abbr:hover{
 
 .quick_view_area .quick_view_wrapper {
   max-width: calc(100% - 20px * 2);
-  width: 700px;
+  width: 750px;
   background: white;
-  height: 510px;
+  height: 550px;
   z-index: 9;
   padding: 20px 20px;
   border-radius: 10px;
