@@ -2223,7 +2223,54 @@ abbr:hover {
   background: white;
   transition: .3s;
 }
-
+.wishlist_alert {
+  width: 300px;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  bottom: 50px;
+  right: -315px;
+  background: transparent;
+  opacity: 0;
+  
+}
+@keyframes wishlist_animation_hide {
+  0%{
+    
+    right: 20px;
+    opacity: 1;
+  }
+  100%{
+    right: -315px;
+    opacity: 0;
+  }
+}
+@keyframes wishlist_animation {
+  0%{
+    right: -315px;
+    opacity: 0;
+  }
+  100%{
+    right: 20px;
+    opacity: 1;
+  }
+  
+}
+.wishlist_alert span{
+  width: 300px;
+  height: 60px;
+  background: var(--primary_color);
+  color: white;
+  font-size: 17px;
+  border-radius: 3px;
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 /*product quick view popup*/
 .quick_view_area {

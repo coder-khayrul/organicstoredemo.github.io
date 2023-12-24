@@ -93,6 +93,25 @@ const description_toggler = () => {
 show_more_button.addEventListener("click", description_toggler)
 
 
+//script for wishlist alert
+const wishlist_message = document.querySelector(".wishlist_alert");
+const wishlist_btns = document.querySelectorAll(".wishlist");
+const wishlist_view_handler = () => {
+
+  wishlist_message.style.animation=  "wishlist_animation .3s ease-in-out  forwards alternate"
+
+setTimeout(() => {
+  wishlist_message.style.animation=  "wishlist_animation_hide .3s ease-in-out  forwards alternate"
+}, 3000)
+}
+
+
+wishlist_btns.forEach(wishlist_btn => {
+  wishlist_btn.addEventListener("click", wishlist_view_handler)
+})
+
+
+
 //script for ask question popup form 
 const user_questoin_popup = document.querySelector(".user_question_popup")
 const question_popup_open_btn = document.querySelectorAll(".question_button")
