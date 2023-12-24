@@ -3,6 +3,77 @@ $('.js-preloader').preloadinator({
   minTime: 2000
 });
 
+//for grid and list view
+const single_box_area = document.querySelectorAll(".product_box_wrapper");
+const grid_view_button = document.querySelector(".grid_view");
+const list_view_button = document.querySelector(".list_view");
+const single_boxs = document.querySelectorAll(".single_shop_product");
+const product_content = document.querySelectorAll(".product_info");
+const product_img = document.querySelectorAll(".product_img");
+const list_view_product_summary = document.querySelectorAll(".product_title p");
+
+const list_view_handler = () => {
+  list_view_button.classList.add("active")
+  grid_view_button.classList.remove("active")
+  list_view_product_summary.forEach(summary => {
+    summary.style.display = "block"
+  })
+  product_img.forEach(img => {
+    img.classList.remove("product_img_border")
+    img.classList.add("product_img_border_list")
+  })
+  product_content.forEach(content => {
+    content.classList.remove("product_info_grid")
+    content.classList.remove("product_info_style")
+    content.classList.add("product_info_list_border_radius"); 
+    content.classList.remove("product_info_grid_border_radius"); 
+    
+  })
+  single_boxs.forEach(box => {
+    box.classList.add("single_shop_product_style")
+  })
+  single_box_area.forEach(area => {
+    area.classList.remove("col-sm-6")
+    area.classList.remove("col-md-4")
+  })
+}
+
+
+const grid_view_handler = () => {
+  list_view_button.classList.remove("active")
+  grid_view_button.classList.add("active")
+  list_view_product_summary.forEach(summary => {
+    summary.style.display = "none"
+  })
+  product_img.forEach(img => {
+    img.classList.add("product_img_border")
+    img.classList.remove("product_img_border_list")
+    
+  })
+  product_content.forEach(content => {
+    content.classList.add("product_info_grid")
+    content.classList.add("product_info_style")
+    content.classList.remove("product_info_list_border_radius"); 
+    content.classList.add("product_info_grid_border_radius"); 
+  })
+  single_boxs.forEach(box => {
+    box.style.display = "block"
+    box.classList.remove("single_shop_product_style")
+  })
+  single_box_area.forEach(area => {
+    area.classList.add("col-sm-6")
+    area.classList.add("col-md-4")
+  })
+}
+
+grid_view_button.addEventListener("click", grid_view_handler)
+list_view_button.addEventListener("click", list_view_handler)
+
+
+
+
+
+
 //get elements
 const color_areas = document.querySelectorAll(".color_box");
 
