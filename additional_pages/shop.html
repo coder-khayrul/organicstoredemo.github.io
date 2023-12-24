@@ -33,9 +33,49 @@
       <div class="dot"></div>
     </div>
   </div>
+  <!--ask question popup-->
+  <div class="user_question_popup">
+    <div class="popup_bg"></div>
+    <div class="user_form_area">
+      <div class="form_close_btn">
+        <a href="#"><i class="fa-solid fa-x"></i></a>
+      </div>
+      <div class="form_title">
+
+        <h3><i class="fa-solid fa-file-circle-question me-2"></i> Ask a Question About This Product</h3>
+      </div>
+      <form action="" autocomplete="">
+        <div class="form_group">
+          <label for="name"></label>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form_group">
+          <label for="email"></label>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form_group">
+          <label for="select"></label>
+          <select name="topic_select" id="topic" required>
+            <option value="0" disabled selected>Select Topic</option>
+            <option value="1">How does it fit?</option>
+            <option value="1">How do you wash it?</option>
+            <option value="1">How you can get delivered?</option>
+            <option value="1">Have any guarantee of product</option>
+          </select>
+        </div>
+        <div class="form_group">
+          <label for="text"></label>
+          <textarea type="message" id="message" placeholder="Write your messgae..." required></textarea>
+        </div>
+        <div class="form_group d-flex justify-content-center ">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!--product_quick view-->
   <div class="quick_view_area">
-
     <div class="popup_bg"></div>
     <div class="quick_view_wrapper">
       <div class="quick_view_bottom">
@@ -1501,8 +1541,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="question_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1537,8 +1577,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="question_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1573,8 +1613,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="question_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1609,8 +1649,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="question_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1645,8 +1685,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="question_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1681,8 +1721,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="question_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1717,8 +1757,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="quesiton_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1753,8 +1793,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="question_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>
@@ -1789,8 +1829,8 @@
                             </div>
                           </div>
                           <div class="product_faq d-flex justify-content-between ">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
-                            <a href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
+                            <a class="buy_button" href="#"><i class="fa-solid fa-magnifying-glass-dollar"></i> Buy Now</a>
+                            <a class="question_button" href="#"><i class="fa-regular fa-circle-question"></i> Question</a>
                           </div>
                         </div>
                       </div>

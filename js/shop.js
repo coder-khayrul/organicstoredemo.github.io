@@ -93,7 +93,23 @@ const description_toggler = () => {
 show_more_button.addEventListener("click", description_toggler)
 
 
+//script for ask question popup form 
+const user_questoin_popup = document.querySelector(".user_question_popup")
+const question_popup_open_btn = document.querySelectorAll(".question_button")
+const question_popup_close_btn = document.querySelector(".form_close_btn");
 
+const question_popup_show = () => {
+  user_questoin_popup.style.display= "flex"
+  document.body.style.overflow = "hidden"
+}
+const question_popup_close = () => {
+  user_questoin_popup.style.display= "none"
+  document.body.style.overflow = "scroll"
+}
+question_popup_close_btn.addEventListener("click", question_popup_close)
+question_popup_open_btn.forEach(question_btn => {
+  question_btn.addEventListener("click" , question_popup_show)
+})
 
 
 //get elements
