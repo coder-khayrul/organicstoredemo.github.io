@@ -1,0 +1,37 @@
+/* Rubik font  */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* niconne font */
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+/* font-family: 'Niconne', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --primary_color: #88b813;
+  --border_color: rgba(130, 130, 130, 0.25);
+  --golden_color: #d99f34;
+  --light_primary_color: #ecf1e6;
+  --gray_black: #333333;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ .breadcrumb_items ul {
+    display: flex;
+    margin-bottom: 0;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  

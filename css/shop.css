@@ -262,6 +262,7 @@ a {
   color: var(--primary_color);
   border: 1px solid var(--primary_color);
   position: relative;
+  cursor: pointer;
 }
 
 .login_form_box .login_other_way .single_way span {
@@ -334,6 +335,7 @@ span.or_devider {
   position: absolute;
   left: 0px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .login_form_box .login_other_way .single_way .social-login i {
@@ -2590,6 +2592,28 @@ abbr:hover {
 
 .mySwiper3 .swiper-wrapper {
   padding-bottom: 35px;
+}
+
+.pagination_container .short_by input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #666;
+  border-radius: 3px;
+  padding: 5px 0px;
+}
+.pagination_container .short_by label{
+  color: #333;
+}
+.go_page {margin-right: 50px;}
+
+.current_page_container {
+  color: #333;
+}
+
+.current_page_container p {
+  margin-bottom: 0;
 }
 
 

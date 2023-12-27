@@ -25,6 +25,33 @@ $(document).ready( () => {
   })
 })
 
+//product item message function here
+let product_item_visible = false;
+
+
+product_item.addEventListener("mouseover", () => {
+  if (product_item_visible) {
+    product_item_message.style.transform = "translate(0px, 30%)";
+    product_item_message.style.opacity = "0";
+
+  } else {
+    product_item_message.style.transition = "transform 0.3s, opacity 0.3s"; // Add a transition property
+    product_item_message.style.transform = "translate(0px, 0px)";
+    product_item_message.style.opacity = "1";
+    product_item_message.style.display = "unset";
+  }
+
+  product_item_visible = !product_item_visible;
+})
+
+product_item.addEventListener("mouseout", () => {
+  if (product_item_visible) {
+    product_item_message.style.transition = "transform 0.3s, opacity 0.3s"; // Add a transition property
+    product_item_message.style.transform = "translate(0px, 30%)";
+    product_item_message.style.opacity = "0";
+  }
+})
+
 
 //get element for 
 category_select_item.addEventListener("click", () => {
@@ -57,10 +84,6 @@ search_page_close_btn.addEventListener("click", () => {
   medium_search_page.style.animation = "mobile_popup_close 1s alternate forwards ease-in";
   medium_search_page.style.transition = "2s"
 })
-
-
-
-
 
 //for sign up and login page tab function
 const login_btn = document.getElementById("login_btn");
@@ -106,6 +129,7 @@ const user_popup_exit = document.querySelector("#user_popup_close");
 const user_popup_page_handler = () => {
   user_popup_page.style.display = "flex";
   document.body.style.overflow = 'hidden'
+
 }
 const user_popup_exit_handler = () => {
   user_popup_page.style.display = "none";
@@ -114,3 +138,6 @@ const user_popup_exit_handler = () => {
 }
 user_popup_icon.addEventListener("click", user_popup_page_handler)
 user_popup_exit.addEventListener("click", user_popup_exit_handler)
+
+
+

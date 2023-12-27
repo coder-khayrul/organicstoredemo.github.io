@@ -357,5 +357,22 @@ var swiper = new Swiper(".mySwiper", {
 
 });
 
+//script for pagination
+const pagination_page = document.querySelector("#page_number");
+const current_page_no = document.querySelector(".page_no");
+pagination_page.addEventListener("change", () => {
+  let input_value = pagination_page.value;
+
+  $('.pagination').pajinatify('set', `${input_value}`, 40);
+  current_page_no.textContent = input_value;
+})
+
+$('.pagination').pajinatify({
+  dir: 'rtl',
+  onChange: function (currentPage) {
+    current_page_no.textContent = currentPage;
+  },
+});
+
 
 
