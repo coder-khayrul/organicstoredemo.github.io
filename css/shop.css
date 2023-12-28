@@ -1861,22 +1861,14 @@ a.nav-link:hover {
   background: var(--gray_more_black);
 }
 
-#product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .product_title h3:hover {
+#product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .product_title h3 a:hover {
   color: var(--primary_color);
   transition: .3s;
 }
 
-/* #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product:hover .product_info {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-} */
 #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .info_header a {
   font-size: 14px;
   color: var(--gray_black);
-}
-
-#product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .product_title h3:hover {
-  color: var(--primary_color);
-  transition: .3s;
 }
 
 #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product:hover .product_img img {
@@ -1888,9 +1880,10 @@ a.nav-link:hover {
   text-decoration: underline !important;
 }
 
-#product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .product_title h3 {
+#product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .product_title h3 a {
   font-size: 20px;
   transition: .3s;
+  color: black;
 }
 
 #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .product_title {
