@@ -103,7 +103,6 @@ section#single_product_page {
 .view_bottom {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background: #ededed;
   padding: 10px 15px;
   position: absolute;
   width: 100%;
@@ -286,8 +285,8 @@ section#single_product_page {
 .product_page_wrapper .offer_area .offer_timer .timer .timer_box b {
     font-weight: 500;
 }
-.product_page_wrapper .offer_area .offer_timer .product_qty .qty_title {
-  width: 255px;
+.product_page_wrapper .offer_area .offer_timer .product_qty {
+  width: 100%;
 }
 
 .product_page_wrapper .offer_area .offer_timer .product_qty .qty_title p {
@@ -303,6 +302,9 @@ section#single_product_page {
 }
 section#single_product_page .about_product {
   padding-bottom: 80px;
+}
+.offer_area {
+  margin-top: 25px;
 }
 .product_page_wrapper .offer_area .offer_timer .product_qty .qty_progress .stroked {
   width: 100%;
@@ -340,7 +342,7 @@ section#single_product_page .about_product {
 }
 
 .checkout_systems {
-  margin: 15px 0px;
+  margin: 25px 0px;
 }
 .product_page_wrapper {
   padding: 10px 10px;
