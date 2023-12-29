@@ -422,3 +422,81 @@ section#single_product_page .about_product {
   background: var(--primary_color);
   transition: .4s;
 }
+.description_tab .product_description h3 {
+  font-size: 20px;
+}
+
+.description_tab .product_description p, li {
+  font-size: 14px;
+  color: #666;
+}
+
+.description_tab .product_description p {
+  line-height: 1.6rem;
+}
+
+.description_tab .product_description  li .check_icon {
+  margin-top: 2px;
+  font-size: 16px;
+  color: var(--primary_color);
+}
+
+.description_tab .product_details_image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.description_tab .product_details_image img {
+  width: 100%;
+}
+
+.description_tab {
+  padding: 20px 15px;
+}
+
+.description_tab .product_details_image img {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: var(--primary_color)!important;
+  background-color: #ededed !important;
+  border-color: transparent !important;
+}
+.nav-tabs .nav-link {
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  isolation: isolate;
+  border-color: transparent !important;
+  background: #ededed !important;
+  color: var(--primary_color)!important;
+}
+.product_details_table table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.product_details_table table tr td{
+  padding: 10px 15px;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 500;
+}
+.product_details_table table tr:nth-child(even){
+  background: #ededed;
+}
+.product_details_table table tr:nth-child(odd){
+  background: white;
+}
+.product_details_table {
+  padding: 35px 15px;
+}
+
+.product_details_table table tr td:last-child {
+  font-weight: 400;
+}
