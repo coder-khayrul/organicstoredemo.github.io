@@ -34,12 +34,6 @@ const img_hover_effect = (img_area, imges) => {
 }
 img_hover_effect(themb_image,slide_image)
 
-
-
-
-
-
-
 //to added header
 // Fetch and inject the header
 fetch('../additional_pages/header.html')
@@ -58,3 +52,23 @@ fetch('../additional_pages/footer.html')
     document.getElementById('footer_section').innerHTML = html;
   })
   .catch(error => console.error('Error fetching header:', error));
+
+
+  //swiper slider for review tab
+  var swiper = new Swiper(".mySwiper", {
+    // autoplay: true,
+    keyboard: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1,
+    spaceBetween: 0,
+  
+  
+  });
