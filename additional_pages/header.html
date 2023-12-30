@@ -34,7 +34,7 @@
                     <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
                     <div class="col-12 col-md-6">
                       <div class="position-relative popup_from d-flex justify-content-center align-items-center">
-                        <form name="user_form" action="" id="signup_from" autocomplete="on" class="signup_form_box">
+                        <form name="user_form" action="" id="signup_from" autocomplete="off" class="signup_form_box">
                           <h2>Create Your Account</h2>
                           <div class="social_site">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -46,7 +46,7 @@
                           </div>
                           <div class="input_box">
                             <label for="name"></label>
-                            <input type="name" name="name" id="name" placeholder="Your full name" required>
+                            <input type="name" name="name" id="YourName" placeholder="Your full name" required>
                           </div>
                           <div class="input_box">
                             <label for="input_email"></label>
@@ -59,7 +59,7 @@
                           <div class="cdt_div">
                             <div class="checkbox_ctn">
                               <label for="checkbox"></label>
-                              <input type="checkbox" name="checkbox" id="checkbox"> <span>Remember me</span>
+                              <input type="checkbox" name="checkbox" id="checkbox_input"> <span>Remember me</span>
                             </div>
                             <a href="#">forgot password?</a>
                           </div>
@@ -76,7 +76,7 @@
                             <h2>Login</h2>
                             <p>Enter your Email and Password to login.</p>
                           </div>
-                          <form action="" name="" id="" class="login_form" autocomplete="on">
+                          <form action="" name="login_form_area" id="login_form_area" class="login_form" autocomplete="on">
                             <input type="email" name="email" id="loginEmail" placeholder="Email">
                             <input type="password" name="password" id="loginPassword" placeholder="password">
                             <div class="optional_items mb-5">
@@ -136,7 +136,7 @@
         <div class="mobile_popup_search">
           <div class="popup_search_wrapper">
             <a href="#" class="popup_search_close" type="submit"><i class="fa-solid fa-x"></i></a>
-            <form action="" name="" class="mobile_search-bar">
+            <form action="" name="" id="mobile_search_form" class="mobile_search-bar">
               <input type="search" name="s" placeholder="Search for product">
               <select class="category_items ps-0">
                 <option value="">All Category</option>
@@ -212,7 +212,7 @@
               <a class="navbar-brand" class="img-fluid " href="./index.html"><img src="../img/logo.png" alt="./img/logo.png">
               </a>
             </div>
-            <form autocomplete="on" action="" class="main_search_bar d-none d-lg-flex align-content-center">
+            <form autocomplete="on" action="" id="main_search_bar_form" class="main_search_bar d-none d-lg-flex align-content-center">
               <div class="category_area">
                 <select class="category_items ps-0">
                   <option value="">All Category</option>
@@ -255,7 +255,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body pt-5">
-                    <form autocomplete="on" action=""
+                    <form autocomplete="on" action="" id="offcanvas_search_form"
                       class="main_search_bar mobile_search_bar d-flex d-lg-none align-content-center p-0 pb-3">
                       <div class="search_input mobile mobile_sm">
                         <label for="searchField"></label>
