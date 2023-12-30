@@ -208,5 +208,5 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: '.swiper-button-prev',
   },
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 10,
 });
