@@ -195,11 +195,16 @@ section#single_product_page {
   background: rgba(80, 173, 85, 1);
   transition: .3s;
 }
-
-.product_page_details>p {
+.product_page_details>a:hover {
+  color: var(--primary_color);
+  transition: .3s;
+}
+.product_page_details > a {
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 5px;
+  color: #333;
+  transition: .3s;
 }
 
 .view_bottom .popup__option a {
@@ -267,7 +272,11 @@ section#single_product_page {
   color: red;
   transition: .3s;
 }
-
+.product_page_details p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7rem;
+}
 .wishlist_compare a:last-child i {
   color: #0D52D6 !important;
   margin-right: 5px;
@@ -695,6 +704,7 @@ textarea {
   border: 1px solid var(--primary_color);
   transition: .3s;
   padding: 10px 15px;
+  outline: none;
 }
 
 .right_side form input {
@@ -899,4 +909,48 @@ input[type="checkbox"] {
   height: 100%;
   position: fixed;
   background: #00000069;
+}
+
+
+
+/*style for swiper thembslider in single product page*/
+.mySwiper2 .swiper-wrapper{
+  margin-bottom: 35px;
+}
+ .mySwiper2 img {
+  height: 350px;
+  width: 100%;
+  object-fit: contain;
+  background: #ededed;
+  cursor: pointer;
+}
+.img_area {
+  width: 100%;
+  overflow: hidden;
+  background: #ededed;
+  border-radius: 10px;
+}
+ .mySwiper3 img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  background: #ededed;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.mySwiper3 .swiper-wrapper {
+    padding-bottom: 50px;
+}
+
+.mySwiper3 .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    background: var(--primary_color);
+}
+
+.mySwiper3 span.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
 }

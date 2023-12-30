@@ -11,46 +11,46 @@
 </head>
 
 <body>
-     <!--ask question popup-->
-  <div class="user_question_popup">
-    <div class="popup_bg"></div>
-    <div class="user_form_area">
-      <div class="form_close_btn">
-        <a href="#"><i class="fa-solid fa-x"></i></a>
-      </div>
-      <div class="form_title">
+    <!--ask question popup-->
+    <div class="user_question_popup">
+        <div class="popup_bg"></div>
+        <div class="user_form_area">
+            <div class="form_close_btn">
+                <a href="#"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class="form_title">
 
-        <h3><i class="fa-solid fa-file-circle-question me-2"></i> Ask a Question About This Product</h3>
-      </div>
-      <form action="" autocomplete="" id="user_question_form" name="user_question_form">
-        <div class="form_group">
-          <label for="fullName"></label>
-          <input type="text" id="fullName" placeholder="Enter your name" required>
+                <h3><i class="fa-solid fa-file-circle-question me-2"></i> Ask a Question About This Product</h3>
+            </div>
+            <form action="" autocomplete="" id="user_question_form" name="user_question_form">
+                <div class="form_group">
+                    <label for="fullName"></label>
+                    <input type="text" id="fullName" placeholder="Enter your name" required>
+                </div>
+                <div class="form_group">
+                    <label for="userEmail"></label>
+                    <input type="email" id="userEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form_group">
+                    <label for="topic"></label>
+                    <select name="topic_select" id="topic" required>
+                        <option value="0" disabled selected>Select Topic</option>
+                        <option value="1">How does it fit?</option>
+                        <option value="1">How do you wash it?</option>
+                        <option value="1">How you can get delivered?</option>
+                        <option value="1">Have any guarantee of product</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="message"></label>
+                    <textarea type="message" id="message" placeholder="Write your messgae..." required></textarea>
+                </div>
+                <div class="form_group d-flex justify-content-center ">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
-        <div class="form_group">
-          <label for="userEmail"></label>
-          <input type="email" id="userEmail" placeholder="Enter your email" required>
-        </div>
-        <div class="form_group">
-          <label for="topic"></label>
-          <select name="topic_select" id="topic" required>
-            <option value="0" disabled selected>Select Topic</option>
-            <option value="1">How does it fit?</option>
-            <option value="1">How do you wash it?</option>
-            <option value="1">How you can get delivered?</option>
-            <option value="1">Have any guarantee of product</option>
-          </select>
-        </div>
-        <div class="form_group">
-          <label for="message"></label>
-          <textarea type="message" id="message" placeholder="Write your messgae..." required></textarea>
-        </div>
-        <div class="form_group d-flex justify-content-center ">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
     </div>
-  </div>
 
     <section id="header_section"></section>
     <section id="single_product_page">
@@ -65,25 +65,58 @@
             <div class="about_product">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <div class="product_slider d-flex align-items-center justify-content-center ">
-                            <div class="product_page_image d-flex align-items-center justify-content-between ">
-                                <div class="themb_img_area">
-                                    <div href="" class="them_img active_img">
-                                        <img src="../img/4g.png" alt="">
+                        <div class="product_slider">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <div class="img_area">
+                                            <img class="img-fluid " src="../img/4g.png" alt="../img/4g.png" />
+                                        </div>
+                                    </div>   
+                                    <div class="swiper-slide ">
+                                        <div class="img_area">
+                                            <img class="img-fluid " src="../img/4i.png" alt="../img/4i.png" />
+                                        </div>
                                     </div>
-                                    <div class="them_img">
-                                        <img src="../img/4i.png" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" img_area">
+                                            <img class="img-fluid " src="../img/4j.png" alt="../img/4j.png" />
+                                        </div>
                                     </div>
-                                    <div class="them_img">
-                                        <img src="../img/4j.png" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" img_area">
+                                            <img class="img-fluid " src="../img/4k.png" alt="../img/4k.png" />
+                                        </div>
                                     </div>
-                                    <div class="them_img">
-                                        <img src="../img/4k.png" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" img_area">
+                                            <img class="img-fluid " src="../img/4f.png" alt="../img/4f.png" />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="img_box">
-                                    <img class="img-fluid main_image" src="../img/4g.png" alt="">
+                                <div class="swiper-button-next swiper-button-next2 custom-color"></div>
+                                <div class="swiper-button-prev swiper-button-prev2 custom-color"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper3 thumbs-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid " src="../img/4g.png" alt="../img/p1.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid " src="../img/4i.png" alt="../img/p2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid " src="../img/4j.png" alt="../img/p3.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid " src="../img/4k.png" alt="../img/p5.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid " src="../img/4f.png" alt="../img/p6.png" />
+                                    </div>
                                 </div>
+                                <div class="swiper-pagination swiper-pagination3"></div>
                             </div>
                         </div>
                     </div>
@@ -92,6 +125,8 @@
                             <div class="product_page_details">
                                 <a href="#">Modern category</a>
                                 <h3>Modern Patek Philippe Watch</h3>
+                                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis in culpa
+                                    quasi. Nemo harum fuga sapiente eligendi dolores atque quis in quod non.</p>
                                 <div class="review_price d-flex flex-wrap  ">
                                     <span class="price me-4">$199</span>
                                     <div class="review_short_info d-flex align-items-center ">
@@ -213,8 +248,9 @@
                                 type="button" role="tab" aria-controls="Review" aria-selected="false">Review</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="shop_delivary-tab" data-bs-toggle="tab" data-bs-target="#shop_delivary"
-                                type="button" role="tab" aria-controls="Brand" aria-selected="false">Shipping & Delivery</button>
+                            <button class="nav-link" id="shop_delivary-tab" data-bs-toggle="tab"
+                                data-bs-target="#shop_delivary" type="button" role="tab" aria-controls="Brand"
+                                aria-selected="false">Shipping & Delivery</button>
                         </li>
                     </ul>
                 </div>
@@ -703,8 +739,8 @@
                                                 </div>
                                                 <div class="customer_box mb-3">
                                                     <label for="review">Your Review:</label>
-                                                    <textarea type="text" name="review" id="review"
-                                                        rows="5"  required></textarea>
+                                                    <textarea type="text" name="review" id="review" rows="5"
+                                                        required></textarea>
                                                 </div>
                                                 <div class="customer_box mb-3">
                                                     <label for="email">Your Email:</label>
@@ -719,43 +755,51 @@
                                                     <button type="submit">Submit</button>
                                                 </div>
                                             </form>
-                                        
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-               
-                <div class="tab-pane fade" id="shop_delivary" role="tabpanel" aria-labelledby="shop_delivary-tab" tabindex="0">
-                    <div class="about_product_brand">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="about_info">
-                                    <h3>Modern Men's Brand Watch</h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
-                                        have suffered alteration in some form, by injected humour, or randomised words
-                                        which don't look even slightly believable. If you are going to use a passage of
-                                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-                                        middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-                                        predefined chunks as necessary, making this the first true generator on the
-                                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-                                        of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                                        The generated Lorem Ipsum is therefore always free from repetition, injected
-                                        humour, or non-characteristic words etc.</p>
+
+                    <div class="tab-pane fade" id="shop_delivary" role="tabpanel" aria-labelledby="shop_delivary-tab"
+                        tabindex="0">
+                        <div class="about_product_brand">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="about_info">
+                                        <h3>Modern Men's Brand Watch</h3>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the
+                                            majority
+                                            have suffered alteration in some form, by injected humour, or randomised
+                                            words
+                                            which don't look even slightly believable. If you are going to use a passage
+                                            of
+                                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+                                            the
+                                            middle of text. All the Lorem Ipsum generators on the Internet tend to
+                                            repeat
+                                            predefined chunks as necessary, making this the first true generator on the
+                                            Internet. It uses a dictionary of over 200 Latin words, combined with a
+                                            handful
+                                            of model sentence structures, to generate Lorem Ipsum which looks
+                                            reasonable.
+                                            The generated Lorem Ipsum is therefore always free from repetition, injected
+                                            humour, or non-characteristic words etc.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="brand_img d-flex justify-content-between ">
-                                    <img src="../img/ship1.png" alt="" class="img-fluid">
-                                    
+                                <div class="col-12 col-md-6">
+                                    <div class="brand_img d-flex justify-content-between ">
+                                        <img src="../img/ship1.png" alt="" class="img-fluid">
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
         </div>
     </section>
