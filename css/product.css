@@ -560,16 +560,21 @@ li {
   font-size: 14px;
   margin-left: 5px;
 }
-.review_slider {padding: 30px;}
+
+.review_slider {
+  padding: 30px;
+}
 
 .review_tab {
-    padding: 60px 15px;
+  padding: 60px 15px;
 }
 
 .review_tab h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
-.swiper-button-next, .swiper-button-prev {
+
+.swiper-button-next,
+.swiper-button-prev {
   width: 40px !important;
   height: 40px !important;
   background: white !important;
@@ -577,13 +582,16 @@ li {
   box-shadow: 1px 1px 20px 0px #0000000d;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 25px !important ;
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px !important;
   color: var(--primary_color) !important;
 }
-.mySwiper .swiper-wrapper{
-  padding:  80px 0px;
+
+.mySwiper .swiper-wrapper {
+  padding: 80px 0px;
 }
+
 .review_add_area {
   padding: 45px 15px;
   background: white;
@@ -593,6 +601,7 @@ li {
 .review_add_area .review_total {
   text-align: center;
 }
+
 .rating_details .rating_box {
   display: flex;
   justify-content: space-between;
@@ -647,11 +656,13 @@ li {
 .review_add_area .review_total div i {
   color: #F6C800;
 }
+
 .rating_star_item {
   display: table-row;
 }
 
-.rating_star_item span, .user_rating_star {
+.rating_star_item span,
+.user_rating_star {
   display: table-cell;
 }
 
@@ -659,9 +670,6 @@ li {
   display: table;
   width: 230px;
   margin-bottom: 10px;
-}
-
-.rating_star_item span {
 }
 
 .right_side h3 {
@@ -673,15 +681,16 @@ li {
   color: #F6C800;
 }
 
-right_side form > div {
+.right_side form>div {
   width: 100%;
 }
 
-right_side form > div input {
+.right_side form>div input {
   width: 100%;
 }
 
-.right_side form input, textarea {
+.right_side form input,
+textarea {
   width: 100%;
   border: 1px solid var(--primary_color);
   transition: .3s;
@@ -693,11 +702,10 @@ right_side form > div input {
   outline: none;
 }
 
-.right_side form input {}
-
-.right_side form .customer_agreed_checkbox {display: flex;align-items: self-start;margin: 25px 0px;}
-
-input#checkbox {
+.right_side form .customer_agreed_checkbox {
+  display: flex;
+  align-items: self-start;
+  margin: 25px 0px;
 }
 
 input[type="checkbox"] {
@@ -719,30 +727,176 @@ input[type="checkbox"] {
   font-size: 15px;
   font-weight: 600;
 }
+
 .right_side form {
   margin: 30px 0px;
 }
+
 .right_side {
   padding: 0px 10px;
 }
-.customer_box label{
+
+.customer_box label {
   margin-bottom: 10px;
   font-size: 14px;
 }
+
 .right_side form .customer_data_submit button:hover {
   transition: .3s;
   background: white;
   border: 1px solid var(--primary_color);
   color: var(--primary_color);
 }
+
 .about_info h3 {
   font-size: 20px;
 }
+
 .about_product_brand {
   padding: 60px 15px;
 }
+
 .about_info p {
   font-size: 14px;
   line-height: 1.6rem;
   color: #666;
+}
+
+/*ask question popup style*/
+
+.user_question_popup{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  z-index: 99998;
+}
+.user_question_popup .user_form_area .form_close_btn a:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+.user_question_popup .user_form_area {
+  z-index: 999999999;
+  width: 530px;
+  background: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  position: relative;
+}
+.user_question_popup .user_form_area .form_close_btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.user_question_popup .user_form_area .form_close_btn a{
+  width: 30px;
+  height: 30px;
+  background: var(--primary_color);
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+}
+.user_question_popup .user_form_area .form_close_btn a {
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+.user_question_popup .user_form_area .form_title h3{
+  font-size: 22px;
+  font-weight: 500;
+}
+.user_question_popup .user_form_area .form_title h3 i {
+  color: var(--primary_color);
+}
+.user_question_popup .user_form_area .form_title h3::after{
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: var(--primary_color);
+  margin: 10px 0px;
+}
+.user_question_popup .user_form_area form .form_group {
+  width: 100%;
+}
+
+.user_question_popup .user_form_area form .form_group input {
+  width: 100%;
+  padding: 0px 10px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ededed;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.user_question_popup .user_form_area form .form_group textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 14px;
+  border: 1px solid #ededed;
+  transition: .3s;
+  outline: none;
+  border-radius: 5px;
+}
+.user_question_popup .user_form_area form .form_group input:focus{
+  border: 1px solid var(--primary_color);
+  transition: .3s;
+}
+.user_question_popup .user_form_area form .form_group textarea:focus{
+  border: 1px solid var(--primary_color);
+  transition: .3s;
+}
+.user_question_popup .user_form_area form .form_group select:focus{
+  border: 1px solid var(--primary_color);
+  transition: .3s;
+}
+.user_question_popup .user_form_area form .form_group button{
+  font-size: 16px;
+  background: var(--primary_color);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 10px;
+  margin-top: 20px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: .3s;
+}
+.user_question_popup .user_form_area form .form_group select {
+  width: 100%;
+  padding: 0px 10px;
+  height: 50px;
+  color: #888;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #ededed;
+  transition: .3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.user_question_popup .user_form_area form .form_group button:hover {
+  color: var(--primary_color);
+  border: 1px solid var(--primary_color);
+  background: white;
+  transition: .3s;
+}
+.popup_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #00000069;
 }

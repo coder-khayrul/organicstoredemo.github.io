@@ -34,6 +34,57 @@ const img_hover_effect = (img_area, imges) => {
 }
 img_hover_effect(themb_image,slide_image)
 
+//for countdown timier
+const dayElement = document.querySelector(".day");
+const hourElement = document.querySelector(".hours");
+const minutesElement = document.querySelector(".minutes");
+const secondElement = document.querySelector(".second");
+
+let endDate = "31 December 2023 12:00 pm"
+const clock = () => {
+  endDate = new Date(endDate);
+  let currentDate = new Date()
+  let diff = (endDate - currentDate);
+  let sec = Math.floor( diff / 1000);
+  let min =  Math.floor(sec / 60);
+  let hrs = Math.floor( min / 60);
+  let days = Math.floor(hrs / 24) ;
+
+  sec %= 60;
+  min %= 60;
+  hrs %= 24;
+
+  dayElement.textContent = days;
+  hourElement.textContent = hrs < 10 ? `0${hrs}` :hrs;
+  minutesElement.textContent = min < 10 ? `0${min}` : min;
+  secondElement.textContent = sec < 10 ? `0${sec}` : sec ;
+}
+setInterval(clock ,1000)
+
+
+
+
+//script for ask question popup form 
+const user_questoin_popup = document.querySelector(".user_question_popup")
+const question_popup_open_btn = document.querySelector(".question_button")
+const question_popup_close_btn = document.querySelector(".form_close_btn");
+
+const question_popup_show = () => {
+  user_questoin_popup.style.display= "flex"
+  document.body.style.overflow = "hidden"
+}
+const question_popup_close = () => {
+  user_questoin_popup.style.display= "none"
+  document.body.style.overflow = "scroll"
+}
+question_popup_close_btn.addEventListener("click", question_popup_close)
+question_popup_open_btn.addEventListener("click" , question_popup_show)
+
+
+
+
+
+
 //to added header
 // Fetch and inject the header
 fetch('../additional_pages/header.html')
