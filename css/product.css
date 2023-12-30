@@ -442,15 +442,12 @@ section#single_product_page .about_product {
   font-size: 20px;
 }
 
-.description_tab .product_description p,
-li {
+.description_tab .product_description p, li, .description_tab p {
   font-size: 14px;
   color: #666;
-}
-
-.description_tab .product_description p {
   line-height: 1.6rem;
 }
+
 
 .description_tab .product_description li .check_icon {
   margin-top: 2px;
