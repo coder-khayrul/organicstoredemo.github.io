@@ -2546,9 +2546,8 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
     justify-content: center !important;
 }
   button.offcanvas_icon {
-   
-    margin-right: 0px;
-   padding-right: 0px;
+   margin-right: 0px;
+   /* padding-right: 0px; */
   }
 }
 /* responsive code for large screen screen */
