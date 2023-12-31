@@ -2050,7 +2050,20 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   right: 0;
   display: none;
 }
-
+.popup_overlay .popup_content::-webkit-scrollbar {
+  width: 10px;
+}
+.popup_overlay .popup_content ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+.popup_overlay .popup_content::-webkit-scrollbar-thumb {
+  background: #888; 
+    border-radius:10px;
+}
+.popup_overlay .popup_content::-webkit-scrollbar-thumb:hover {
+  
+  background: #555; 
+} 
 .popup_overlay .popup_content {
   width: 90vw;
   height: 90vh;
@@ -2153,6 +2166,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
     object-fit: cover;
     height: 100%;
     object-position: top center;
+    cursor: pointer;
 }
 .product_color_choice .product_colors span {
   width: 30px;
@@ -2452,6 +2466,47 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 
 /* responsive code for mobile screen */
 @media only screen and (max-width: 502px) {
+  .popup_img{
+    height: 300px;
+  }
+  .popup_overlay .popup_content .exit_icon{
+    left: 93%;
+  }
+  .popup_info h3 {
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+  .signup_form_box .page_links a:last-child{
+    margin-right: 0;
+  }
+  .signup_form_box .page_links{
+    justify-content: space-between;
+  }
+  .login_form_box .login_other_way .single_way span, .msg_box p{
+    font-size: 14px;
+  }
+  .login_form_box .login_other_way .single_way{
+    width: 250px;
+  }
+  .remember_field {
+    font-size: 14px;
+}
+
+.forget_item {
+    font-size: 14px;
+}
+  
+  .user_join_popup{
+    padding: 20px 15px;
+  }
+  .owl-theme .owl-dots .owl-dot span{
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .mobile_popup_search .popup_search_wrapper{
+    padding: 40px 10px;
+  }
   .single_post .content_side .post_info a {
     font-size: 18px;
     font-weight: 600;
@@ -2496,7 +2551,6 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
    padding-right: 0px;
   }
 }
-
 /* responsive code for large screen screen */
 
 @media only screen and (min-width: 502px) {
