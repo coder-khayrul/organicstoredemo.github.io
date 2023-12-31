@@ -2277,11 +2277,6 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 /* ***************************responsive code************************* */
 
 /* responsive code for large desktop screen */
-@media only screen and (max-width: 1360px) {
-  .msg_box_container {
-    height: unset;
-  }
-}
 
 @media only screen and (max-width: 1140px) {
   .link_menu ul li a {

@@ -1295,6 +1295,9 @@ a.nav-link:hover {
   /* responsive code for laptop screen */
 
   @media only screen and (max-width: 768px) {
+    /* .signup_form_box{
+      margin-left: 0;
+    } */
     .dstp_search_bar .dstp_search_wrapper .dstp_search_box {
       width: 25rem;
     }

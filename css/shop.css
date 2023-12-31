@@ -2215,7 +2215,9 @@ abbr:hover {
   border: 1px solid transparent;
   transition: .3s;
 }
-
+.user_question_popup .user_form_area form .form_group select option{
+  color: #333 ;
+}
 .user_question_popup .user_form_area form .form_group select {
   width: 100%;
   padding: 0px 10px;
@@ -2744,6 +2746,10 @@ abbr:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
+.page_wrapper .msg_box {
+    padding: 80px 0px;
+}
   #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_img {
     height: 307px;
   }
