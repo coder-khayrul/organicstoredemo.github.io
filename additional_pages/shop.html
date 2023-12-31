@@ -51,15 +51,15 @@
       </div>
       <form action="" autocomplete="">
         <div class="form_group">
-          <label for="name"></label>
-          <input type="text" placeholder="Enter your name" required>
+          <label for="name_input"></label>
+          <input type="text" id="name_input" placeholder="Enter your name" required>
         </div>
         <div class="form_group">
-          <label for="email"></label>
-          <input type="email" placeholder="Enter your email" required>
+          <label for="user_email"></label>
+          <input type="email" id="user_email" placeholder="Enter your email" required>
         </div>
         <div class="form_group">
-          <label for="select"></label>
+          <label for="topic"></label>
           <select name="topic_select" id="topic" required>
             <option value="0" disabled selected>Select Topic</option>
             <option value="1">How does it fit?</option>
@@ -69,7 +69,7 @@
           </select>
         </div>
         <div class="form_group">
-          <label for="text"></label>
+          <label for="message"></label>
           <textarea type="message" id="message" placeholder="Write your messgae..." required></textarea>
         </div>
         <div class="form_group d-flex justify-content-center ">
@@ -85,7 +85,7 @@
     <div class="quick_view_wrapper">
       <div class="view_bottom">
         <div class="cart_count d-flex">
-          <input type="number" min="1" value="1">
+          <input type="number" id="count_num" min="1" value="1">
         </div>
         <div class="cart_button d-flex align-items-center justify-content-center ">
           <span><i class="fa-solid fa-cart-plus"></i></span>
@@ -234,8 +234,8 @@
                       <span>or use your email address</span>
                     </div>
                     <div class="input_box">
-                      <label for="name"></label>
-                      <input type="name" name="name" id="name" placeholder="Your full name" required>
+                      <label for="name_"></label>
+                      <input type="name" name="name" id="name_" placeholder="Your full name" required>
                     </div>
                     <div class="input_box">
                       <label for="input_email"></label>
@@ -447,7 +447,7 @@
                 <form autocomplete="on" action=""
                   class="main_search_bar mobile_search_bar d-flex d-lg-none align-content-center p-0 pb-3">
                   <div class="search_input mobile mobile_sm">
-                    <label for="searchField"></label>
+                    <label for="offcanvas_searchField"></label>
                     <input type="text" name="searchField" id="offcanvas_searchField"
                       placeholder="Enter search keyword..">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>

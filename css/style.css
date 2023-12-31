@@ -1746,7 +1746,8 @@ section#product_list_section .product_list_wrapper .newsletter .newsletter_wrapp
 section#product_list_section .product_list_wrapper .newsletter .newsletter_wrapper .newsletter_mailbox input {
   outline: none;
   border: none;
-  padding: 6px 10px;
+  padding: 15px;
+  font-size: 14px;
   box-sizing: border-box;
   border-radius: 3px;
   margin-bottom: 20px;

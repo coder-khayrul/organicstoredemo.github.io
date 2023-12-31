@@ -1893,9 +1893,11 @@ a.nav-link:hover {
   font-size: 15px;
   color: #333;
 }
+
 section#product_container {
   padding-bottom: 70px;
 }
+
 #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .product_option input {
   width: 40px;
   text-align: center;
@@ -2089,7 +2091,7 @@ abbr:hover {
 
 /*ask question popup style*/
 
-.user_question_popup{
+.user_question_popup {
   width: 100%;
   position: fixed;
   top: 0;
@@ -2104,10 +2106,12 @@ abbr:hover {
   justify-content: center;
   z-index: 99998;
 }
+
 .user_question_popup .user_form_area .form_close_btn a:hover {
   transform: scale(1.1);
   transition: .3s;
 }
+
 .user_question_popup .user_form_area {
   z-index: 999999999;
   width: 530px;
@@ -2116,12 +2120,14 @@ abbr:hover {
   padding: 30px 20px;
   position: relative;
 }
-.user_question_popup .user_form_area .form_close_btn{
+
+.user_question_popup .user_form_area .form_close_btn {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.user_question_popup .user_form_area .form_close_btn a{
+
+.user_question_popup .user_form_area .form_close_btn a {
   width: 30px;
   height: 30px;
   background: var(--primary_color);
@@ -2129,20 +2135,24 @@ abbr:hover {
   place-items: center;
   border-radius: 100%;
 }
+
 .user_question_popup .user_form_area .form_close_btn a {
   font-size: 15px;
   color: white;
   cursor: pointer;
   transition: .3s;
 }
-.user_question_popup .user_form_area .form_title h3{
+
+.user_question_popup .user_form_area .form_title h3 {
   font-size: 22px;
   font-weight: 500;
 }
+
 .user_question_popup .user_form_area .form_title h3 i {
   color: var(--primary_color);
 }
-.user_question_popup .user_form_area .form_title h3::after{
+
+.user_question_popup .user_form_area .form_title h3::after {
   content: " ";
   display: block;
   width: 80px;
@@ -2150,6 +2160,7 @@ abbr:hover {
   background: var(--primary_color);
   margin: 10px 0px;
 }
+
 .user_question_popup .user_form_area form .form_group {
   width: 100%;
 }
@@ -2174,19 +2185,23 @@ abbr:hover {
   outline: none;
   border-radius: 5px;
 }
-.user_question_popup .user_form_area form .form_group input:focus{
+
+.user_question_popup .user_form_area form .form_group input:focus {
   border: 1px solid var(--primary_color);
   transition: .3s;
 }
-.user_question_popup .user_form_area form .form_group textarea:focus{
+
+.user_question_popup .user_form_area form .form_group textarea:focus {
   border: 1px solid var(--primary_color);
   transition: .3s;
 }
-.user_question_popup .user_form_area form .form_group select:focus{
+
+.user_question_popup .user_form_area form .form_group select:focus {
   border: 1px solid var(--primary_color);
   transition: .3s;
 }
-.user_question_popup .user_form_area form .form_group button{
+
+.user_question_popup .user_form_area form .form_group button {
   font-size: 16px;
   background: var(--primary_color);
   color: white;
@@ -2200,6 +2215,7 @@ abbr:hover {
   border: 1px solid transparent;
   transition: .3s;
 }
+
 .user_question_popup .user_form_area form .form_group select {
   width: 100%;
   padding: 0px 10px;
@@ -2213,12 +2229,14 @@ abbr:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .user_question_popup .user_form_area form .form_group button:hover {
   color: var(--primary_color);
   border: 1px solid var(--primary_color);
   background: white;
   transition: .3s;
 }
+
 .wishlist_alert {
   width: 300px;
   height: 60px;
@@ -2231,31 +2249,36 @@ abbr:hover {
   right: -315px;
   background: transparent;
   opacity: 0;
-  
+
 }
+
 @keyframes wishlist_animation_hide {
-  0%{
-    
+  0% {
+
     right: 20px;
     opacity: 1;
   }
-  100%{
+
+  100% {
     right: -315px;
     opacity: 0;
   }
 }
+
 @keyframes wishlist_animation {
-  0%{
+  0% {
     right: -315px;
     opacity: 0;
   }
-  100%{
+
+  100% {
     right: 20px;
     opacity: 1;
   }
-  
+
 }
-.wishlist_alert span{
+
+.wishlist_alert span {
   width: 300px;
   height: 60px;
   background: var(--primary_color);
@@ -2285,7 +2308,7 @@ abbr:hover {
   z-index: 99998;
 }
 
- .popup_bg {
+.popup_bg {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -2597,10 +2620,14 @@ abbr:hover {
   border-radius: 3px;
   padding: 5px 0px;
 }
-.pagination_container .short_by label{
+
+.pagination_container .short_by label {
   color: #333;
 }
-.go_page {margin-right: 50px;}
+
+.go_page {
+  margin-right: 50px;
+}
 
 .current_page_container {
   color: #333;
@@ -2715,13 +2742,15 @@ abbr:hover {
     font-size: 14px;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_img{
-  height: 307px;
-}
-.login_form_box{
-  position: relative;
-}
+  #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_img {
+    height: 307px;
+  }
+
+  .login_form_box {
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2784,18 +2813,22 @@ abbr:hover {
 @media only screen and (max-width: 576px) {
   .go_page {
     margin-right: 10px;
-}
-  .user_question_popup .user_form_area .form_close_btn a{
+  }
+
+  .user_question_popup .user_form_area .form_close_btn a {
     width: 25px;
     height: 25px;
     font-size: 13px;
   }
-  .user_question_popup .user_form_area .form_title h3{
+
+  .user_question_popup .user_form_area .form_title h3 {
     font-size: 16px;
   }
-  .user_question_popup .user_form_area{
+
+  .user_question_popup .user_form_area {
     width: 360px;
   }
+
   #product_container .columns .main_page .main_page_wrapper .product_stor {
     padding: 30px 45px;
   }
@@ -2849,5 +2882,18 @@ abbr:hover {
 
   .slider_img {
     position: absolute;
+  }
+}
+
+
+@media only screen and (max-width: 415px) {
+  #product_container .columns .main_page .main_page_wrapper .product_area .product_view span {
+    display: none;
+  }
+  #product_container .columns .main_page .main_page_wrapper .product_area .product_filter>select{
+    font-size: 14px;
+  }
+  #product_container .columns .main_page .main_page_wrapper .product_area .product_filter>select option {
+    font-size: 14px;
   }
 }
