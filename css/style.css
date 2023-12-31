@@ -92,10 +92,9 @@ div#offcanvasExample {
   height: 100%;
 }
 .page_wrapper .login_form {
-  padding: 20px 0px;
+  padding: 20px 20px;
   background: white;
   height: 100%;
-  padding-left: 20px;
 }
 
 .signup_form_box {
@@ -103,7 +102,7 @@ div#offcanvasExample {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 .signup-login_buttons {
   display: flex;
@@ -2350,6 +2349,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 /* responsive code for laptop screen */
 
 @media only screen and (max-width: 768px) {
+  
   section#hero_section .hero_wrapper .single_slider {
     flex-direction: column;
     padding: 70px 50px;
@@ -2478,6 +2478,22 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   .page_bottom_menu a:hover {
     color: var(--primary_color);
     background: #ededed !important;
+  }
+  .logo a.navbar-brand img {
+    width: 90px;
+  }
+  .woocommerce_options li a{
+    font-size: 14px;
+  }
+  .pagination_container {
+    flex-wrap: wrap;
+    gap: 19px;
+    justify-content: center !important;
+}
+  button.offcanvas_icon {
+   
+    margin-right: 0px;
+   padding-right: 0px;
   }
 }
 

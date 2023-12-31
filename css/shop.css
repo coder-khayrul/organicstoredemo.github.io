@@ -103,10 +103,9 @@ div#offcanvasExample {
 }
 
 .page_wrapper .login_form {
-  padding: 20px 0px;
+  padding: 20px 20px;
   background: white;
   height: 100%;
-  padding-left: 20px;
 }
 
 .signup_form_box {
@@ -1894,7 +1893,9 @@ a.nav-link:hover {
   font-size: 15px;
   color: #333;
 }
-
+section#product_container {
+  padding-bottom: 70px;
+}
 #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_info .product_option input {
   width: 40px;
   text-align: center;
@@ -2714,6 +2715,14 @@ abbr:hover {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 768px) {
+  #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_img{
+  height: 307px;
+}
+.login_form_box{
+  position: relative;
+}
+}
 
 @media only screen and (max-width: 700px) {
 
@@ -2773,6 +2782,9 @@ abbr:hover {
 }
 
 @media only screen and (max-width: 576px) {
+  .go_page {
+    margin-right: 10px;
+}
   .user_question_popup .user_form_area .form_close_btn a{
     width: 25px;
     height: 25px;
