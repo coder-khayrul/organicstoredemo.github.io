@@ -4,55 +4,1056 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product | Organic Store</title>
+    <title>Product-01 | Organic Store</title>
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/mega_menu.css">
+    <link rel="stylesheet" href="../css/accordion_menu.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
 </head>
 
 <body>
-     <!--ask question popup-->
-  <div class="user_question_popup">
-    <div class="popup_bg"></div>
-    <div class="user_form_area">
-      <div class="form_close_btn">
-        <a href="#"><i class="fa-solid fa-x"></i></a>
-      </div>
-      <div class="form_title">
+    <!--ask question popup-->
+    <div class="user_question_popup">
+        <div class="popup_bg"></div>
+        <div class="user_form_area">
+            <div class="form_close_btn">
+                <a href="#"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class="form_title">
 
-        <h3><i class="fa-solid fa-file-circle-question me-2"></i> Ask a Question About This Product</h3>
-      </div>
-      <form action="" autocomplete="" id="user_question_form" name="user_question_form">
-        <div class="form_group">
-          <label for="fullName"></label>
-          <input type="text" id="fullName" placeholder="Enter your name" required>
+                <h3><i class="fa-solid fa-file-circle-question me-2"></i> Ask a Question About This Product</h3>
+            </div>
+            <form action="" autocomplete="" id="user_question_form" name="user_question_form">
+                <div class="form_group">
+                    <label for="fullName"></label>
+                    <input type="text" id="fullName" placeholder="Enter your name" required>
+                </div>
+                <div class="form_group">
+                    <label for="userEmail"></label>
+                    <input type="email" id="userEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form_group">
+                    <label for="topic"></label>
+                    <select name="topic_select" id="topic" required>
+                        <option value="0" disabled selected>Select Topic</option>
+                        <option value="1">How does it fit?</option>
+                        <option value="1">How do you wash it?</option>
+                        <option value="1">How you can get delivered?</option>
+                        <option value="1">Have any guarantee of product</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="message"></label>
+                    <textarea type="message" id="message" placeholder="Write your messgae..." required></textarea>
+                </div>
+                <div class="form_group d-flex justify-content-center ">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
-        <div class="form_group">
-          <label for="userEmail"></label>
-          <input type="email" id="userEmail" placeholder="Enter your email" required>
-        </div>
-        <div class="form_group">
-          <label for="topic"></label>
-          <select name="topic_select" id="topic" required>
-            <option value="0" disabled selected>Select Topic</option>
-            <option value="1">How does it fit?</option>
-            <option value="1">How do you wash it?</option>
-            <option value="1">How you can get delivered?</option>
-            <option value="1">Have any guarantee of product</option>
-          </select>
-        </div>
-        <div class="form_group">
-          <label for="message"></label>
-          <textarea type="message" id="message" placeholder="Write your messgae..." required></textarea>
-        </div>
-        <div class="form_group d-flex justify-content-center ">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
     </div>
-  </div>
 
-    <section id="header_section"></section>
+    <!--header section start here-->
+    <!-- page bottom menu -->
+    <div class="page_bottom_menu  justify-content-between align-content-center flex-wrap">
+        <a class="p_btm_item col-3 p-3" href="#"><i class="fa-solid fa-house"></i></a>
+        <a class="p_btm_item col-3 p-3" href="#"><i class="fa-regular fa-heart"></i> </a>
+        <a class="p_btm_item col-3 p-3" href="#"><i class="fa-solid fa-user"></i></a>
+        <a class="p_btm_item col-3 p-3" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+    <header id="header">
+        <!--signup and sign in page popup start-->
+        <div class="user_popup_container">
+            <div class="container-xxl">
+                <div class="user_join_popup">
+                    <div class="page_wrapper ">
+                        <div class="row">
+                            <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
+                            <div class="col-12 col-md-6">
+                                <div
+                                    class="position-relative popup_from d-flex justify-content-center align-items-center">
+                                    <form name="user_form" action="" id="signup_from" autocomplete="off"
+                                        class="signup_form_box">
+                                        <h2>Create Your Account</h2>
+                                        <div class="social_site">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                        </div>
+                                        <div class="d-flex justify-content-center ">
+                                            <span>or use your email address</span>
+                                        </div>
+                                        <div class="input_box">
+                                            <label for="YourName"></label>
+                                            <input type="name" name="name" id="YourName" placeholder="Your full name"
+                                                required>
+                                        </div>
+                                        <div class="input_box">
+                                            <label for="input_email"></label>
+                                            <input type="email" name="email" id="input_email" placeholder="Your email"
+                                                required>
+                                        </div>
+                                        <div class="input_box">
+                                            <label for="Password"></label>
+                                            <input type="password" name="Password" id="Password"
+                                                placeholder="New Password" required>
+                                        </div>
+                                        <div class="cdt_div">
+                                            <div class="checkbox_ctn">
+                                                <label for="checkbox_input"></label>
+                                                <input type="checkbox" name="checkbox" id="checkbox_input">
+                                                <span>Remember me</span>
+                                            </div>
+                                            <a href="#">forgot password?</a>
+                                        </div>
+                                        <div class="login_btn">
+                                            <button type="submit">SIGN UP</button>
+                                        </div>
+                                        <div class="page_links">
+                                            <a href="#">Privacy Policy</a>
+                                            <a href="#">Terms & Conditions</a>
+                                        </div>
+                                    </form>
+                                    <div class="login_form_box" id="login_from">
+                                        <div class="from_title">
+                                            <h2>Login</h2>
+                                            <p>Enter your Email and Password to login.</p>
+                                        </div>
+                                        <form action="" name="login_form_area" id="login_form_area" class="login_form"
+                                            autocomplete="on">
+                                            <input type="email" name="email" id="loginEmail" placeholder="Email">
+                                            <input type="password" name="password" id="loginPassword"
+                                                placeholder="password">
+                                            <div class="optional_items mb-5">
+                                                <div class="remember_field">
+                                                    <input type="checkbox" name="remember" id="remember">
+                                                    <label for="remember">Remember me</label>
+
+                                                </div>
+                                                <div class="forget_item">
+                                                    <a href="#">Forget your email?</a>
+                                                </div>
+                                            </div>
+                                            <button type="submit">Login</button>
+                                        </form>
+                                        <span class="or_devider">Or</span>
+                                        <div class="login_other_way">
+                                            <div class="single_way">
+                                                <div class="social-login">
+                                                    <i class="fa-brands fa-google"></i>
+                                                </div>
+                                                <span>Connect with google</span>
+                                            </div>
+                                            <div class="single_way">
+                                                <div class="social-login">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </div>
+                                                <span>Connect with facebook</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pe-0">
+                                <div class="msg_box_container">
+                                    <div class="msg_box d-flex flex-column ">
+                                        <div class="cir_photo">
+                                            <img src="../img/profile_sml.jpg" alt="profile picture">
+                                        </div>
+                                        <h3 id="user_msg">Wellcome Back!</h3>
+                                        <p>Login here by filling you're username and password or use your favorite
+                                            social network account
+                                            to
+                                            enter to the site</p>
+                                        <div class="signup-login_buttons">
+                                            <button id="login_btn" type="submit">LOGIN</button>
+                                            <button id="signup_btn" type="submit">SIGN UP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--signup and sign in page popup end-->
+        <!--mobile search page-->
+        <div class="mobile_popup_search">
+            <div class="popup_search_wrapper">
+                <a href="#" class="popup_search_close" type="submit"><i class="fa-solid fa-x"></i></a>
+                <form action="" name="mobile_search_form" autocomplete="off" id="mobile_search_form"
+                    class="mobile_search-bar">
+                    <input type="search" name="s" id="search_input" placeholder="Search for product">
+                    <select class="category_items ps-0">
+                        <option value="">All Category</option>
+                        <option value="">Clock</option>
+                        <option value="">Lighting</option>
+                        <option value="">Furniture</option>
+                        <option value="">Toy</option>
+                        <option value="">Fashion</option>
+                        <option value="">Others</option>
+                    </select>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="popular_category">
+                    <h3>Most Popular Category</h3>
+                    <div class="popular_category_wrapper d-flex flex-wrap ">
+                        <a href="#" class="popular_category_title">
+                            <span>Furniture</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Accessories</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Laptop</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>LED Signage</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Sound Device</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Family</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Tablet</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Toys</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Cricket</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Badminton</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Computer</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Air Condition</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid container-xl">
+            <!--top header section start here-->
+            <div class="top_header d-flex justify-content-between align-items-center ">
+                <div class="logo">
+                    <a class="navbar-brand" class="img-fluid " href="./index.html"><img src="../img/logo.png"
+                            alt="./img/logo.png">
+                    </a>
+                </div>
+                <form autocomplete="on" action="" id="main_search_bar_form"
+                    class="main_search_bar d-none d-lg-flex align-content-center">
+                    <div class="category_area">
+                        <select class="category_items ps-0">
+                            <option value="">All Category</option>
+                            <option value="">Clock</option>
+                            <option value="">Lighting</option>
+                            <option value="">Furniture</option>
+                            <option value="">Toy</option>
+                            <option value="">Fashion</option>
+                            <option value="">Others</option>
+                        </select>
+                        <div class="select_icon">
+                            <i class="toggle_open fa-solid fa-caret-down"></i>
+                            <i style="display: none;" class="toggle_close fa-solid fa-caret-up"></i>
+                        </div>
+                    </div>
+                    <div class="search_input">
+                        <label for="searchField"></label>
+                        <input type="text" name="searchField" id="searchField" placeholder="Enter search keyword.."
+                            required>
+                        <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+                <div class="woocommerce_area">
+                    <ul class="woocommerce_options align-items-center  justify-content-end mb-0  ps-0">
+                        <li class="list-unstyled me-3 search_icon d-unset d-lg-none"><a href="#"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li class="list-unstyled me-3"><a id="user_join_icon" href="#"><i
+                                    class="fa-solid fa-user"></i></a></li>
+                        <li id="product_item" class="list-unstyled me-3"><a href="#"><i
+                                    class="fa-solid fa-bag-shopping"></i></a>
+                        </li>
+                        <li class="list-unstyled me-3"><span>£</span>0.00</li>
+                        <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                        <li class="list-unstyled product_like_list"><a href="#"><i class="fa-regular fa-heart"></i> </a>
+                        </li>
+                        <button class="offcanvas_icon btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <img src="../img/bars-solid.svg" alt="./img/bars-solid.svg" srcset="">
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas_close_btn ">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body pt-5">
+                                <form autocomplete="on" action="" id="offcanvas_search_form"
+                                    class="main_search_bar mobile_search_bar d-flex d-lg-none align-content-center p-0 pb-3">
+                                    <div class="search_input mobile mobile_sm">
+                                        <label for="offcanvas_searchField"></label>
+                                        <input type="text" name="searchField" id="offcanvas_searchField"
+                                            placeholder="Enter search keyword..">
+                                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </form>
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item col-6" role="presentation">
+                                        <button class="nav-link active menu_tab" id="pills-home-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">Menu</button>
+                                    </li>
+                                    <li class="nav-item col-6" role="presentation">
+                                        <button class="nav-link menu_tab" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">Categories</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab" tabindex="0">
+                                        <ul class="accordion-menu">
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                                                    <a href="../index.html">Home</a>
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                </div>
+                                                <ul class="submenuItems">
+                                                    <li><a href="#">Home 1</a></li>
+                                                    <li><a href="#">Home 2</a></li>
+                                                    <li><a href="#">Home 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-paper-plane"
+                                                        aria-hidden="true"></i> Blog
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                </div>
+                                                <ul class="submenuItems">
+                                                    <li><a href="#">Blog 1</a></li>
+                                                    <li><a href="#">Blog 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-quote-left"
+                                                        aria-hidden="true"></i> <a href="../pages/shop.html">Shop</a>
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                </div>
+                                                <ul class="submenuItems">
+                                                    <li class="sub">
+                                                        <div class="dropdownlink"> Fantasy 1
+                                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                        </div>
+                                                        <ul class="submenuItems">
+                                                            <li><a href="#">Fantasy 2</a></li>
+                                                            <li><a href="#">Fantasy 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Fantasy 2</a></li>
+                                                    <li><a href="#">Fantasy 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                        aria-hidden="true"></i> Elements
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                </div>
+                                                <ul class="submenuItems">
+                                                    <li><a href="#">Elements 1</a></li>
+                                                    <li><a href="#">Elements 2</a></li>
+                                                    <li><a href="#">Elements 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                        aria-hidden="true"></i> Contact Us
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <ul class="accordion-menu">
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                                                    Category one
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-paper-plane"
+                                                        aria-hidden="true"></i> Category two
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-quote-left"
+                                                        aria-hidden="true"></i> Category
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                </div>
+                                                <ul class="submenuItems">
+                                                    <li>
+                                                        <div class="dropdownlink"> Category 1
+                                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                        </div>
+                                                        <ul class="submenuItems">
+                                                            <li><a href="#">Category 2</a></li>
+                                                            <li><a href="#">Category 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Category</a></li>
+                                                    <li><a href="#">Category</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                        aria-hidden="true"></i> Elements
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                </div>
+                                                <ul class="submenuItems">
+                                                    <li><a href="#">Elements 1</a></li>
+                                                    <li><a href="#">Elements 2</a></li>
+                                                    <li><a href="#">Elements 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                        aria-hidden="true"></i> Contact Us
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                        aria-hidden="true"></i> Category title
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                        aria-hidden="true"></i> Category title
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                        aria-hidden="true"></i> Category title
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <!-- product cart message-->
+                <div class="product_msg">
+                    <span>No products in the cart.</span>
+                </div>
+            </div>
+            <!--top header section end here-->
+            <nav class="navbar navbar-expand-lg justify-content-between ">
+                <!-- vertical category start -->
+                <div class=" vertical_category d-none d-lg-flex ">
+                    <div class="vertical_category_wrapper ">
+                        <div class="v_category_handler d-flex justify-content-between align-items-center ">
+                            <i class="fa-solid fa-list mb-0 pb-0 "></i>
+                            <span class="v_category_title">PRODUCT CATEGORIES</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <ul id="category_list" class="v_category_items ps-0 ">
+                            <li>
+                                <div class="category_title">
+                                    <img src="../img/telephone.png" alt="telephone.png" class="img-fluid me-2">
+                                    <span>Electronic</span>
+                                    <!-- product mega menu 1 start-->
+                                    <div class="product_mega_menu" id="product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Computer</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Telephone</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- product mega menu end-->
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <div class="category_title">
+                                    <img src="../img/sofa.png" alt="./img/sofa.png" class="img-fluid me-2">
+                                    <span>Furniture</span>
+                                    <!-- product mega menu 1 start-->
+                                    <div class="product_mega_menu" id="product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Electronic Device</h4>
+                                                        <li><a href="#">Small Sofas</a></li>
+                                                        <li><a href="#">Armchairs</a></li>
+                                                        <li><a href="#">Easy Chir</a></li>
+                                                        <li><a href="#">Day Beds</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="menu_inner_item">
+                                                        <img src="../img/product_ads.jpg" alt="./img/product_ads.jpg"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- product mega menu end-->
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <div class="category_title">
+                                    <img src="../img/computer.png" alt="./img/computer.png" class="img-fluid me-2">
+                                    <span>Computer</span>
+                                    <!-- product mega menu 1 start-->
+                                    <div class="product_mega_menu" id="product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Computer</h4>
+                                                        <li><a href="#">Small Sofas</a></li>
+                                                        <li><a href="#">Armchairs</a></li>
+                                                        <li><a href="#">Easy Chir</a></li>
+                                                        <li><a href="#">Day Beds</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Tables</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Furniture</h4>
+                                                        <li><a href="#">Tablet Device</a></li>
+                                                        <li><a href="#">Gaming</a></li>
+                                                        <li><a href="#">Play online</a></li>
+                                                        <li><a href="#">Play Ground</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Electronic Device</h4>
+                                                        <li><a href="#">Small Sofas</a></li>
+                                                        <li><a href="#">Armchairs</a></li>
+                                                        <li><a href="#">Easy Chir</a></li>
+                                                        <li><a href="#">Day Beds</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <div class="menu_inner_item">
+                                                        <img src="../img/product_anunc.jpg"
+                                                            alt="./img/product_anunc.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- product mega menu end-->
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <div class="category_title">
+                                    <img src="../img/gardening-tools.png" alt="./img/gardening-tools.png"
+                                        class="img-fluid me-2">
+                                    <span>Farming Tools</span>
+                                    <!-- product mega menu 1 start-->
+                                    <div class="product_mega_menu" id="product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Electronic Device</h4>
+                                                        <li><a href="#">Small Sofas</a></li>
+                                                        <li><a href="#">Armchairs</a></li>
+                                                        <li><a href="#">Easy Chir</a></li>
+                                                        <li><a href="#">Day Beds</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Electronic Device</h4>
+                                                        <li><a href="#">Small Sofas</a></li>
+                                                        <li><a href="#">Armchairs</a></li>
+                                                        <li><a href="#">Easy Chir</a></li>
+                                                        <li><a href="#">Day Beds</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="menu_inner_item">
+                                                        <img src="../img/product_anunc.jpg"
+                                                            alt="../img/product_anunc.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- product mega menu end-->
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <div class="category_title">
+                                    <img src="../img/technology.png" alt="./img/technology.png" class="img-fluid me-2">
+                                    <span>Instruments</span>
+                                    <!-- product mega menu 1 start-->
+                                    <div class="product_mega_menu" id="product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Electronic Device</h4>
+                                                        <li><a href="#">Small Sofas</a></li>
+                                                        <li><a href="#">Armchairs</a></li>
+                                                        <li><a href="#">Easy Chir</a></li>
+                                                        <li><a href="#">Day Beds</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Technology</h4>
+                                                        <li><a href="#">Footstone</a></li>
+                                                        <li><a href="#">Trolleys</a></li>
+                                                        <li><a href="#">Shoe cabinate</a></li>
+                                                        <li><a href="#">product demo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul class="menu_inner_item ps-0 ">
+                                                        <h4>Armchairs</h4>
+                                                        <li><a href="#">Super Chir</a></li>
+                                                        <li><a href="#">Sofa Chir</a></li>
+                                                        <li><a href="#">Reading Chir</a></li>
+                                                        <li><a href="#">Primaum Chir</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <div class="menu_inner_item">
+                                                        <img src="../img/product_anunc.jpg"
+                                                            alt="../img/product_anunc.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- product mega menu end-->
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- desktop menu start here -->
+                <ul id="desktop_menu" class="navbar-nav navbar-light" class="menu-main">
+                    <li class="nav-item "><a class="nav-link" href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                    <li class="nav-item menu-item-has-children">
+                        <a href="../pages/shop.html" class="nav-link">SHOP <i class="fa fa-angle-down"></i></a>
+                        <div class="sub-menu mega-menu mega-menu-column-4 ">
+                            <div class="list-item">
+                                <h4 class="title">SHOP LAYOUT</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4 class="title">PRODUCT PAGES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a id="sale" href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4 class="title">PRODUCT FEATURES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a id="hot_sale" href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebart</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a id="sale" href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4 class="title">WOOCOMMERCE</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a id="sale" href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4 class="title">SHOP PAGES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No </a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-item-has-children">
+                        <a href="#" class="nav-link">PAGES <i class="fa fa-angle-down"></i></a>
+                        <div class="sub-menu mega-menu mega-menu-column-4 row">
+                            <div class="list-item col-3">
+                                <h4 class="title">BASIC PAGES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">INFORMATION PAGES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">ADDITIONAL PAGE</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">PORTFOLIO</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No </a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-item-has-children">
+                        <a href="#" class="nav-link">ELEMENTS <i class="fa fa-angle-down"></i></a>
+                        <div class="sub-menu mega-menu mega-menu-column-4 row">
+                            <div class="list-item col-3">
+                                <h4 class="title">CIYA ELEMENTS 01</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">CIYA ELEMENTS 02</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">CIYA ELEMENTS 03</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">CIYA ELEMENTS 04</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No </a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                </ul>
+                <!-- desktop menu end here -->
+                <div class="link_menu d-none d-lg-flex align-items-center  justify-content-end  ">
+                    <ul class="d-flex justify-content-between align-items-center   ps-0 mb-0 ">
+                        <li class="list-unstyled me-3"><a href="#">New Arrivals</a></li>
+                        <li class="list-unstyled me-3"><a href="#">Super Sale</a></li>
+                        <li class="list-unstyled "><a href="#">Outlet</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
     <section id="single_product_page">
         <div class="container-fluid container-xl">
             <div class="breadcrumb_items breadcrumb ">
@@ -117,7 +1118,8 @@
                                         <button class="d-none d-sm-flex ">Add To Cart</button>
                                     </div>
                                     <div class="popup__option">
-                                        <span><i class="fa-solid fa-bag-shopping"></i></span><a href="#" class="d-none d-sm-grid ">Buy Now</a>
+                                        <span><i class="fa-solid fa-bag-shopping"></i></span><a href="#"
+                                            class="d-none d-sm-grid ">Buy Now</a>
                                     </div>
                                     <div class="popup__option popup__option2 question_button">
                                         <a href="#"><i class="fa-solid fa-question"></i></a>
@@ -213,8 +1215,9 @@
                                 type="button" role="tab" aria-controls="Review" aria-selected="false">Review</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="shop_delivary-tab" data-bs-toggle="tab" data-bs-target="#shop_delivary"
-                                type="button" role="tab" aria-controls="Brand" aria-selected="false">Shipping & Delivery</button>
+                            <button class="nav-link" id="shop_delivary-tab" data-bs-toggle="tab"
+                                data-bs-target="#shop_delivary" type="button" role="tab" aria-controls="Brand"
+                                aria-selected="false">Shipping & Delivery</button>
                         </li>
                     </ul>
                 </div>
@@ -703,8 +1706,8 @@
                                                 </div>
                                                 <div class="customer_box mb-3">
                                                     <label for="review">Your Review:</label>
-                                                    <textarea type="text" name="review" id="review"
-                                                        rows="5"  required></textarea>
+                                                    <textarea type="text" name="review" id="review" rows="5"
+                                                        required></textarea>
                                                 </div>
                                                 <div class="customer_box mb-3">
                                                     <label for="email">Your Email:</label>
@@ -719,34 +1722,43 @@
                                                     <button type="submit">Submit</button>
                                                 </div>
                                             </form>
-                                        
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                <div class="tab-pane fade" id="shop_delivary" role="tabpanel" aria-labelledby="shop_delivary-tab" tabindex="0">
-                    <div class="about_product_brand">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="about_info">
-                                    <h3>Modern Men's Brand Watch</h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
-                                        have suffered alteration in some form, by injected humour, or randomised words
-                                        which don't look even slightly believable. If you are going to use a passage of
-                                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-                                        middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-                                        predefined chunks as necessary, making this the first true generator on the
-                                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-                                        of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                                        The generated Lorem Ipsum is therefore always free from repetition, injected
-                                        humour, or non-characteristic words etc.</p>
+                    <div class="tab-pane fade" id="shop_delivary" role="tabpanel" aria-labelledby="shop_delivary-tab"
+                        tabindex="0">
+                        <div class="about_product_brand">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="about_info">
+                                        <h3>Modern Men's Brand Watch</h3>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the
+                                            majority
+                                            have suffered alteration in some form, by injected humour, or randomised
+                                            words
+                                            which don't look even slightly believable. If you are going to use a passage
+                                            of
+                                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+                                            the
+                                            middle of text. All the Lorem Ipsum generators on the Internet tend to
+                                            repeat
+                                            predefined chunks as necessary, making this the first true generator on the
+                                            Internet. It uses a dictionary of over 200 Latin words, combined with a
+                                            handful
+                                            of model sentence structures, to generate Lorem Ipsum which looks
+                                            reasonable.
+                                            The generated Lorem Ipsum is therefore always free from repetition, injected
+                                            humour, or non-characteristic words etc.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="brand_img d-flex justify-content-between ">
-                                    <img src="../img/ship1.png" alt="" class="img-fluid">
+                                <div class="col-12 col-md-6">
+                                    <div class="brand_img d-flex justify-content-between ">
+                                        <img src="../img/ship1.png" alt="" class="img-fluid">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -754,12 +1766,12 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <section id="footer_section"></section>
     <!--script files here-->
     <script src="../js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/accordion_menu.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/product.js"></script>

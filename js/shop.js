@@ -278,7 +278,7 @@ shop_img_area.forEach((area) => {
 
 //to added footer
 // Fetch and inject the header
-fetch('../additional_pages/footer.html')
+fetch('../pages/footer.html')
   .then(response => response.text())
   .then(html => {
     document.getElementById('footer_container').innerHTML = html;

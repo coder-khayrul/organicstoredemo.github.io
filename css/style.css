@@ -565,11 +565,9 @@ span.or_devider {
   outline: none;
   border: 1px solid #ededed;
 }
-
 .search_input input:focus {
   border: 1px solid var(--primary_color);
 }
-
 /* top header style end */
 /* header style start here */
 header#header {
@@ -2173,6 +2171,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   width: 30px;
   height: 30px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .product_color_choice .product_colors span:first-child {
