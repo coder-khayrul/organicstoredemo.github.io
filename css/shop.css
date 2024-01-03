@@ -1996,11 +1996,12 @@ abbr:hover {
 
 #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product .product_img .quick_view_icon {
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.089);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
   display: none;
+  z-index: 1;
 }
 
 #product_container .columns .main_page .main_page_wrapper .product_stor .single_shop_product:hover .quick_view_icon {
