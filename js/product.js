@@ -325,7 +325,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 //to added header
 // Fetch and inject the header
-// fetch('../pages/header.html')
+// fetch('header.html')
 //   .then(response => response.text())
 //   .then(html => {
 //     document.getElementById('header_section').innerHTML = html;
@@ -334,7 +334,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 //to added footer
 // Fetch and inject the header
-fetch('../pages/footer.html')
+fetch('footer.html')
   .then(response => response.text())
   .then(html => {
     document.getElementById('footer_section').innerHTML = html;
