@@ -21,7 +21,7 @@
 		opacity: 1;
 	}
 }
-#new_::after{
+.new_::after{
 	content: "NEW";
     background: #019267;
     color: white;
@@ -32,7 +32,7 @@
 	border-radius: 3px;
     box-sizing: border-box;
 }
-#hot_sale::after {
+.hot_sale::after {
     content: "HOT";
     background: tomato;
     color: white;
@@ -42,7 +42,7 @@
     font-size: 10px;
     box-sizing: border-box;
 }
-#sale::after {
+.sale::after {
     content: "SALE";
     background: #88B813;
     color: white;

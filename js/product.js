@@ -332,7 +332,6 @@ var swiper2 = new Swiper(".mySwiper2", {
 //   })
 //   .catch(error => console.error('Error fetching header:', error));
 
-
 //to added footer
 // Fetch and inject the header
 fetch('../pages/footer.html')

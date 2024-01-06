@@ -6,24 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Mart</title>
   <!-- main css link -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href=" css/style.css">
   <!--preloader css-->
-  <link rel="stylesheet" href="./css/preloader.css">
+  <link rel="stylesheet" href=" css/preloader.css">
   <!--mega menu css-->
-  <link rel="stylesheet" href="./css/mega_menu.css">
+  <link rel="stylesheet" href=" css/mega_menu.css">
   <!-- swiper css  -->
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href=" css/swiper-bundle.min.css">
   <!--owl-carousel-->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- animate css-->
-  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href=" css/animate.min.css">
   <!--bootstrap css -->
-  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href=" css/bootstrap.css">
   <!-- bottom to top toggle button -->
-  <link rel="stylesheet" href="./css/jquery.elevator.css">
+  <link rel="stylesheet" href=" css/jquery.elevator.css">
   <!--accordion css file-->
-  <link rel="stylesheet" href="./css/accordion_menu.css">
+  <link rel="stylesheet" href=" css/accordion_menu.css">
 
   <!--font-awesome cdn-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -53,8 +53,8 @@
       <!--mobile search page-->
       <div class="mobile_popup_search">
         <div class="popup_search_wrapper">
-          <a href="#" class="popup_search_close" type="submit"><i class="fa-solid fa-x"></i></a>
-          <form action="" name="" class="mobile_search-bar">
+          <a href="#" class="popup_search_close"><i class="fa-solid fa-x"></i></a>
+          <form class="mobile_search-bar">
             <input type="search" name="s" placeholder="Search for product">
             <select class="category_items ps-0">
               <option value="">All Category</option>
@@ -131,7 +131,7 @@
                 <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
                 <div class="col-12 col-md-6">
                   <div class="position-relative popup_from d-flex justify-content-center align-items-center">
-                    <form name="user_form" action="" id="signup_from" autocomplete="on" class="signup_form_box">
+                    <form class="signup_form_box">
                       <h2>Create Your Account</h2>
                       <div class="social_site">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -143,7 +143,7 @@
                       </div>
                       <div class="input_box">
                         <label for="name"></label>
-                        <input type="name" name="name" id="name" placeholder="Your full name" required>
+                        <input type="text" name="name" id="name" placeholder="Your full name" required>
                       </div>
                       <div class="input_box">
                         <label for="input_email"></label>
@@ -173,7 +173,7 @@
                         <h2>Login</h2>
                         <p>Enter your Email and Password to login.</p>
                       </div>
-                      <form action="" name="" id="" class="login_form" autocomplete="on">
+                      <form class="login_form">
                         <input type="email" name="email" id="loginEmail" placeholder="Email">
                         <input type="password" name="password" id="loginPassword" placeholder="password">
                         <div class="optional_items mb-5">
@@ -233,10 +233,11 @@
         <!--top header section start here-->
         <div class="top_header d-flex justify-content-between align-items-center ">
           <div class="logo">
-            <a class="navbar-brand" class="img-fluid " href="./index.html"><img src="./img/logo.png" alt="./img/logo.png">
+            <a class="navbar-brand" href=" index.html"><img class="img-fluid" src=" img/logo.png"
+                alt=" img/logo.png">
             </a>
           </div>
-          <form autocomplete="on" action="" class="main_search_bar d-none d-lg-flex align-content-center">
+          <form class="main_search_bar d-none d-lg-flex align-content-center">
             <div class="category_area">
               <select class="category_items ps-0">
                 <option value="">All Category</option>
@@ -269,157 +270,180 @@
               <li class="list-unstyled me-3"><span>£</span>0.00</li>
               <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
               <li class="list-unstyled product_like_list"><a href="#"><i class="fa-regular fa-heart"></i> </a></li>
-              <button class="offcanvas_icon btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <img src="./img/bars-solid.svg" alt="./img/bars-solid.svg" srcset="">
-              </button>
-              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas_close_btn ">
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body pt-5">
-                  <form autocomplete="on" action=""
-                    class="main_search_bar mobile_search_bar d-flex d-lg-none align-content-center p-0 pb-3">
-                    <div class="search_input mobile mobile_sm">
-                      <label for="searchField"></label>
-                      <input type="text" name="searchField" id="offcanvas_searchField"
-                        placeholder="Enter search keyword..">
-                      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                  </form>
-                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item col-6" role="presentation">
-                      <button class="nav-link active menu_tab" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Menu</button>
-                    </li>
-                    <li class="nav-item col-6" role="presentation">
-                      <button class="nav-link menu_tab" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Categories</button>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                      aria-labelledby="pills-home-tab" tabindex="0">
-                      <ul class="accordion-menu">
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i> <a href="../index.html">Home</a>
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </div>
-                          <ul class="submenuItems">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-paper-plane" aria-hidden="true"></i> Blog
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </div>
-                          <ul class="submenuItems">
-                            <li><a href="#">Blog 1</a></li>
-                            <li><a href="#">Blog 2</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i> <a href="./pages/shop.html">Shop</a>
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </div>
-                          <ul class="submenuItems">
-                            <li class="sub">
-                              <div class="dropdownlink"> Fantasy 1
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                              </div>
-                              <ul class="submenuItems">
-                                <li><a href="#">Fantasy 2</a></li>
-                                <li><a href="#">Fantasy 3</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Fantasy 2</a></li>
-                            <li><a href="#">Fantasy 3</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Product Pages
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </div>
-                          <ul class="submenuItems">
-                            <li><a href="product_pages/product01.html">Product page-01</a></li>
-                            <li><a href="product_pages/product.html">Product page-02</a></li>
-                            
-                          </ul>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Contact Us
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                      tabindex="0">
-                      <ul class="accordion-menu">
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i> Category one
-                          </div>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-paper-plane" aria-hidden="true"></i> Category two
-                          </div>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i> Category
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </div>
-                          <ul class="submenuItems">
-                            <li>
-                              <div class="dropdownlink"> Category 1
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                              </div>
-                              <ul class="submenuItems">
-                                <li><a href="#">Category 2</a></li>
-                                <li><a href="#">Category 3</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Category</a></li>
-                            <li><a href="#">Category</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Elements
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </div>
-                          <ul class="submenuItems">
-                            <li><a href="#">Elements 1</a></li>
-                            <li><a href="#">Elements 2</a></li>
-                            <li><a href="#">Elements 3</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Contact Us
-                          </div>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Category title
-                          </div>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Category title
-                          </div>
-                        </li>
-                        <li>
-                          <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Category title
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+              <li class="list-unstyled">
+                <button class="offcanvas_icon btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <img src=" img/bars-solid.svg" alt=" img/bars-solid.svg">
+                </button>
+              </li>
+            </ul>
 
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+              <div class="offcanvas_close_btn ">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body pt-5">
+                <form class="main_search_bar mobile_search_bar d-flex d-lg-none align-content-center p-0 pb-3">
+                  <div class="search_input mobile mobile_sm">
+                    <label for="searchField"></label>
+                    <input type="text" name="searchField" id="offcanvas_searchField"
+                      placeholder="Enter search keyword..">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+                </form>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item col-6" role="presentation">
+                    <button class="nav-link active menu_tab" id="pills-home-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                      aria-selected="true">Menu</button>
+                  </li>
+                  <li class="nav-item col-6" role="presentation">
+                    <button class="nav-link menu_tab" id="pills-profile-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                      aria-selected="false">Categories</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab" tabindex="0">
+                    <ul class="accordion-menu">
+                      <li>
+                        <div class="dropdownlink">
+                          <i class="fa fa-road" aria-hidden="true"></i>
+                          <a href=" index.html">Home</a>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                          <li><a href="#">Home 1</a></li>
+                          <li><a href="#">Home 2</a></li>
+                          <li><a href="#">Home 3</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="dropdownlink">
+                          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                          <a href="#">Blog</a>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                          <li><a href="#">Blog 1</a></li>
+                          <li><a href="#">Blog 2</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="dropdownlink">
+                          <i class="fa fa-quote-left" aria-hidden="true"></i>
+                          <a href="  shop.html">Shop</a>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                          <li class="sub">
+                            <div class="dropdownlink">
+                              <a href="#">Fantasy 1</a>
+                              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+                            <ul class="submenuItems">
+                              <li><a href="#">Fantasy 2</a></li>
+                              <li><a href="#">Fantasy 3</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Fantasy 2</a></li>
+                          <li><a href="#">Fantasy 3</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="dropdownlink">
+                          <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                          <a href="#">Product Pages</a>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                          <li>
+                            <a href=" product01.html">Product page-01</a>
+                          </li>
+                          <li>
+                            <a href=" product.html">Product page-02</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="dropdownlink">
+                          <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                          <a href="#">Contact Us</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <ul class="accordion-menu">
+                      <li>
+                        <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                          <a href="#">Category one</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdownlink"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+                          <a href="#">Category two</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          <a href="#">Category</a>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                          <li>
+                            <div class="dropdownlink">
+                              <a href="#">Category 1</a>
+                              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+                            <ul class="submenuItems">
+                              <li><a href="#">Category 2</a></li>
+                              <li><a href="#">Category 3</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Category</a></li>
+                          <li><a href="#">Category</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i>
+                          <a href="#">Elements</a>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                          <li><a href="#">Elements 1</a></li>
+                          <li><a href="#">Elements 2</a></li>
+                          <li><a href="#">Elements 3</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="dropdownlink">
+                          <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                          <a href="#">Contact Us</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i>
+                          <a href="#">Category title</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i>
+                          <a href="#">Category title</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i>
+                          <a href="#">Category title</a>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-
-            </ul>
+            </div>
           </div>
           <!-- product cart message-->
           <div class="product_msg">
@@ -439,378 +463,427 @@
               <ul id="category_list" class="v_category_items ps-0 ">
                 <li>
                   <div class="category_title">
-                    <img src="./img/telephone.png" alt="telephone.png" class="img-fluid me-2">
+                    <img src=" img/telephone.png" alt="telephone.png" class="img-fluid me-2">
                     <span>Electronic</span>
-                    <!-- product mega menu 1 start-->
-                    <div class="product_mega_menu" id="product_menu">
+                    <div class="product_mega_menu product_menu">
                       <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
                         <div class="row flex-wrap ">
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Computer</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Telephone</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- product mega menu end-->
                   </div>
                   <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li>
                   <div class="category_title">
-                    <img src="./img/sofa.png" alt="./img/sofa.png" class="img-fluid me-2">
+                    <img src=" img/sofa.png" alt=" img/sofa.png" class="img-fluid me-2">
                     <span>Furniture</span>
-                    <!-- product mega menu 1 start-->
-                    <div class="product_mega_menu" id="product_menu">
+                    <div class="product_mega_menu product_menu">
                       <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
                         <div class="row flex-wrap ">
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Electronic Device</h4>
-                              <li><a href="#">Small Sofas</a></li>
-                              <li><a href="#">Armchairs</a></li>
-                              <li><a href="#">Easy Chir</a></li>
-                              <li><a href="#">Day Beds</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Small Sofas</a></li>
+                                <li><a href="#">Armchairs</a></li>
+                                <li><a href="#">Easy Chir</a></li>
+                                <li><a href="#">Day Beds</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
-
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="menu_inner_item ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-6">
                             <div class="menu_inner_item">
-                              <img src="./img/product_ads.jpg" alt="./img/product_ads.jpg" class="img-fluid">
+                              <img src=" img/product_ads.jpg" alt=" img/product_ads.jpg" class="img-fluid">
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- product mega menu end-->
                   </div>
                   <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li>
                   <div class="category_title">
-                    <img src="./img/computer.png" alt="./img/computer.png" class="img-fluid me-2">
+                    <img src=" img/computer.png" alt=" img/computer.png" class="img-fluid me-2">
                     <span>Computer</span>
-                    <!-- product mega menu 1 start-->
-                    <div class="product_mega_menu" id="product_menu">
+                    <div class="product_mega_menu product_menu">
                       <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
                         <div class="row flex-wrap ">
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Computer</h4>
-                              <li><a href="#">Small Sofas</a></li>
-                              <li><a href="#">Armchairs</a></li>
-                              <li><a href="#">Easy Chir</a></li>
-                              <li><a href="#">Day Beds</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Small Sofas</a></li>
+                                <li><a href="#">Armchairs</a></li>
+                                <li><a href="#">Easy Chir</a></li>
+                                <li><a href="#">Day Beds</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Tables</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Furniture</h4>
-                              <li><a href="#">Tablet Device</a></li>
-                              <li><a href="#">Gaming</a></li>
-                              <li><a href="#">Play online</a></li>
-                              <li><a href="#">Play Ground</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Tablet Device</a></li>
+                                <li><a href="#">Gaming</a></li>
+                                <li><a href="#">Play online</a></li>
+                                <li><a href="#">Play Ground</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primum Chir</a></li>
-                            </ul>
+                              <ul class="menu_inner_item ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Electronic Device</h4>
-                              <li><a href="#">Small Sofas</a></li>
-                              <li><a href="#">Armchairs</a></li>
-                              <li><a href="#">Easy Chir</a></li>
-                              <li><a href="#">Day Beds</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Small Sofas</a></li>
+                                <li><a href="#">Armchairs</a></li>
+                                <li><a href="#">Easy Chir</a></li>
+                                <li><a href="#">Day Beds</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
-
                           <div class="col-6">
                             <div class="menu_inner_item">
-                              <img src="img/product_anunc.jpg" alt="./img/product_anunc.png" class="img-fluid">
+                              <img src="img/product_anunc.jpg" alt=" img/product_anunc.png" class="img-fluid">
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- product mega menu end-->
                   </div>
                   <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li>
                   <div class="category_title">
-                    <img src="img/gardening-tools.png" alt="./img/gardening-tools.png" class="img-fluid me-2">
+                    <img src="img/gardening-tools.png" alt=" img/gardening-tools.png" class="img-fluid me-2">
                     <span>Farming Tools</span>
-                    <!-- product mega menu 1 start-->
-                    <div class="product_mega_menu" id="product_menu">
+                    <div class="product_mega_menu product_menu">
                       <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
                         <div class="row flex-wrap ">
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Electronic Device</h4>
-                              <li><a href="#">Small Sofas</a></li>
-                              <li><a href="#">Armchairs</a></li>
-                              <li><a href="#">Easy Chir</a></li>
-                              <li><a href="#">Day Beds</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Small Sofas</a></li>
+                                <li><a href="#">Armchairs</a></li>
+                                <li><a href="#">Easy Chir</a></li>
+                                <li><a href="#">Day Beds</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class=" ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Electronic Device</h4>
-                              <li><a href="#">Small Sofas</a></li>
-                              <li><a href="#">Armchairs</a></li>
-                              <li><a href="#">Easy Chir</a></li>
-                              <li><a href="#">Day Beds</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Small Sofas</a></li>
+                                <li><a href="#">Armchairs</a></li>
+                                <li><a href="#">Easy Chir</a></li>
+                                <li><a href="#">Day Beds</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-6">
                             <div class="menu_inner_item">
-                              <img src="img/product_anunc.jpg" alt="./img/product_anunc.png" class="img-fluid">
+                              <img src="img/product_anunc.jpg" alt=" img/product_anunc.png" class="img-fluid">
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- product mega menu end-->
                   </div>
                   <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li>
                   <div class="category_title">
-                    <img src="./img/technology.png" alt="./img/technology.png" class="img-fluid me-2">
+                    <img src=" img/technology.png" alt=" img/technology.png" class="img-fluid me-2">
                     <span>Instruments</span>
-                    <!-- product mega menu 1 start-->
-                    <div class="product_mega_menu" id="product_menu">
+                    <div class="product_mega_menu product_menu">
                       <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
                         <div class="row flex-wrap ">
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Electronic Device</h4>
-                              <li><a href="#">Small Sofas</a></li>
-                              <li><a href="#">Armchairs</a></li>
-                              <li><a href="#">Easy Chir</a></li>
-                              <li><a href="#">Day Beds</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Small Sofas</a></li>
+                                <li><a href="#">Armchairs</a></li>
+                                <li><a href="#">Easy Chir</a></li>
+                                <li><a href="#">Day Beds</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Technology</h4>
-                              <li><a href="#">Footstone</a></li>
-                              <li><a href="#">Trolleys</a></li>
-                              <li><a href="#">Shoe cabinate</a></li>
-                              <li><a href="#">product demo</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Footstone</a></li>
+                                <li><a href="#">Trolleys</a></li>
+                                <li><a href="#">Shoe cabinate</a></li>
+                                <li><a href="#">product demo</a></li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-3">
-                            <ul class="menu_inner_item ps-0 ">
+                            <div class="menu_inner_item">
                               <h4>Armchairs</h4>
-                              <li><a href="#">Super Chir</a></li>
-                              <li><a href="#">Sofa Chir</a></li>
-                              <li><a href="#">Reading Chir</a></li>
-                              <li><a href="#">Primaum Chir</a></li>
-                            </ul>
+                              <ul class="ps-0 ">
+                                <li><a href="#">Super Chir</a></li>
+                                <li><a href="#">Sofa Chir</a></li>
+                                <li><a href="#">Reading Chir</a></li>
+                                <li><a href="#">Primaum Chir</a></li>
+                              </ul>
+                            </div>
                           </div>
-
                           <div class="col-6">
                             <div class="menu_inner_item">
-                              <img src="./img/product_anunc.jpg" alt="./img/product_anunc.png" class="img-fluid">
+                              <img src=" img/product_anunc.jpg" alt=" img/product_anunc.png" class="img-fluid">
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- product mega menu end-->
                   </div>
                   <i class="fa-solid fa-angle-right"></i>
                 </li>
@@ -818,17 +891,17 @@
             </div>
           </div>
           <!-- desktop menu start here -->
-          <ul id="desktop_menu" class="navbar-nav navbar-light" class="menu-main">
+          <ul id="desktop_menu" class="navbar-nav navbar-light menu-main">
             <li class="nav-item "><a class="nav-link" href="#">HOME</a></li>
             <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
             <li class="nav-item menu-item-has-children">
-              <a href="./pages/shop.html" class="nav-link">SHOP <i class="fa fa-angle-down"></i></a>
+              <a href="  shop.html" class="nav-link">SHOP <i class="fa fa-angle-down"></i></a>
               <div class="sub-menu mega-menu mega-menu-column-4 ">
                 <div class="list-item">
                   <h4 class="title">SHOP LAYOUT</h4>
                   <ul class="ps-0 mt-3">
-                    <li><a id="new_" href="product_pages/product01.html">Product page-01</a></li>
-                    <li><a id="new_" href="product_pages/product.html">Product page-02</a></li>
+                    <li><a class="new_" href=" product01.html">Product page-01</a></li>
+                    <li><a class="new_" href=" product.html">Product page-02</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
@@ -846,7 +919,7 @@
                     <li><a href="#">Sticky Gallery No Sidebar</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                    <li><a id="sale" href="#">Product List</a></li>
+                    <li><a class="sale" href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Sticky Gallery No Sidebar </a></li>
@@ -858,10 +931,10 @@
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
-                    <li><a  href="#">Product List</a></li>
+                    <li><a href="#">Product List</a></li>
                     <li><a href="#">Sticky Gallery No Sidebart</a></li>
                     <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                    <li><a id="sale" href="#">Product List</a></li>
+                    <li><a class="sale" href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                   </ul>
                 </div>
@@ -871,7 +944,7 @@
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Sticky Gallery No Sidebar</a></li>
                     <li><a href="#">Product List</a></li>
-                    <li><a id="sale" href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a class="sale" href="#">Sticky Gallery No Sidebar</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                   </ul>
@@ -894,8 +967,8 @@
                 <div class="list-item col-3">
                   <h4 class="title">BASIC PAGES</h4>
                   <ul class="ps-0 mt-3">
-                    <li><a href="product_pages/product01.html" id="new_" target="_blank">Product Page-01</a></li>
-                    <li><a href="product_pages/product.html" id="new_" target="_blank">Product Page-02</a></li>
+                    <li><a href=" product01.html" class="new_" target="_blank">Product Page-01</a></li>
+                    <li><a href=" product.html" class="new_" target="_blank">Product Page-02</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
@@ -949,11 +1022,11 @@
                     <li><a href="#">Sticky Gallery No Sidebar</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
-                    <li><a href="#">Product List</a></li>
+                    <li><a class="sale" href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Sticky Gallery No Sidebar</a></li>
                     <li><a href="#">Product List</a></li>
-                    <li><a href="#">Product List</a></li>
+                    <li><a class="hot_sale" href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                   </ul>
                 </div>
@@ -964,7 +1037,7 @@
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Sticky Gallery No Sidebar</a></li>
                     <li><a href="#">Product List</a></li>
-                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a class="hot_sale" href="#">Sticky Gallery No Sidebar</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
@@ -985,7 +1058,7 @@
                 <div class="list-item col-3">
                   <h4 class="title">CIYA ELEMENTS 04</h4>
                   <ul class="ps-0 mt-3">
-                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                    <li><a class="new_" href="#">Sticky Gallery No Sidebar</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Product List</a></li>
                     <li><a href="#">Sticky Gallery No </a></li>
@@ -1020,11 +1093,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia vel, autem harum.ipsum dolor
                       sit amet consectetur.</p>
                     <div class="slider_button">
-                      <button><a href="">Read More</a></button>
+                      <a href="#">Read More</a>
                     </div>
                   </div>
                   <div class="slider_img animate__animated animate__zoomIn">
-                    <img class="img-fluid " src="./img/hero_slider_img_1.png" alt="./img/hero_slider_img_1.png">
+                    <img class="img-fluid " src=" img/hero_slider_img_1.png" alt=" img/hero_slider_img_1.png">
                   </div>
                 </div>
               </div>
@@ -1035,11 +1108,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia vel, autem harum.ipsum dolor
                       sit amet consectetur.</p>
                     <div class="slider_button">
-                      <button><a href="">Read More</a></button>
+                      <a href="#">Read More</a>
                     </div>
                   </div>
                   <div class="slider_img animate__animated animate__zoomIn">
-                    <img class="img-fluid " src="./img/hero_slider_img_2.png" alt="./img/hero_slider_img_1.png">
+                    <img class="img-fluid " src=" img/hero_slider_img_2.png" alt=" img/hero_slider_img_1.png">
                   </div>
                 </div>
               </div>
@@ -1049,6 +1122,8 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination swiper-pagination2"></div>
           </div>
+        </div>
+      </div>
     </section>
     <!--*************hero section end here**************-->
     <!--*************package section start here**************-->
@@ -1063,7 +1138,7 @@
                   <h4>Organic pack</h4>
                 </div>
                 <div class="package_img">
-                  <img class="img-fluid" src="./img/img-02.jpg" alt="./img/img-02.jpg">
+                  <img class="img-fluid" src=" img/img-02.jpg" alt=" img/img-02.jpg">
                 </div>
               </a>
             </div>
@@ -1075,7 +1150,7 @@
                     <h4>Organic pack</h4>
                   </div>
                   <div class="package_img">
-                    <img class="img-fluid" src="./img/img-03.jpg" alt="./img/img-02.jpg">
+                    <img class="img-fluid" src=" img/img-03.jpg" alt=" img/img-02.jpg">
                   </div>
                 </div>
                 <div class="single_package d-flex mb-4">
@@ -1084,7 +1159,7 @@
                     <h4>Organic pack</h4>
                   </div>
                   <div class="package_img">
-                    <img class="img-fluid" src="./img/img-04.jpg" alt="./img/img-02.jpg">
+                    <img class="img-fluid" src=" img/img-04.jpg" alt=" img/img-02.jpg">
                   </div>
                 </div>
               </a>
@@ -1096,7 +1171,7 @@
                   <h4>Organic pack</h4>
                 </div>
                 <div class="package_img">
-                  <img class="img-fluid" src="./img/img-05.jpg" alt="./img/img-02.jpg">
+                  <img class="img-fluid" src=" img/img-05.jpg" alt=" img/img-02.jpg">
                 </div>
               </a>
             </div>
@@ -1130,7 +1205,7 @@
             <div class="col-12 col-md-6 order-3 order-md-2">
               <div class="vitamin_quantity px-2">
                 <div class="vitamin_quantity_img d-flex justify-content-center ">
-                  <img class="img-fluid" src="./img/organic-store-img-05.png" alt="./img/organic-store-img-05.png">
+                  <img class="img-fluid" src=" img/organic-store-img-05.png" alt=" img/organic-store-img-05.png">
                 </div>
                 <div class="vitamin_button d-flex justify-content-center mb-4 mb-md-0 mt-5">
                   <button class="me-5" type="submit">SHOP NOW</button>
@@ -1225,7 +1300,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid " src="./img/p_a1.jpg" alt="./img/p_a1.jpg">
+                          <img class="img-fluid " src=" img/p_a1.jpg" alt=" img/p_a1.jpg">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1249,7 +1324,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/man_ganji.png" alt="./img/man_ganji.png">
+                          <img class="img-fluid" src=" img/man_ganji.png" alt=" img/man_ganji.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1273,7 +1348,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid " src="./img/a2.png" alt="./img/p_a1.jpg">
+                          <img class="img-fluid " src=" img/a2.png" alt=" img/p_a1.jpg">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1297,7 +1372,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5ii.png" alt="./img/man_ganji.png">
+                          <img class="img-fluid" src=" img/5ii.png" alt=" img/man_ganji.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1321,7 +1396,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid " src="./img/a3.png" alt="./img/p_a1.jpg">
+                          <img class="img-fluid " src=" img/a3.png" alt=" img/p_a1.jpg">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1345,7 +1420,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid " src="./img/a4.png" alt="./img/p_a1.jpg">
+                          <img class="img-fluid " src=" img/a4.png" alt=" img/p_a1.jpg">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1369,8 +1444,8 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/man_sut_back.png" alt="./img/man_sut.png">
-                          <img class="img-fluid back_img" src="./img/man_sut_back.png" alt="./img/man_sut_back.png">
+                          <img class="img-fluid font_img" src=" img/man_sut_back.png" alt=" img/man_sut.png">
+                          <img class="img-fluid back_img" src=" img/man_sut_back.png" alt=" img/man_sut_back.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1394,7 +1469,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3l.png" alt="./img/man_ganji.png">
+                          <img class="img-fluid" src=" img/3l.png" alt=" img/man_ganji.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1418,8 +1493,8 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/watch.jpg" alt="./img/watch.jpg">
-                          <img class="img-fluid back_img" src="./img/watch_back.jpg" alt="./img/watch_back.jpg">
+                          <img class="img-fluid font_img" src=" img/watch.jpg" alt=" img/watch.jpg">
+                          <img class="img-fluid back_img" src=" img/watch_back.jpg" alt=" img/watch_back.jpg">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1442,31 +1517,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/man_ganji.png" alt="./img/man_ganji.png">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
-                          </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid" src="./img/man_jcket.png" alt="./img/man_jcket.png">
+                          <img class="img-fluid" src=" img/man_ganji.png" alt=" img/man_ganji.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1490,7 +1541,31 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/man_tshirt.png" alt="./img/man_tshirt.png">
+                          <img class="img-fluid" src=" img/man_jcket.png" alt=" img/man_jcket.png">
+                        </div>
+                        <div class="product_manage d-flex justify-content-center">
+                          <div class="product_option">
+                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                          </div>
+                          <div class="view_btn  ">
+                            <button type="submit">Quick View</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product_info">
+                        <span class="product_group">Accessories</span>
+                        <h4>La-ta-da Boho Chic Head Wrap</h4>
+                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="single_product ms-2 mb-4 ">
+                      <div class="product_img_content">
+                        <div class="product_img">
+                          <img class="img-fluid" src=" img/man_tshirt.png" alt=" img/man_tshirt.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1520,7 +1595,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid " src="./img/a.png" alt="./img/a.png">
+                          <img class="img-fluid " src=" img/a.png" alt=" img/a.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1544,7 +1619,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/b.png" alt="./img/b.png">
+                          <img class="img-fluid" src=" img/b.png" alt=" img/b.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1568,7 +1643,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/c.png" alt="./img/c.png">
+                          <img class="img-fluid" src=" img/c.png" alt=" img/c.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1592,7 +1667,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/d.png" alt="./img/d.png">
+                          <img class="img-fluid" src=" img/d.png" alt=" img/d.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1615,7 +1690,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/e.png" alt="./img/e.png">
+                          <img class="img-fluid" src=" img/e.png" alt=" img/e.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1638,31 +1713,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/f.png" alt="./img/f.png">
-                        </div>
-                        <div class="product_manage d-flex justify-content-center">
-                          <div class="product_option">
-                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
-                          </div>
-                          <div class="view_btn  ">
-                            <button type="submit">Quick View</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product_info">
-                        <span class="product_group">Accessories</span>
-                        <h4>La-ta-da Boho Chic Head Wrap</h4>
-                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="single_product ms-2 mb-4 ">
-                      <div class="product_img_content">
-                        <div class="product_img">
-                          <img class="img-fluid" src="./img/g.png" alt="./img/g.png">
+                          <img class="img-fluid" src=" img/f.png" alt=" img/f.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1686,7 +1737,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/e.png" alt="./img/e.png">
+                          <img class="img-fluid" src=" img/g.png" alt=" img/g.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1710,7 +1761,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/man_shart.png" alt="./img/man_shart.png">
+                          <img class="img-fluid" src=" img/e.png" alt=" img/e.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1734,7 +1785,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/h.png" alt="./img/man_shart.png">
+                          <img class="img-fluid" src=" img/man_shart.png" alt=" img/man_shart.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1758,7 +1809,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/i.png" alt="./img/man_shart.png">
+                          <img class="img-fluid" src=" img/h.png" alt=" img/man_shart.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1782,7 +1833,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/j.png" alt="./img/man_shart.png">
+                          <img class="img-fluid" src=" img/i.png" alt=" img/man_shart.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1806,7 +1857,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/k.png" alt="./img/man_shart.png">
+                          <img class="img-fluid" src=" img/j.png" alt=" img/man_shart.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1830,7 +1881,31 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/l.png" alt="./img/man_shart.png">
+                          <img class="img-fluid" src=" img/k.png" alt=" img/man_shart.png">
+                        </div>
+                        <div class="product_manage d-flex justify-content-center">
+                          <div class="product_option">
+                            <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                          </div>
+                          <div class="view_btn  ">
+                            <button type="submit">Quick View</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product_info">
+                        <span class="product_group">Accessories</span>
+                        <h4>La-ta-da Boho Chic Head Wrap</h4>
+                        <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="single_product ms-2 mb-4 ">
+                      <div class="product_img_content">
+                        <div class="product_img">
+                          <img class="img-fluid" src=" img/l.png" alt=" img/man_shart.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1860,8 +1935,8 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/3a1.png" alt="./img/3a1.png">
-                          <img class="img-fluid back_img" src="./img/3a2.png" alt="./img/3a2.png">
+                          <img class="img-fluid font_img" src=" img/3a1.png" alt=" img/3a1.png">
+                          <img class="img-fluid back_img" src=" img/3a2.png" alt=" img/3a2.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1885,9 +1960,9 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/ban_jersey.png" alt="./img/ban_jersey.png">
-                          <img class="img-fluid back_img" src="./img/ban_jersey_back.png"
-                            alt="./img/ban_jersey_back.png">
+                          <img class="img-fluid font_img" src=" img/ban_jersey.png" alt=" img/ban_jersey.png">
+                          <img class="img-fluid back_img" src=" img/ban_jersey_back.png"
+                            alt=" img/ban_jersey_back.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1911,7 +1986,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3b.png" alt="./img/3b.png">
+                          <img class="img-fluid" src=" img/3b.png" alt=" img/3b.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1935,7 +2010,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3c.png" alt="./img/3c.png">
+                          <img class="img-fluid" src=" img/3c.png" alt=" img/3c.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1959,7 +2034,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3d.png" alt="./img/3d">
+                          <img class="img-fluid" src=" img/3d.png" alt=" img/3d">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -1983,7 +2058,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3e.png" alt="./img/3e">
+                          <img class="img-fluid" src=" img/3e.png" alt=" img/3e">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2007,8 +2082,8 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/3f1.png" alt="./img/3f1">
-                          <img class="img-fluid back_img" src="./img/3f2.png" alt="./img/3f2">
+                          <img class="img-fluid font_img" src=" img/3f1.png" alt=" img/3f1">
+                          <img class="img-fluid back_img" src=" img/3f2.png" alt=" img/3f2">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2032,8 +2107,8 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/3g1.png" alt="./img/3g1">
-                          <img class="img-fluid back_img" src="./img/3g2.png" alt="./img/3g2">
+                          <img class="img-fluid font_img" src=" img/3g1.png" alt=" img/3g1">
+                          <img class="img-fluid back_img" src=" img/3g2.png" alt=" img/3g2">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2057,7 +2132,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3h.png" alt="./img/3g1">
+                          <img class="img-fluid" src=" img/3h.png" alt=" img/3g1">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2081,7 +2156,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3i.png" alt="./img/3g1">
+                          <img class="img-fluid" src=" img/3i.png" alt=" img/3g1">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2105,7 +2180,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3j.png" alt="./img/3g1">
+                          <img class="img-fluid" src=" img/3j.png" alt=" img/3g1">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2129,7 +2204,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3k.png" alt="./img/3g1">
+                          <img class="img-fluid" src=" img/3k.png" alt=" img/3g1">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2153,7 +2228,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/3l.png" alt="./img/3g1">
+                          <img class="img-fluid" src=" img/3l.png" alt=" img/3g1">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2183,8 +2258,8 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid font_img" src="./img/4a.png" alt="./img/4a1">
-                          <img class="img-fluid back_img" src="./img/4a2.png" alt="./img/4a2">
+                          <img class="img-fluid font_img" src=" img/4a.png" alt=" img/4a1">
+                          <img class="img-fluid back_img" src=" img/4a2.png" alt=" img/4a2">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2208,7 +2283,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4b.png" alt="./img/4b">
+                          <img class="img-fluid" src=" img/4b.png" alt=" img/4b">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2232,7 +2307,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4c.png" alt="./img/4c">
+                          <img class="img-fluid" src=" img/4c.png" alt=" img/4c">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2256,7 +2331,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4d.png" alt="./img/4d">
+                          <img class="img-fluid" src=" img/4d.png" alt=" img/4d">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2280,7 +2355,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4e.png" alt="./img/4e">
+                          <img class="img-fluid" src=" img/4e.png" alt=" img/4e">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2304,7 +2379,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4f.png" alt="./img/4f">
+                          <img class="img-fluid" src=" img/4f.png" alt=" img/4f">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2328,7 +2403,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4g.png" alt="./img/4g">
+                          <img class="img-fluid" src=" img/4g.png" alt=" img/4g">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2352,7 +2427,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4h.png" alt="./img/4g">
+                          <img class="img-fluid" src=" img/4h.png" alt=" img/4g">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2376,7 +2451,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4i.png" alt="./img/4g">
+                          <img class="img-fluid" src=" img/4i.png" alt=" img/4g">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2400,7 +2475,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4j.png" alt="./img/4g">
+                          <img class="img-fluid" src=" img/4j.png" alt=" img/4g">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2424,7 +2499,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4k.png" alt="./img/4g">
+                          <img class="img-fluid" src=" img/4k.png" alt=" img/4g">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2448,7 +2523,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/4l.png" alt="./img/4g">
+                          <img class="img-fluid" src=" img/4l.png" alt=" img/4g">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2478,7 +2553,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5a.png" alt="./img/5a">
+                          <img class="img-fluid" src=" img/5a.png" alt=" img/5a">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2502,7 +2577,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5b.png" alt="./img/5b">
+                          <img class="img-fluid" src=" img/5b.png" alt=" img/5b">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2526,7 +2601,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5c.png" alt="./img/5c.png">
+                          <img class="img-fluid" src=" img/5c.png" alt=" img/5c.png">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2550,7 +2625,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5d.png" alt="./img/5d">
+                          <img class="img-fluid" src=" img/5d.png" alt=" img/5d">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2574,7 +2649,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5e.png" alt="./img/5e">
+                          <img class="img-fluid" src=" img/5e.png" alt=" img/5e">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2598,7 +2673,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5f.png" alt="./img/5f">
+                          <img class="img-fluid" src=" img/5f.png" alt=" img/5f">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2622,7 +2697,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5g.png" alt="./img/5f">
+                          <img class="img-fluid" src=" img/5g.png" alt=" img/5f">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2646,7 +2721,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5h.png" alt="./img/5f">
+                          <img class="img-fluid" src=" img/5h.png" alt=" img/5f">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2670,7 +2745,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5i.png" alt="./img/5f">
+                          <img class="img-fluid" src=" img/5i.png" alt=" img/5f">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2694,7 +2769,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5j.png" alt="./img/5f">
+                          <img class="img-fluid" src=" img/5j.png" alt=" img/5f">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2718,7 +2793,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5k.png" alt="./img/5f">
+                          <img class="img-fluid" src=" img/5k.png" alt=" img/5f">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2742,7 +2817,7 @@
                     <div class="single_product ms-2 mb-4 ">
                       <div class="product_img_content">
                         <div class="product_img">
-                          <img class="img-fluid" src="./img/5l.png" alt="./img/5f">
+                          <img class="img-fluid" src=" img/5l.png" alt=" img/5f">
                         </div>
                         <div class="product_manage d-flex justify-content-center">
                           <div class="product_option">
@@ -2767,9 +2842,6 @@
             </div>
           </div>
         </div>
-      </div>
-      </div>
-      </div>
       </div>
     </section>
 
@@ -2796,7 +2868,7 @@
           <div class="row">
             <div class="col-12 col-lg-6">
               <div class="discover_img d-flex justify-content-center  justify-content-lg-start mb-5 mb-lg-0">
-                <img class="img-fluid" src="./img/organic-store-img-07.png" alt="./img/organic-store-img-07.png">
+                <img class="img-fluid" src=" img/organic-store-img-07.png" alt=" img/organic-store-img-07.png">
               </div>
             </div>
             <div class="col-12 col-lg-6">
@@ -2811,8 +2883,8 @@
                     <div class="col-12 col-sm-6">
                       <div class="discover__single_features d-flex  mb-4">
                         <div class="d_box_icon d-flex justify-content-center  me-3 align-items-start ">
-                          <img class="img-fluid" src="./img/organic-store-icon-01.jpg"
-                            alt="./img/organic-store-icon-01.jpg">
+                          <img class="img-fluid" src=" img/organic-store-icon-01.jpg"
+                            alt=" img/organic-store-icon-01.jpg">
                         </div>
                         <div class="d_box_info">
                           <h5>100% Natural</h5>
@@ -2823,8 +2895,8 @@
                     <div class="col-12 col-sm-6">
                       <div class="discover__single_features d-flex mb-4">
                         <div class="d_box_icon me-3 d-flex justify-content-center align-items-start">
-                          <img class="img-fluid" src="./img/organic-store-icon-02.jpg"
-                            alt="./img/organic-store-icon-02.jpg">
+                          <img class="img-fluid" src=" img/organic-store-icon-02.jpg"
+                            alt=" img/organic-store-icon-02.jpg">
                         </div>
                         <div class="d_box_info">
                           <h5>100% Organic</h5>
@@ -2835,8 +2907,8 @@
                     <div class="col-12 col-sm-6">
                       <div class="discover__single_features d-flex mb-4">
                         <div class="d_box_icon me-3 d-flex justify-content-center align-items-start">
-                          <img class="img-fluid" src="./img/organic-store-icon-03.jpg"
-                            alt="./img/organic-store-icon-03.jpg">
+                          <img class="img-fluid" src=" img/organic-store-icon-03.jpg"
+                            alt=" img/organic-store-icon-03.jpg">
                         </div>
                         <div class="d_box_info">
                           <h5>Easy Buy</h5>
@@ -2847,8 +2919,8 @@
                     <div class="col-12 col-sm-6">
                       <div class="discover__single_features d-flex mb-4">
                         <div class="d_box_icon me-3 d-flex justify-content-center align-items-start ">
-                          <img class="img-fluid" src="./img/organic-store-icon-04.jpg"
-                            alt="./img/organic-store-icon-04.jpg">
+                          <img class="img-fluid" src=" img/organic-store-icon-04.jpg"
+                            alt=" img/organic-store-icon-04.jpg">
                         </div>
                         <div class="d_box_info">
                           <h5>
@@ -2881,7 +2953,7 @@
             what the future holds for you.</p>
         </div>
         <div class="product-ads_img d-flex justify-content-center ">
-          <img class="img-fluid" src="./img/organic-store-logo-icon.png" alt="./img/organic-store-logo-icon.png">
+          <img class="img-fluid" src=" img/organic-store-logo-icon.png" alt=" img/organic-store-logo-icon.png">
         </div>
       </div>
     </section>
@@ -2907,7 +2979,7 @@
                         <div class="p_slide_1">
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_jcket.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_jcket.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">WD·NY Black - Men's Pinstripe Seer Sucker Vest</a>
@@ -2915,7 +2987,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_shart.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_shart.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">Men's Pinstripe Seer Sucker</a>
@@ -2924,7 +2996,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_ganji.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_ganji.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">WD·NY Black - Men's Pinstripe Seer Sucker Vest</a>
@@ -2936,7 +3008,7 @@
                         <div class="p_slide_2">
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_shart.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_shart.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">WD·NY Black - Men's Black Shirt</a>
@@ -2944,7 +3016,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_sut.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_sut.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">Men's Original Indian Sut</a>
@@ -2952,7 +3024,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/watch.jpg" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/watch.jpg" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">Black - Men's Best Watch Vest</a>
@@ -2983,7 +3055,7 @@
                         <div class="p_slide_1">
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/ban_jersey.png" alt="./img/ban_jersey.png">
+                              <img class="img-fluid" src=" img/ban_jersey.png" alt=" img/ban_jersey.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">NY Black - Men's Sucker Vest</a>
@@ -2992,7 +3064,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_sut.png" alt="./img/man_sut.png">
+                              <img class="img-fluid" src=" img/man_sut.png" alt=" img/man_sut.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">Men's Pinstripe Seer Sucker</a>
@@ -3001,7 +3073,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_tshirt.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_tshirt.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">WD·Black - Men's Seer Sucker Vest</a>
@@ -3013,7 +3085,7 @@
                         <div class="p_slide_2">
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_shart.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_shart.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">WD·NY Seer Sucker Vest</a>
@@ -3022,7 +3094,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_sut.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_sut.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">WD·NY Black - Men's Sucker Vest</a>
@@ -3030,7 +3102,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/watch.jpg" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/watch.jpg" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">Women Watch Water Proof</a>
@@ -3060,7 +3132,7 @@
                         <div class="p_slide_1">
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_sut_back.png" alt="./img/man_sut_back.png">
+                              <img class="img-fluid" src=" img/man_sut_back.png" alt=" img/man_sut_back.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">China Men's Sut Fashion</a>
@@ -3069,7 +3141,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_jcket.png" alt="./img/man_jcket.png">
+                              <img class="img-fluid" src=" img/man_jcket.png" alt=" img/man_jcket.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">Italian Jacket Seer Sucker</a>
@@ -3078,7 +3150,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_ganji.png" alt="./img/man_ganji.png">
+                              <img class="img-fluid" src=" img/man_ganji.png" alt=" img/man_ganji.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">NY Black - Men's Pinstripe Sucker Vest</a>
@@ -3090,7 +3162,7 @@
                         <div class="p_slide_2">
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_shart.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_shart.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">WD·NY Black - Men's Black T-shirt</a>
@@ -3098,7 +3170,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_sut.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_sut.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">Black - Men's Best Sucker Vest</a>
@@ -3106,7 +3178,7 @@
                           </div>
                           <div class="single_product d-flex justify-content-between align-items-center mb-3">
                             <div class="single_product_img ">
-                              <img class="img-fluid" src="./img/man_shart.png" alt="./img/man_shart.png">
+                              <img class="img-fluid" src=" img/man_shart.png" alt=" img/man_shart.png">
                             </div>
                             <div class="single_product_info">
                               <a href="#" class="mb-2">Men's Pinstripe Seer Sucker Vest</a>
@@ -3165,7 +3237,7 @@
                     <div class=" align-items-center  row ">
                       <div class="col-12 col-sm-6 mb-4 mb-md-0">
                         <div class="post_img">
-                          <img class="img-fluid " src="./img/blog-01-500x375.jpg" alt="">
+                          <img class="img-fluid " src=" img/blog-01-500x375.jpg" alt="">
                         </div>
                       </div>
                       <div class="col-12 col-sm-6">
@@ -3189,7 +3261,7 @@
                     <div class="align-items-center  row ">
                       <div class="col-12 col-sm-6 mb-4 mb-md-0">
                         <div class="post_img">
-                          <img class="img-fluid " src="./img/blog-01-500x375.jpg" alt="">
+                          <img class="img-fluid " src=" img/blog-01-500x375.jpg" alt="">
                         </div>
                       </div>
                       <div class="col-12 col-sm-6">
@@ -3213,7 +3285,7 @@
                     <div class="align-items-center  row ">
                       <div class="col-12 col-sm-6 mb-4 mb-md-0">
                         <div class="post_img">
-                          <img class="img-fluid " src="./img/blog-02-500x375.jpg" alt="">
+                          <img class="img-fluid " src=" img/blog-02-500x375.jpg" alt="">
                         </div>
                       </div>
                       <div class="col-12 col-sm-6">
@@ -3237,7 +3309,7 @@
                     <div class="align-items-center  row ">
                       <div class="col-12 col-sm-6 mb-4 mb-md-0">
                         <div class="post_img">
-                          <img class="img-fluid " src="./img/blog-07-500x375.jpg" alt="">
+                          <img class="img-fluid " src=" img/blog-07-500x375.jpg" alt="">
                         </div>
                       </div>
                       <div class="col-12 col-sm-6">
@@ -3263,40 +3335,31 @@
           </div>
         </div>
       </div>
-      </div>
-      </div>
-      </div>
     </section>
     <!--*************latest_news_section end here**************-->
-
     <!--*************product_image_slider start here**************-->
-    <section id="product_image_slider" class="py-5 mb-5">
+    <div id="product_image_slider" class="py-5 mb-5">
       <div class="container-fluid container">
         <div class="p_image_slider_wrapper">
           <div class="swiper mySwiper-2">
             <div class="swiper-wrapper">
               <div class="single_p_img swiper-slide  d-flex justify-content-center "><img class="img-fluid"
-                  src="./img/organic-store-logo-icon-01.png" alt="./img/organic-store-logo-icon-01.png"></div>
+                  src=" img/organic-store-logo-icon-01.png" alt=" img/organic-store-logo-icon-01.png"></div>
               <div class="single_p_img swiper-slide  d-flex justify-content-center "><img class="img-fluid"
-                  src="./img/organic-store-logo-icon-02.png" alt="./img/organic-store-logo-icon-02.png"></div>
+                  src=" img/organic-store-logo-icon-02.png" alt=" img/organic-store-logo-icon-02.png"></div>
               <div class="single_p_img swiper-slide  d-flex justify-content-center "><img class="img-fluid"
-                  src="./img/organic-store-logo-icon-03.png" alt="./img/organic-store-logo-icon-03.png"></div>
+                  src=" img/organic-store-logo-icon-03.png" alt=" img/organic-store-logo-icon-03.png"></div>
               <div class="single_p_img swiper-slide  d-flex justify-content-center "><img class="img-fluid"
-                  src="./img/organic-store-logo-icon-04.png" alt="./img/organic-store-logo-icon-04.png"></div>
+                  src=" img/organic-store-logo-icon-04.png" alt=" img/organic-store-logo-icon-04.png"></div>
               <div class="single_p_img swiper-slide  d-flex justify-content-center "><img class="img-fluid"
-                  src="./img/organic-store-logo-icon-05.png" alt="./img/organic-store-logo-icon-05.png"></div>
+                  src=" img/organic-store-logo-icon-05.png" alt=" img/organic-store-logo-icon-05.png"></div>
               <div class="single_p_img swiper-slide  d-flex justify-content-center "><img class="img-fluid"
-                  src="./img/organic-store-logo-icon-06.png" alt="./img/organic-store-logo-icon-06.png"></div>
-
+                  src=" img/organic-store-logo-icon-06.png" alt=" img/organic-store-logo-icon-06.png"></div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      </div>
-    </section>
-
-
+    </div>
     <!--*************product_image_slider end here**************-->
     <!--*************footer_section start here**************-->
     <footer id="footer_section" class="pt-3 pb-0">
@@ -3306,7 +3369,7 @@
             <div class="col-12 col-md-6 col-lg-3">
               <div class="single_footer_item mb-5 mb-lg-0">
                 <div class="footer_logo mb-4">
-                  <img class="img-fluid" src="./img/logo.png" alt="./img/logo.png">
+                  <img class="img-fluid" src=" img/logo.png" alt=" img/logo.png">
                 </div>
                 <div class="summary_info mb-4">
                   <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -3391,39 +3454,39 @@
           <div class="col-12 col-md-6">
             <div class="popup_image_side d-flex flex-column ">
               <div class="popup_img">
-                <img class="popup_p_img img-fluid" src="./img/man_jcket.png" alt="./img/man_jcket.png">
+                <img class="popup_p_img img-fluid" src=" img/man_jcket.png" alt=" img/man_jcket.png">
               </div>
               <div class="popup_gallary d-flex justify-content-between my-2">
                 <div class="swiper mySwiper7">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="popup_gallary_img">
-                        <img class="img-fluid" src="./img/man_jcket.png" alt="./img/man_jcket.png">
+                        <img class="img-fluid" src=" img/man_jcket.png" alt=" img/man_jcket.png">
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="popup_gallary_img">
-                        <img class="img-fluid" src="./img/man_shart.png" alt="./img/man_jcket.png">
+                        <img class="img-fluid" src=" img/man_shart.png" alt=" img/man_jcket.png">
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="popup_gallary_img">
-                        <img class="img-fluid" src="./img/man_ganji.png" alt="./img/man_jcket.png">
+                        <img class="img-fluid" src=" img/man_ganji.png" alt=" img/man_jcket.png">
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="popup_gallary_img">
-                        <img class="img-fluid" src="./img/man_sut.png" alt="./img/man_jcket.png">
+                        <img class="img-fluid" src=" img/man_sut.png" alt=" img/man_jcket.png">
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="popup_gallary_img">
-                        <img class="img-fluid" src="./img/a.png" alt="./img/man_jcket.png">
+                        <img class="img-fluid" src=" img/a.png" alt=" img/man_jcket.png">
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="popup_gallary_img">
-                        <img class="img-fluid" src="./img/b.png" alt="./img/man_jcket.png">
+                        <img class="img-fluid" src=" img/b.png" alt=" img/man_jcket.png">
                       </div>
                     </div>
                   </div>
@@ -3491,23 +3554,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-  <script src="./js/popper.min.js"></script>
+  <script src=" js/popper.min.js"></script>
   <!-- jquery script -->
-  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src=" js/jquery-3.7.1.min.js"></script>
   <!--mixitup javascript file-->
-  <!-- <script src="./js/mixitup.min.js"></script> -->
+  <!-- <script src=" js/mixitup.min.js"></script> -->
   <!-- Swiper JS -->
-  <script src="./js/swiper-bundle.min.js"></script>
+  <script src=" js/swiper-bundle.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <!-- bottom to top toggle button -->
-  <script src="./js/jquery.elevator.js"></script>
+  <script src=" js/jquery.elevator.js"></script>
   <!--accordion menu javascript file-->
-  <script src="./js/accordion_menu.js"></script>
+  <script src=" js/accordion_menu.js"></script>
   <!--preloader script-->
-  <script src="./js/jquery.preloadinator.min.js"></script>
+  <script src=" js/jquery.preloadinator.min.js"></script>
 
   <!-- main script file -->
-  <script src="./js/script.js"></script>
+  <script src=" js/script.js"></script>
 
 
 </body>

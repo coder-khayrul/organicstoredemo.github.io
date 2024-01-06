@@ -718,11 +718,11 @@ span:nth-child(3) {
 .vertical_category ul.v_category_items li:hover {
   background: #ededed;
 }
-.vertical_category ul.v_category_items li:hover #product_menu {
+.vertical_category ul.v_category_items li:hover .product_menu {
   display: unset;
   transition: 0.3s;
 }
-#product_menu {
+.product_menu {
   position: relative;
   display: none;
   transition: 0.3s;
@@ -730,17 +730,16 @@ span:nth-child(3) {
 .product_mega_menu:hover .product_mega_menu {
   display: unset;
 }
-ul.menu_inner_item {
+.menu_inner_item ul {
   margin-bottom: 15px;
 }
-ul.menu_inner_item h4 {
+.menu_inner_item h4 {
   font-size: 15px;
   font-weight: 600;
-}
-ul.menu_inner_item h4 {
   margin-bottom: 15px;
 }
-ul.menu_inner_item li {
+
+.menu_inner_item ul li {
   padding: 5px 10px !important;
 }
 .product_mega_menu .product_mega_menu_wrapper .row {
@@ -1151,18 +1150,6 @@ section#hero_section .hero_wrapper .single_slider .slider_img {
 section#hero_section .hero_wrapper .single_slider .slider_content .slider_button {
   margin-top: 40px;
 }
-
-section#hero_section .hero_wrapper .single_slider .slider_content .slider_button button:hover {
-  background: white;
-  border: 1px solid var(--primary_color);
-  transition: 0.3s;
-}
-
-section#hero_section .hero_wrapper .single_slider .slider_content .slider_button button:hover a {
-  color: var(--primary_color);
-  transition: 0.3s;
-}
-
 section#hero_section .hero_wrapper .single_slider .slider_content {
   width: 45%;
   display: flex;
@@ -1176,17 +1163,20 @@ section#hero_section .hero_wrapper .single_slider .slider_content p {
   margin: 20px 0px;
 }
 
-section#hero_section .hero_wrapper .single_slider .slider_content .slider_button button {
+section#hero_section .hero_wrapper .single_slider .slider_content .slider_button a {
   outline: none;
   border: 1px solid transparent;
   padding: 15px 60px;
+  color: white;
   border-radius: 10px;
   background: var(--primary_color);
   transition: 0.3s;
 }
-
-section#hero_section .hero_wrapper .single_slider .slider_content .slider_button button a {
-  color: white;
+section#hero_section .hero_wrapper .single_slider .slider_content .slider_button a:hover {
+  background: white;
+  color: var(--primary_color);
+  border: 1px solid var(--primary_color);
+  transition: 0.3s;
 }
 
 /*hero section style end here*/
@@ -1903,7 +1893,7 @@ span.swiper-pagination-bullet {
 /*latest_news_section style end here*/
 
 /*product_image_slider style start here*/
-section#product_image_slider {
+#product_image_slider {
   background-color: var(--primary_color);
 }
 

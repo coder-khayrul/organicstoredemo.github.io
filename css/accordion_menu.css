@@ -61,6 +61,7 @@
 }
 .accordion-menu li a {
     font-size: 14px;
+    color: #333;
 }
 .submenuItems a:hover {
     background: var(--primary_color);
