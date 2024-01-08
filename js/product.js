@@ -220,11 +220,17 @@ const hourElement = document.querySelector(".hours");
 const minutesElement = document.querySelector(".minutes");
 const secondElement = document.querySelector(".second");
 
-let endDate = "5 January 2024 12:00 pm"
+let endDate = "9 january 2024 01:25 am"
 const clock = () => {
   endDate = new Date(endDate);
   let currentDate = new Date()
-  let diff = (endDate - currentDate);
+let diff;
+  if( currentDate <=  endDate){
+   
+      diff = (endDate - currentDate);
+}else{
+  diff = 0;
+}
   let sec = Math.floor(diff / 1000);
   let min = Math.floor(sec / 60);
   let hrs = Math.floor(min / 60);
@@ -234,7 +240,7 @@ const clock = () => {
   min %= 60;
   hrs %= 24;
 
-  dayElement.textContent = days;
+  dayElement.textContent =  hrs < 10 ? `0${days}` : days;
   hourElement.textContent = hrs < 10 ? `0${hrs}` : hrs;
   minutesElement.textContent = min < 10 ? `0${min}` : min;
   secondElement.textContent = sec < 10 ? `0${sec}` : sec;
