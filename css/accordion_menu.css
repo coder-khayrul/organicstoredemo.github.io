@@ -32,7 +32,7 @@
     transition: all 0.4s ease-out;
 }
 
-.dropdownlink i {
+.dropdownlink i, .dropdownlink svg {
     position: absolute;
     top: 17px;
     left: 16px;
