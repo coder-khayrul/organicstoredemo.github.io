@@ -333,7 +333,7 @@ span.or_devider {
   transition: 0.3s;
 }
 
-.login_form_box .login_other_way .single_way .social-login i {
+.login_form_box .login_other_way .single_way .social-login i, .login_form_box .login_other_way .single_way .social-login svg {
   position: absolute;
   left: 15px;
   transition: 0.3s;
@@ -401,7 +401,7 @@ span.or_devider {
   z-index: 999;
 }
 
-.page_wrapper #user_popup_close:hover i {
+.page_wrapper #user_popup_close:hover i, .page_wrapper #user_popup_close:hover svg{
   transform: rotate(360deg);
   transition: 0.6s;
 }
@@ -1581,7 +1581,7 @@ section#single_product_page {
   margin: 10px 0;
 }
 
-.product_page_details .review_short_info .review_star i {
+.product_page_details .review_short_info .review_star i, .product_page_details .review_short_info .review_star svg {
   color: #F6C800;
 }
 
@@ -1590,7 +1590,7 @@ section#single_product_page {
   column-gap: 25px;
 }
 
-.wishlist_compare a:first-child i {
+.wishlist_compare a:first-child i,.wishlist_compare a:first-child svg {
   color: red;
   margin-right: 5px;
 }
@@ -1610,7 +1610,7 @@ section#single_product_page {
   color: #666;
   line-height: 1.7rem;
 }
-.wishlist_compare a:last-child i {
+.wishlist_compare a:last-child i, .wishlist_compare a:last-child svg {
   color: #0D52D6 !important;
   margin-right: 5px;
 }
@@ -2156,7 +2156,7 @@ input[type="checkbox"] {
   font-size: 22px;
   font-weight: 500;
 }
-.user_question_popup .user_form_area .form_title h3 i {
+.user_question_popup .user_form_area .form_title h3 i, .user_question_popup .user_form_area .form_title h3 svg {
   color: var(--primary_color);
 }
 .user_question_popup .user_form_area .form_title h3::after{
@@ -2286,31 +2286,7 @@ input[type="checkbox"] {
     width: 10px;
     height: 10px;
 }
-/* Rubik font  */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* niconne font */
-@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
-
-/* font-family: 'Niconne', cursive; */
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Rubik", sans-serif;
-}
-a{
-    text-decoration: none !important;
-}
-:root {
-    --primary_color: #88b813;
-    --border_color: rgba(130, 130, 130, 0.25);
-    --golden_color: #d99f34;
-    --light_primary_color: #ecf1e6;
-    --gray_black: #333333;
-    --gray_more_black: rgba(0, 0, 0, .105);
-  }
-  
 /*footer section style start here*/
 footer#footer_section {
     padding: 20px 0px;

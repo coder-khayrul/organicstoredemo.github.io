@@ -337,7 +337,7 @@ span.or_devider {
   cursor: pointer;
 }
 
-.login_form_box .login_other_way .single_way .social-login i {
+.login_form_box .login_other_way .single_way .social-login i, .login_form_box .login_other_way .single_way .social-login svg {
   position: absolute;
   left: 15px;
   transition: 0.3s;
@@ -405,7 +405,7 @@ span.or_devider {
   z-index: 999;
 }
 
-.page_wrapper #user_popup_close:hover i {
+.page_wrapper #user_popup_close:hover i,.page_wrapper #user_popup_close:hover svg {
   transform: rotate(360deg);
   transition: 0.6s;
 }
@@ -2161,7 +2161,7 @@ abbr:hover {
   font-weight: 500;
 }
 
-.user_question_popup .user_form_area .form_title h3 i {
+.user_question_popup .user_form_area .form_title h3 i, .user_question_popup .user_form_area .form_title h3 svg{
   color: var(--primary_color);
 }
 
@@ -2652,30 +2652,6 @@ abbr:hover {
   margin-bottom: 0;
 }
 
-/* Rubik font  */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/* niconne font */
-@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
-
-/* font-family: 'Niconne', cursive; */
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Rubik", sans-serif;
-}
-a{
-    text-decoration: none !important;
-}
-:root {
-    --primary_color: #88b813;
-    --border_color: rgba(130, 130, 130, 0.25);
-    --golden_color: #d99f34;
-    --light_primary_color: #ecf1e6;
-    --gray_black: #333333;
-    --gray_more_black: rgba(0, 0, 0, .105);
-  }
   
 /*footer section style start here*/
 footer#footer_section {

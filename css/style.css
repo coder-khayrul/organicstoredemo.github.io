@@ -298,7 +298,7 @@ span.or_devider {
   left: 0px;
   transition: 0.3s;
 }
-.login_form_box .login_other_way .single_way .social-login i {
+.login_form_box .login_other_way .single_way .social-login i, .login_form_box .login_other_way .single_way .social-login svg {
   position: absolute;
   left: 15px;
   transition: 0.3s;
@@ -359,7 +359,7 @@ span.or_devider {
   z-index: 999;
 }
 
-.page_wrapper #user_popup_close:hover i {
+.page_wrapper #user_popup_close:hover i,.page_wrapper #user_popup_close:hover svg {
   transform: rotate(360deg);
   transition: 0.6s;
 }
