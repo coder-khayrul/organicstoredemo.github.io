@@ -276,14 +276,6 @@ shop_img_area.forEach((area) => {
   image_hover_effect(area, shop_img);
 });
 
-//to added footer
-// Fetch and inject the header
-fetch('footer.html')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('footer_container').innerHTML = html;
-  })
-  .catch(error => console.error('Error fetching header:', error));
 
 var swiper = new Swiper(".mySwiper3", {
   spaceBetween: 1,

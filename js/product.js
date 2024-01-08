@@ -323,25 +323,6 @@ var swiper2 = new Swiper(".mySwiper2", {
 }
 );
 
-//to added header
-// Fetch and inject the header
-// fetch('header.html')
-//   .then(response => response.text())
-//   .then(html => {
-//     document.getElementById('header_section').innerHTML = html;
-//   })
-//   .catch(error => console.error('Error fetching header:', error));
-
-//to added footer
-// Fetch and inject the header
-fetch('footer.html')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('footer_section').innerHTML = html;
-  })
-  .catch(error => console.error('Error fetching header:', error));
-
-
 //swiper slider for review tab
 var swiper = new Swiper(".mySwiper", {
   // autoplay: true,

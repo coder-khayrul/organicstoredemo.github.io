@@ -1961,7 +1961,7 @@ footer#footer_section .footer-wrapper .single_footer_item .address p {
   color: #666;
 }
 
-footer#footer_section .footer-wrapper .single_footer_item .address i {
+footer#footer_section .footer-wrapper .single_footer_item .address i,  .address svg {
   color: var(--primary_color);
   font-size: 15px;
 }
