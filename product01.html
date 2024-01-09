@@ -25,7 +25,7 @@
 
                 <h3><i class="fa-solid fa-file-circle-question me-2"></i> Ask a Question About This Product</h3>
             </div>
-            <form action="" autocomplete="" id="user_question_form" name="user_question_form">
+            <form id="user_question_form">
                 <div class="form_group">
                     <label for="fullName"></label>
                     <input type="text" id="fullName" placeholder="Enter your name" required>
@@ -37,16 +37,16 @@
                 <div class="form_group">
                     <label for="topic"></label>
                     <select name="topic_select" id="topic" required>
-                        <option value="0" disabled selected>Select Topic</option>
-                        <option value="1">How does it fit?</option>
-                        <option value="1">How do you wash it?</option>
-                        <option value="1">How you can get delivered?</option>
-                        <option value="1">Have any guarantee of product</option>
+                        <option value="" disabled selected>Select Topic</option>
+                        <option value="">How does it fit?</option>
+                        <option value="">How do you wash it?</option>
+                        <option value="">How you can get delivered?</option>
+                        <option value="">Have any guarantee of product</option>
                     </select>
                 </div>
                 <div class="form_group">
                     <label for="message"></label>
-                    <textarea type="message" id="message" placeholder="Write your messgae..." required></textarea>
+                    <textarea id="message" placeholder="Write your messgae..." required></textarea>
                 </div>
                 <div class="form_group d-flex justify-content-center ">
                     <button type="submit">Submit</button>
@@ -74,7 +74,7 @@
                             <div class="col-12 col-md-6">
                                 <div
                                     class="position-relative popup_from d-flex justify-content-center align-items-center">
-                                    <form name="user_form" action="" id="signup_from" autocomplete="off"
+                                    <form id="signup_from" 
                                         class="signup_form_box">
                                         <h2>Create Your Account</h2>
                                         <div class="social_site">
@@ -87,7 +87,7 @@
                                         </div>
                                         <div class="input_box">
                                             <label for="YourName"></label>
-                                            <input type="name" name="name" id="YourName" placeholder="Your full name"
+                                            <input type="text" name="name" id="YourName" placeholder="Your full name"
                                                 required>
                                         </div>
                                         <div class="input_box">
@@ -121,8 +121,7 @@
                                             <h2>Login</h2>
                                             <p>Enter your Email and Password to login.</p>
                                         </div>
-                                        <form action="" name="login_form_area" id="login_form_area" class="login_form"
-                                            autocomplete="on">
+                                        <form id="login_form_area" class="login_form">
                                             <input type="email" name="email" id="loginEmail" placeholder="Email">
                                             <input type="password" name="password" id="loginPassword"
                                                 placeholder="password">
@@ -183,8 +182,8 @@
         <!--mobile search page-->
         <div class="mobile_popup_search">
             <div class="popup_search_wrapper">
-                <a href="#" class="popup_search_close" type="submit"><i class="fa-solid fa-x"></i></a>
-                <form action="" name="mobile_search_form" autocomplete="off" id="mobile_search_form"
+                <a href="#" class="popup_search_close"><i class="fa-solid fa-x"></i></a>
+                <form id="mobile_search_form"
                     class="mobile_search-bar">
                     <input type="search" name="s" id="search_input" placeholder="Search for product" required>
                     <select class="category_items ps-0">
@@ -258,11 +257,10 @@
             <!--top header section start here-->
             <div class="top_header d-flex justify-content-between align-items-center ">
                 <div class="logo">
-                    <a class="navbar-brand" class="img-fluid " href=" index.html"><img src=" img/logo.png"
-                            alt=" img/logo.png">
+                    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="img/logo.png" alt=" img/logo.png">
                     </a>
                 </div>
-                <form autocomplete="on" action="" id="main_search_bar_form"
+                <form id="main_search_bar_form"
                     class="main_search_bar d-none d-lg-flex align-content-center">
                     <div class="category_area">
                         <select class="category_items ps-0">
@@ -304,7 +302,7 @@
                             <button class="offcanvas_icon btn d-block d-lg-none" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                                 aria-controls="offcanvasExample">
-                                <img src=" img/bars-solid.svg" alt=" img/bars-solid.svg" srcset="">
+                                <img src=" img/bars-solid.svg" alt=" img/bars-solid.svg">
                             </button>
                         </li>
                     </ul>
@@ -1140,7 +1138,7 @@
                         <div class="product_slider d-flex align-items-center justify-content-center ">
                             <div class="product_page_image d-flex align-items-center justify-content-between ">
                                 <div class="themb_img_area">
-                                    <div href="" class="them_img active_img">
+                                    <div class="them_img active_img">
                                         <img src=" img/4g.png" alt="">
                                     </div>
                                     <div class="them_img">
@@ -1287,7 +1285,7 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="shop_delivary-tab" data-bs-toggle="tab"
-                                data-bs-target="#shop_delivary" type="button" role="tab" aria-controls="Brand"
+                                data-bs-target="#shop_delivary" type="button" role="tab" aria-controls="shop_delivary"
                                 aria-selected="false">Shipping & Delivery</button>
                         </li>
                     </ul>
@@ -1770,14 +1768,14 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <form action="" id="customer_form">
+                                            <form id="customer_form">
                                                 <div class="customer_box mb-3">
                                                     <label for="name">Your Name</label>
                                                     <input type="text" name="name" id="name" required>
                                                 </div>
                                                 <div class="customer_box mb-3">
                                                     <label for="review">Your Review:</label>
-                                                    <textarea type="text" name="review" id="review" rows="5"
+                                                    <textarea name="review" id="review" rows="5"
                                                         required></textarea>
                                                 </div>
                                                 <div class="customer_box mb-3">
