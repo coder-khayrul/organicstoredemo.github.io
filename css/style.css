@@ -2448,7 +2448,31 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
     line-height: 1.5rem;
   }
 }
+@media only screen and (max-width: 576px) {
+  .discover_story_lower .discover__single_features .d_box_icon img {
+  width: 70px;
+}
+/*swiper style*/
+.swiper-button-next_sm{
+  margin-left: 50px !important;
+}
+.swiper-button-prev_sm{
+    margin-right: 50px !important;
+}
+.swiper-button-next_sm, .swiper-button-prev_sm {
+  position: absolute;
+  top: unset!important;
+  bottom: 0;
+  left: 50% !important;
+  transform: translate(-145%, 147%) !important;
 
+}
+.latest_news_slider {
+  padding-bottom: 70px;
+}
+
+
+}
 /* responsive code for mobile screen */
 @media only screen and (max-width: 502px) {
   .popup_img{

@@ -83,6 +83,18 @@ hero_slider_img_area.forEach((area) => {
 });
 
 
+const gallary_themb_img = document.querySelectorAll(".popup_gallary_img img");
+const gallary_main_area = document.querySelector(".popup_p_img");
+
+gallary_themb_img.forEach( s_img => {
+  s_img.addEventListener("click", () => {
+    let main_img_src = s_img.src;
+       gallary_main_area.src = `${main_img_src}`
+  })
+})
+
+
+
 //get elements
 const vitamin_img = document.querySelector(".vitamin_quantity_img img");
 const vitamin_img_area = document.querySelector(".vitamin_quantity_img");
