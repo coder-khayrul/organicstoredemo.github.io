@@ -768,6 +768,10 @@ span:nth-child(3) {
   left: 225px;
   box-shadow: 1px 5px 15px 11px rgb(0 0 0 / 17%);
 }
+.sub .dropdownlink {
+  padding: 0;
+}
+
 .vertical_category ul.v_category_items {
   position: absolute;
   background: white;
